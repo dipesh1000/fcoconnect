@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/app.css">
-    <title>Document</title>
+    <title>FCO Connect</title>
 </head>
 <body>
     <header>
@@ -249,7 +249,7 @@
             </div>
             <div class="button_container">
                 <button class="btn theme_btn btn-outline-primary">Back</button>
-                <button class="btn theme_btn active btn-primary">Continue</button>
+                <button class="btn theme_btn active btn-primary" id="handleclick">Continue</button>
             </div>
         </div>
     </section>
@@ -372,19 +372,21 @@
     <script src="js/main.js"></script>
 
     <script>
-        Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!',
-            }).then((result) => {
-            if (result.isConfirmed) {
-                Swal.fire('Deleted!', 'Your file has been deleted.', 'success');
-            }
+        $('#handleclick').on("click", function(){
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, Save it!',
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location = "https://fcoconnect.vercel.app/bookingconfirmed.html";
+                }
             });
+        });
     </script>
 
 </body>

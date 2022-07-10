@@ -60,6 +60,7 @@ a {
 }
 
 .status {
+    width: fit-content;
     background: #00D215;
     border-radius: 24.1071px;
     font-weight: 400;
@@ -309,11 +310,23 @@ header {
             .form-select {
                 height: 49px!important;
                 margin-bottom: 4px;
+                color: #8b8d8f!important;
+            }
+            .form-control {
+                border: 1px solid #CED4DA!important;
+                border-radius: 4px!important;
+                color: #8b8d8f!important;
+                height: 49px!important;
+            }
+            .form-check-input:checked {
+                background-color: $primary;
+                border-color: $primary;
             }
         }
         .btn-main {
-            background-color: #DC3545;
-            border: 1px solid #DC3545;
+            margin-top: 10px;
+            background-color: $primary;
+            border: 1px solid $primary;
             padding: .5em 2em;
             color: #fff;
         }
@@ -1019,3 +1032,202 @@ header {
 }
 
 /** End Confirmed Page **/
+
+/** Transfer Page **/
+.transfer_search {
+    padding: 2em 0 2em 0;
+    .ts_title {
+        h2 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 34px;
+            color: #333333;
+            margin-bottom: 0;
+        }
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #333333;
+            opacity: 0.5;
+            &.ts_title_info {
+                background: rgba(220, 53, 69, 0.05);
+                border-radius: 25px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 25px;
+                color: #000000;
+                padding: .2em 1em;
+                display: inline-block;
+                margin-top: 10px;
+                i {
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    .arrival_ch {
+        .nav-pills {
+            justify-content: center;
+            .nav-item {
+                .nav-link {
+                    color: rgba(0, 0, 0, 0.5);
+                    line-height: 38px;
+                    &.active {
+                        background: transparent;
+                        color: $primary;
+                        &::after {
+                            content: '';
+                            display: block;
+                            height: 1px;
+                            width: 100%;
+                            background: $primary;
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content {
+            .product_cards {
+                position: relative;
+                margin-bottom: 15px;
+                margin-top: 40px;
+                .product_card {
+                    border: 1px solid #ddd;
+                    padding: 1em 0;
+                    background: #FFFFFF;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    border-radius: 10px;
+                    text-align: center;
+                    margin-bottom: 15px;
+                    h4 {
+                        padding: 1em 0 0 0;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #DC3545;
+                    }
+                    span {
+                        display: block;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                    img {
+                        width: fit-content;
+                        margin-bottom: 10px;
+                        margin: 0 auto;
+                    }
+                    ul {
+                        list-style: none;
+                        text-align: left;
+                        margin-bottom: .2em;
+                        li {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            padding-bottom: 8px;
+                            color: #000000;
+                            i {
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                    .showmore {
+                        padding: 0 2em;
+                        display: block;
+                        text-align: left;
+                        text-decoration: underline;
+                    }
+                    .tb_price {
+                        background: $primarylite;
+                        padding: .6em 0;
+                        margin-bottom: 15px;
+                        margin-top: 15px;
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 34px;
+                        color: $primary;
+                    }
+                    .theme_btn {
+                        margin-bottom: 15px;
+                    }
+                }
+                .owl-nav {
+                    .owl-prev {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                    }
+                    .owl-next {
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .button_container {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .form-select {
+        height: 49px;
+    }
+    .form-control {
+        height: 49px;
+    }
+}
+
+/** End Transfer Page **/
+
+
+/** Transfer Details **/
+.td_arrival {
+    h4 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .td_arrival_form {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        .td_details {
+            padding: 1em;
+            background: $primarylite;
+            border-radius: 10px 0 0 10px;
+        }
+        .td_inputs {
+            padding: 1em;
+            .form-label {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+            }
+        }
+        .ts_picks {
+            span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: #333333;
+                opacity: 0.5;
+            }
+        }
+        .ts_date {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .form-control {
+        height: 49px;
+    }
+    .btn-outline-secondary {
+        border-color: transparent!important;
+    }
+}
+/** End Transfer Details **/

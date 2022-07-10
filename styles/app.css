@@ -52,6 +52,9 @@ a:hover {
 }
 
 .status {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background: #00D215;
   border-radius: 24.1071px;
   font-weight: 400;
@@ -359,9 +362,23 @@ header .navbar .nav-item {
 .searchbox .form_field_group .tab-content .form-select {
   height: 49px !important;
   margin-bottom: 4px;
+  color: #8b8d8f !important;
+}
+
+.searchbox .form_field_group .tab-content .form-control {
+  border: 1px solid #CED4DA !important;
+  border-radius: 4px !important;
+  color: #8b8d8f !important;
+  height: 49px !important;
+}
+
+.searchbox .form_field_group .tab-content .form-check-input:checked {
+  background-color: #DC3545;
+  border-color: #DC3545;
 }
 
 .searchbox .form_field_group .btn-main {
+  margin-top: 10px;
   background-color: #DC3545;
   border: 1px solid #DC3545;
   padding: .5em 2em;
@@ -1200,4 +1217,228 @@ header .navbar .nav-item {
 }
 
 /** End Confirmed Page **/
+/** Transfer Page **/
+.transfer_search {
+  padding: 2em 0 2em 0;
+}
+
+.transfer_search .ts_title h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+.transfer_search .ts_title span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  opacity: 0.5;
+}
+
+.transfer_search .ts_title span.ts_title_info {
+  background: rgba(220, 53, 69, 0.05);
+  border-radius: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000000;
+  padding: .2em 1em;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.transfer_search .ts_title span.ts_title_info i {
+  padding-right: 15px;
+}
+
+.transfer_search .arrival_ch .nav-pills {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.transfer_search .arrival_ch .nav-pills .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 38px;
+}
+
+.transfer_search .arrival_ch .nav-pills .nav-item .nav-link.active {
+  background: transparent;
+  color: #DC3545;
+}
+
+.transfer_search .arrival_ch .nav-pills .nav-item .nav-link.active::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #DC3545;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card {
+  border: 1px solid #ddd;
+  padding: 1em 0;
+  background: #FFFFFF;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card h4 {
+  padding: 1em 0 0 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #DC3545;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: .2em;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 8px;
+  color: #000000;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card ul li i {
+  padding-right: 15px;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card .showmore {
+  padding: 0 2em;
+  display: block;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card .tb_price {
+  background: #FFF2F2;
+  padding: .6em 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #DC3545;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .product_card .theme_btn {
+  margin-bottom: 15px;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.transfer_search .arrival_ch .tab-content .product_cards .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.transfer_search .button_container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.transfer_search .form-select {
+  height: 49px;
+}
+
+.transfer_search .form-control {
+  height: 49px;
+}
+
+/** End Transfer Page **/
+/** Transfer Details **/
+.td_arrival h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.td_arrival .td_arrival_form {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.td_arrival .td_arrival_form .td_details {
+  padding: 1em;
+  background: #FFF2F2;
+  border-radius: 10px 0 0 10px;
+}
+
+.td_arrival .td_arrival_form .td_inputs {
+  padding: 1em;
+}
+
+.td_arrival .td_arrival_form .td_inputs .form-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.td_arrival .td_arrival_form .ts_picks span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #333333;
+  opacity: 0.5;
+}
+
+.td_arrival .td_arrival_form .ts_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.td_arrival .form-control {
+  height: 49px;
+}
+
+.td_arrival .btn-outline-secondary {
+  border-color: transparent !important;
+}
+
+/** End Transfer Details **/
 /*# sourceMappingURL=app.css.map */

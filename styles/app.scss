@@ -1,16 +1,218 @@
 
-$primary: #FF5B00;
+$primary: #DC3545;
+
 $link: #333;
 $heading: #111;
 $secondary: #00225f;
 $subTitle: rgba(0, 0, 0, 0.4);
-$content: rgba(0, 0, 0, 0.6);
 
+$primarylite: #FFF2F2;
+$metatitle: rgba(0, 0, 0, 0.5);
+
+
+$review: #82C188;
+
+/** Global CSS **/
 *, body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    &:hover {
+        color: $primary;
+    }
+}
+
+.theme_btn {
+    color: $primary;
+    border-color: $primary;
+    padding: .8em 3em;
+    background-color: $primarylite;
+    &_sm {
+        color: $primary;
+        border-color: $primary;
+        padding: .8em 2em;
+        background-color: $primarylite;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        &.active {
+            border-color: $primary;
+            background-color: $primary;
+        }
+        &:hover {
+            border-color: $primary;
+            background-color: $primary;
+        }
+    }
+    &.active {
+        border-color: $primary;
+        background-color: $primary;
+    }
+    &:hover {
+        border-color: $primary;
+        background-color: $primary;
+    }
+}
+
+.status {
+    background: #00D215;
+    border-radius: 24.1071px;
+    font-weight: 400;
+    font-size: 11.5714px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding: .2em 1em .2em 1.8em;
+    display: inline-block;
+    margin-bottom: 15px;
+    position: relative;
+    &::before {
+        content: '';
+        background-color: #fff;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 10%;
+        top: 40%;
+    }
+}
+
+.room_meta_title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.5;
+}
+.pagination_wrap {
+    padding-top: 15px;
+    .pagination {
+        justify-content: center;
+        .page-item {
+            .page-link {
+                color: $metatitle;
+            }
+            &.active {
+                .page-link {
+                    color: $primary;
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                }
+            }
+        }
+    }
+}
+
+.item_details {
+    .item_main_title {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 30px;
+            color: #000000;
+        }
+    }
+    .reviews {
+        display: flex;
+        color: #DC3545;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #DC3545;
+        margin-bottom: .5em;
+        .rating {
+            margin-bottom: 0;
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            li {
+                font-size: 15px;
+                padding-right: 5px;
+            }
+        }
+            span {
+            padding-left: 10px;
+        }
+    }
+    .item_address {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+        opacity: 0.5;
+    }
+    .room_galary {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .room_aminities {
+        span {
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            justify-content: space-between;
+            li {
+                img {
+                    display: block;
+                    height: 33px;
+                }
+                span {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        a {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            opacity: 0.5;
+            margin-bottom: 15px;
+            display: inline-block;
+            text-decoration: underline;
+        }
+    }
+    .customer_review {
+        margin-top: 15px;
+        .c_reviewlist {
+            display: flex;
+            color: $review;
+            list-style: none;
+            padding-left: 0;
+            li {
+                padding-right: 5px;
+            }
+        }
+    }
+    .hotel_terms {
+        ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            li {
+                padding-right: 15px;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+/** Global CSS Ends **/
 
 header {
     .navbar {
@@ -444,3 +646,376 @@ header {
         }
     }
 }
+
+/** Search Page **/
+.page_title {
+    background: #DC3545;
+    background-image: url('../img/pagetitlebg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // opacity: 0.25;
+    h1 {
+        color: #fff;
+        padding: .5em 0;
+        margin-bottom: 0;
+    }
+}
+.page_searchbox {
+    background: rgba(220, 53, 69, 0.05);
+    padding: 2em 0;
+    .search_box {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 1.5em;
+        h5 {
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            color: #DC3545;
+        }
+        .form-select {
+            height: 49px;
+        }
+        .search_submit {
+            button {
+                background: #DC3545;
+                color: #fff;
+                width: 100%;
+                height: 47px;
+                border: 1px solid #DC3545;
+            }
+        }
+    }
+}
+.searchlist {
+    padding: 4em 0;
+    .searchitem {
+        display: flex;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        margin-bottom: 48px;
+        .item_details {
+            width: 33.33%;
+            padding: 2em;
+        }
+        .other_room_list {
+            flex: 1;
+            border-left: 1px solid rgba(0, 0, 0, 0.3);
+            .room_box {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+                padding: 2em;
+                display: flex;
+                img {
+                    width: 213px;
+                }
+                .inner_room_meta {
+                    flex: 1;
+                    padding: 0 0 0 1.5em;
+                    display: flex;
+                    align-items: center;
+                    .room_metas {
+                        flex: 1;
+                        padding-right: 1.5em;
+                        align-self: flex-start;
+                        .room_type {
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 20px;
+                            color: #000000;
+                        }
+                        .form-control_input {
+                            color: $metatitle;
+                            position: relative;
+                            input {
+                                padding-left: 110px;
+                            }
+                            .pre_value {
+                                position: absolute;
+                                top: 7px;
+                                left: 18px;
+                                i {
+                                    padding-right: 10px;
+                                }
+                            }
+                        }
+                        .hotel_info {
+                            span {
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 14px;
+                                color: #000000;
+                                opacity: 0.5;
+                                i {
+                                    padding-right: 10px;
+                                    color: orange;
+                                }
+                            }
+                        }
+                    }
+                    .price_details {
+                        width: 180px;
+                        border-left: 1px solid rgba(0, 0, 0, 0.3);
+                        padding-left: 1em;
+                        text-align: center;
+                        h2 {
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 28px;
+                            color: $primary;
+                            margin-bottom: 0;
+                        }
+                        span {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: $metatitle;
+                            display: inline-block;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            .total_costing {
+                display: flex;
+                padding: 1em 2em;
+                justify-content: space-between;
+                align-items: center;
+                .ttal_amt {
+                    display: flex;
+                    align-items: center;
+                    .theme_btn {
+                        margin-left: 15px;
+                    }
+                }
+                h2 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/** End Search Page **/
+
+/** Booking Page **/
+
+.details_page {
+    padding: 4em 0;
+    .dp_title {
+        margin-bottom: 20px;
+        h2 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            color: #000000;
+            margin-bottom: 0;
+        }
+        span {
+            color: $primary;
+        }
+    }
+    .dp_boxes {
+        border: 1px solid #CED4DA;
+        .dp_box_details {
+            padding: 1.5em;
+            border-top: 1px solid #CED4DA;
+            h4 {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 25px;
+                color: #000000;
+                opacity: 0.5;
+            }
+            .dp_item_box {
+                padding: 1.5em;
+                border: 1px solid #CED4DA;
+                background-color: $primarylite;
+                margin-bottom: 25px;
+                .dp_item_form {
+                    .form-select {
+                        height: 49px;
+                    }
+                    .form-control {
+                        height: 49px;
+                    }
+                }
+                .dp_room_info {
+                    span {
+                        background-color: $primary;
+                        color: #fff;
+                        padding: .2em 1em;
+                        display: inline-block;
+                        border-radius: 20px;
+                        margin-bottom: 15px;
+                    }
+                    h3 {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #000000;
+                        opacity: 0.5;
+                    }
+                    ul {
+                        list-style: none;
+                        padding-left: 0;
+                        display: flex;
+                        margin-bottom: 0;
+                        li {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-align: right;
+                            color: #000000;
+                            opacity: 0.5;
+                            &:last-child {
+                                padding-left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dp_box {
+            .dp_room_feature {
+                border-left: 1px solid #CED4DA;
+                padding: 1.5em;
+                background-color: $primarylite;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 27px;
+                text-align: right;
+                color: #000000;
+                opacity: 0.5;
+                table {
+                    width: 60%;
+                    .dp_feature_name{
+                        text-align: right;
+                    }
+                    .text-left {
+                        text-align: left;
+                        padding-left: 15px;
+                    }
+                }
+            }
+            .dp_inner_box {
+                padding: 1.5em;
+                .dp_aminities {
+                    ul {
+                        list-style: none;
+                        padding-left: 0;
+                        display: flex;
+                        li {
+                            background-color: $primary;
+                            color: #fff;
+                            border-radius: 20px;
+                            padding: .2em 1em;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .total_amt {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em 1.5em;
+            align-items: center;
+            border-top: 1px solid #CED4DA;
+            .t_amt_title {
+                span {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+            h2 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                color: $primary;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .button_container {
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+/** End Booking Page **/
+
+/** Confirmed Page **/
+.confirmed_booking {
+    margin: 0 auto;
+    width: 735px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+    .booking_card {
+        text-align: center;
+        .banner_card {
+            padding: 2em;
+            background-color: green;
+            color: #fff;
+            border-radius: 20px 20px 0 0;
+            i {
+                font-size: 50px;
+            }
+        }
+        .card_meta {
+            border: 1px solid #ddd;
+            border-radius: 0 0 20px 20px;
+            padding: 40px;
+        }
+        a {
+            color: $primary;
+            margin-bottom: 15px;
+            display: inline-block;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 30px;
+            color: #DC3545;
+        }
+        .booking_num {
+            width: 80%;
+            margin: 0 auto;
+            border-top: .5px dashed #ddd;
+            padding-top: .5em;
+            border-bottom: .5px dashed #ddd;
+            padding-bottom: .5em;
+            margin-bottom: 15px;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 30px;
+            color: #000000;
+        }
+        span {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.7);
+            opacity: 0.8;
+        }
+    }
+    .back_to {
+        background-color: $primary;
+        color: #fff;
+        padding: .5em 2em;
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 20px;
+
+    }
+}
+
+/** End Confirmed Page **/

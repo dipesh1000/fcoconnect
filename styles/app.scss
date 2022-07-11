@@ -154,7 +154,11 @@ a {
         margin-top: 15px;
         margin-bottom: 15px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+
+        a{
+            margin-right: 20px;
+        }
     }
     .room_aminities {
         span {
@@ -168,11 +172,12 @@ a {
             list-style: none;
             padding-left: 0;
             margin-bottom: 0;
-            justify-content: space-between;
+            justify-content: flex-start;
             li {
                 img {
                     display: block;
                     height: 33px;
+                    margin-right: 35px;
                 }
                 span {
                     margin-bottom: 0;
@@ -278,6 +283,11 @@ header {
     }
     .form_field_group {
         flex: 1;
+        .owl-nav{
+            background-color: red;
+            display: flex;
+            justify-content: center;
+        }
         .nav-pills {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -307,6 +317,7 @@ header {
                             left: 40%;
                             background: #DC3545;
                             text-align: center;
+                            z-index: 10!important;
                         }
                     }
                 }
@@ -361,13 +372,13 @@ header {
     padding: 3em;
     .termsgroup {
         margin-bottom: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
         list-style: none;
+        padding-left: 0!important;
         li {
             text-align: center;
             max-width: 160px;
+            margin-right: auto;
+            margin-left: auto;
             img {
                 margin-bottom: 15px;
             }
@@ -461,7 +472,7 @@ header {
         position: absolute;
         transform: rotate(-90deg);
         top: 50%;
-        right: 5%;
+        right: 0%;
         h1 {
             color: #000;
             span {
@@ -658,13 +669,15 @@ header {
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 28px;
-                &:first-child {
-                    padding-left: 0;
-                }
+                padding-left: 0!important;
+                padding-right: 25px!important;
+                text-transform: capitalize;
             }
         }
     }
     .copyright {
+        padding-top: 10px;
+        padding-bottom: 10px;
         .copylayout {
             height: 50px;
             display: flex;
@@ -713,6 +726,7 @@ header {
         }
         .form-select {
             height: 49px;
+            width: 100%;
         }
         .search_submit {
             button {
@@ -1314,26 +1328,41 @@ header {
         }
     }
 
+    .search_inner_box{
+        // flex-direction: column;
+        flex-wrap: wrap;
+        .form_field_group{
+            flex-basis: 100%;
+
+            .nav-pills{
+                width: 100%!important;
+                grid: unset!important;
+            }
+        }
+       .ads_img_contaainer{
+        max-width: 250px;
+        margin: 0 auto;
+
+        &:first-child{
+            margin-top: 2.7rem;
+            order: 2;
+            flex-basis: 50%;
+        }
+        &:last-child{
+            margin-top: 2.7rem;
+            flex-basis: 50%;
+        }
+       }
+    }
+
     .about_inner_bg{
         padding: 2em 2em!important;
     }
 
-
-    // room 
-    .other_room_list{
-        border: none!important;
-        .room_box{
-            img{
-                width: 300px!important;
-            }
-    
-            .inner_room_meta{
-                flex-direction: column;
-        
-                .price_details{
-                    align-self: flex-start;
-                    margin-top: 2rem;
-                }
+    .page_searchbox{
+        .row{
+            .col-md-2{
+                padding-left: 2px;
             }
         }
     }
@@ -1353,31 +1382,21 @@ header {
     }
     
     .search_inner_box{
-        flex-direction: column;
-
-       .ads_img_contaainer{
-        max-width: 200px;
-        width: 100%;
-        margin: 0 auto;
-        &:first-child{
-            margin-bottom: 3rem;
-        }
-        &:last-child{
-            margin-top: 3rem;
-        }
-       }
-    }
-    .nav-pills{
-        grid-template-columns: repeat(3, 1fr)!important;
-        row-gap: 0.8rem;
-        .nav-item{
-            .nav-link{
-                width: 100%;
-                margin: 0!important;
-                border: 2px solid #DC3545!important;
-                &.active{
-                    height: auto!important;
-                }
+        .form_field_group{
+            width: 100%!important;
+            .nav-pills{
+                // grid-template-columns: repeat(3, 1fr)!important;
+                // row-gap: 0.8rem;
+                // .nav-item{
+                //     .nav-link{
+                //         width: 100%;
+                //         margin: 0!important;
+                //         border: 2px solid #DC3545!important;
+                //         &.active{
+                //             height: auto!important;
+                //         }
+                //     }
+                // }
             }
         }
     }
@@ -1397,6 +1416,21 @@ header {
     .room_aminities{
         a{
             display: none!important;
+        }
+    }
+
+    .eventattraction{
+        .row{
+            > .col-1{
+                display: none!important;
+            }
+        }
+    }
+
+    .quickLinks{
+        .nav{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }
@@ -1430,29 +1464,34 @@ header {
             }
         }
     }
-    .ads_img_contaainer {
-        display: none;
-    }
     .search_image_ads {
         display: flex;
         justify-content: space-around;
     }
 
-    .nav-pills{
-        grid-template-columns: 1fr!important;
-        row-gap: 0;
-        .nav-item{
-            &:nth-child(1), 
-            &:nth-child(2),
-            &:nth-child(3),
-            &:nth-child(4),
-            &:nth-child(5){
-                .nav-link{
-                    border-bottom-width: 1px!important;
+    .search_inner_box{
+        .nav-pills{
+            grid-template-columns: 1fr!important;
+            row-gap: 0;
+            .nav-item{
+                &:nth-child(1), 
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5){
+                    .nav-link{
+                        border-bottom-width: 1px!important;
+                    }
                 }
             }
         }
+        .tab-content{
+            .hide-block{
+                display: none!important;
+            }
+        }
     }
+
     // termsbox
     .termsgroup{
         grid-template-columns: repeat(2, 1fr);
@@ -1497,6 +1536,31 @@ header {
             &:nth-child(2){
                 margin-top: 14px;
             }
+        }
+    }
+
+    .eventattraction{
+        .row{
+            > .col-11{
+                .row{
+                    .col-xl-8.col-md-6{
+                        padding-left: 0!important;
+                    }
+                }
+            }
+        }
+    }
+
+    .quickLinks{
+        .nav{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .copyright {
+        .copylayout {
+            flex-direction: column;
         }
     }
 }
@@ -1558,9 +1622,30 @@ header {
             }
         }
     }
+
+    .transfer_search{
+        .ts_title{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-pills{
+            flex-wrap: nowrap!important;
+            .nav-item{
+                padding-left: 0!important;
+            }
+        }
+    }
+
     .eventattraction {
         .event_title {
             right: -14%;
+        }
+    }
+
+    .quickLinks{
+        .nav{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

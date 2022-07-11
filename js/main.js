@@ -4,6 +4,34 @@ $(document).ready(function () {
   var preslides = $('.preeventslides');
   var footerslides = $('.footerslides');
   var card = $('.cardslider');
+  var searchInnerBoxPillsTab = $('.slidrss');
+
+    var li =  $(".owl-item li ");
+    $(".owl-item li").click(function(){
+    li.removeClass('active');
+    });
+
+  searchInnerBoxPillsTab.owlCarousel({
+    // items change number for slider display on desktop
+    loop: false,
+    autoplay: false,
+    dots: true,
+    nav: false,
+    items: 3,
+    smartSpeed: 1000,
+    responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:6
+      }
+  }
+  });
+
   owl.owlCarousel({
     // items change number for slider display on desktop
     loop: true,
@@ -67,10 +95,10 @@ $(document).ready(function () {
       0: {
         items: 1,
       },
-      600: {
+      800: {
         items: 2,
       },
-      1000: {
+      1200: {
         items: 3,
       },
     },

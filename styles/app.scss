@@ -267,13 +267,15 @@ header {
     }
     .form_field_group {
         flex: 1;
-        padding: 0 1em;
+        // padding: 0 1em;
         .nav-pills {
-            border: 1px solid #DC3545;
-            justify-content: space-between;
+            // border: 1px solid #DC3545;
+            display: flex;
+            justify-content: center;
             .nav-item {
-                border-left: 1px solid #DC3545;
+                // border: 1px solid #DC3545!important;
                 .nav-link {
+                    border: 1px solid #DC3545;
                     color: #333333;
                     font-size: 16px;
                     font-weight: 700;
@@ -284,6 +286,7 @@ header {
                         border-radius: 0;
                         color: #fff;
                         background-color: #DC3545;
+                        border: 1px solid #DC3545;
                         &::after {
                             content: '';
                             position: absolute;
@@ -486,7 +489,7 @@ header {
 }
 
 .upcoming_event {
-    padding: 4em 0;
+    // padding: 4em 0;
     background: #FFF5F7;
     .highlightsGroups {
         .owl-nav {
@@ -1231,3 +1234,64 @@ header {
     }
 }
 /** End Transfer Details **/
+
+@media screen and (max-width: 992px){
+    .search_inner_box{
+        flex-direction: column;
+
+       .ads_img_contaainer{
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+        &:first-child{
+            margin-bottom: 3rem;
+        }
+        &:last-child{
+            margin-top: 3rem;
+        }
+       }
+    }
+    .nav-pills{
+        .nav-link{
+            width: 100%;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 1200px){
+    // termsbox
+    .termsgroup{
+        display: grid!important;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 3rem;
+    }
+
+    .about_inner_bg{
+        padding: 2em 2em!important;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    // termsbox
+    .termsgroup{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about_inner_bg{
+        padding: 2em 0em!important;
+    }
+}
+
+@media screen and (max-width: 576px){
+    // termsbox
+    .termsgroup{
+        grid-template-columns: 1fr;
+    }
+    .termsgroup li{
+        margin: 0 auto;
+    }
+}

@@ -1656,6 +1656,7 @@ header .navbar .nav-item {
     padding-left: 20px !important;
   }
   .termsgroup {
+    padding-left: 0;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

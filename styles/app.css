@@ -295,6 +295,10 @@ header .navbar .nav-item {
   margin: 40px 0;
 }
 
+.searchbox .search_image_ads {
+  display: none;
+}
+
 .searchbox .search_inner_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1580,6 +1584,18 @@ header .navbar .nav-item {
 }
 
 @media screen and (max-width: 768px) {
+  header .navbar .nav-item {
+    line-height: 32px;
+    padding-left: 0;
+  }
+  header .navbar .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    background: white;
+    width: 93%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
   .banner .inner_content form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1588,6 +1604,16 @@ header .navbar .nav-item {
   }
   .banner .inner_content form div {
     padding-right: 16px !important;
+  }
+  .ads_img_contaainer {
+    display: none;
+  }
+  .search_image_ads {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .nav-pills {
     -ms-grid-columns: 1fr !important;
@@ -1703,6 +1729,9 @@ header .navbar .nav-item {
   }
   .room_box .inner_room_meta .price_details * {
     margin-right: 13px;
+  }
+  .eventattraction .event_title {
+    right: -14%;
   }
 }
 

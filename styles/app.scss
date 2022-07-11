@@ -263,6 +263,9 @@ header {
 
 .searchbox {
     margin: 40px 0;
+    .search_image_ads {
+        display: none;
+    }
     .search_inner_box {
         display: flex;
     }
@@ -1399,6 +1402,23 @@ header {
 }
 
 @media screen and (max-width: 768px){
+    header {
+        .navbar {
+            .nav-item {
+                line-height: 32px;
+                padding-left: 0;
+            }
+            .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                background: rgb(255, 255, 255);
+                width: 93%;
+                padding-top: 15px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    
     .banner{
         .inner_content{
             form{
@@ -1409,6 +1429,13 @@ header {
                 }
             }
         }
+    }
+    .ads_img_contaainer {
+        display: none;
+    }
+    .search_image_ads {
+        display: flex;
+        justify-content: space-around;
     }
 
     .nav-pills{
@@ -1529,6 +1556,11 @@ header {
                     margin-right: 13px;
                 }
             }
+        }
+    }
+    .eventattraction {
+        .event_title {
+            right: -14%;
         }
     }
 }

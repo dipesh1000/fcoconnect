@@ -528,7 +528,7 @@ header .navbar .nav-item {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   top: 50%;
-  right: -19%;
+  right: 5%;
 }
 
 .eventattraction .event_title h1 {
@@ -1738,6 +1738,9 @@ header .navbar .nav-item {
   }
   .other_room_list .room_box .inner_room_meta .price_details h2 {
     font-size: 16px !important;
+  }
+  .eventattraction .event_title {
+    right: -19%;
   }
 }
 /*# sourceMappingURL=app.css.map */

@@ -458,9 +458,7 @@ header {
         position: absolute;
         transform: rotate(-90deg);
         top: 50%;
-        // right: 5%;
-        right: -19%;
-    
+        right: 5%;
         h1 {
             color: #000;
             span {
@@ -1579,6 +1577,11 @@ header {
                     }
                 }
             }
+        }
+    }
+    .eventattraction {
+        .event_title {
+            right: -19%;
         }
     }
 }

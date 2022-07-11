@@ -38,6 +38,17 @@ $(document).ready(function () {
     nav: true,
     smartSpeed: 1000,
     margin: 15,
+	responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
   });
   card.owlCarousel({
     // items change number for slider display on desktop

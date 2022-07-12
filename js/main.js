@@ -38,17 +38,17 @@ $(document).ready(function () {
     nav: true,
     smartSpeed: 1000,
     margin: 15,
-	responsive:{
-      0:{
-          items:1
+    responsive: {
+      0: {
+        items: 1,
       },
-      600:{
-          items:3
+      600: {
+        items: 3,
       },
-      1000:{
-          items:5
-      }
-  }
+      1000: {
+        items: 5,
+      },
+    },
   });
   card.owlCarousel({
     // items change number for slider display on desktop
@@ -82,6 +82,19 @@ $(document).ready(function () {
     autoplay: true,
     nav: false,
     dots: true,
+    smartSpeed: 1000,
+    margin: 15,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+  });
+  form_item_slider.owlCarousel({
+    items: 3,
+    // items change number for slider display on desktop
+    loop: true,
+    autoplay: true,
+    nav: false,
+    dots: false,
     smartSpeed: 1000,
     margin: 15,
     autoplay: true,

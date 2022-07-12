@@ -1536,8 +1536,15 @@ header .navbar .nav-item {
   .room_aminities a {
     display: none !important;
   }
+  .eventattraction {
+    padding-right: 64px !important;
+    padding-left: 64px !important;
+  }
   .eventattraction .row > .col-1 {
     display: none !important;
+  }
+  .eventattraction .container {
+    padding: 0 !important;
   }
   .quickLinks .nav {
     display: grid;
@@ -1650,6 +1657,14 @@ header .navbar .nav-item {
   .eventattraction {
     padding: 4em 1em;
   }
+  .ads_img_contaainer {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .aboutevent > .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
   .total_costing {
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -1677,6 +1692,10 @@ header .navbar .nav-item {
   .transfer_search .ts_title {
     text-align: center;
     margin-bottom: 20px;
+  }
+  .eventattraction {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
   }
   .eventattraction .event_title {
     right: -14%;

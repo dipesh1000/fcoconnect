@@ -1500,9 +1500,17 @@ header {
     }
 
     .eventattraction{
+        padding-right: 64px!important;
+        padding-left: 64px!important;
         .row{
             > .col-1{
                 display: none!important;
+            }
+        }
+
+        .container{
+            padding: 0!important;
+            > .row{
             }
         }
     }
@@ -1665,6 +1673,18 @@ header {
         padding: 4em 1em;
     }
 
+    .ads_img_contaainer{
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
+
+    .aboutevent{
+        > .container{
+            padding-right: 0!important;
+            padding-left: 0!important;
+        }
+    }
+
     .total_costing{
         flex-direction: column!important;
         align-items: flex-start!important;
@@ -1700,6 +1720,8 @@ header {
     }
 
     .eventattraction {
+        padding-right: 16px!important;
+        padding-left: 16px!important;
         .event_title {
             right: -14%;
         }

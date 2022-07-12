@@ -281,7 +281,7 @@ header .navbar .nav-item {
 
 .searchbox .ads_img_contaainer {
   width: 19%;
-  padding: 0 15px;
+  padding: 0 25px;
 }
 
 .searchbox .ads_img_contaainer img {
@@ -1655,6 +1655,10 @@ header .navbar .nav-item {
 }
 
 @media screen and (max-width: 576px) {
+  .searchbox > .container {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
   .termsgroup {
     padding-left: 0;
     grid-template-columns: 1fr !important;
@@ -1702,8 +1706,8 @@ header .navbar .nav-item {
     margin-bottom: 20px;
   }
   .eventattraction {
-    padding-right: 16px !important;
-    padding-left: 16px !important;
+    padding-right: 12px !important;
+    padding-left: 12px !important;
   }
   .eventattraction .event_title {
     right: -14%;

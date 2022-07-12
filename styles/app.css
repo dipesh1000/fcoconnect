@@ -1791,4 +1791,22 @@ header .navbar .nav-item {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
 }
+
+@media screen and (min-width: 992px) {
+  .mainfooter .container > .row .col-lg-4:nth-child(3) {
+    padding-left: 40px !important;
+  }
+  .mainfooter .container > .row .col-lg-4:nth-child(2) {
+    padding-left: 40px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainfooter .container > .row .col-lg-4:nth-child(3) {
+    padding-left: 60px !important;
+  }
+  .mainfooter .container > .row .col-lg-4:nth-child(2) {
+    padding-left: 60px !important;
+  }
+}
 /*# sourceMappingURL=app.css.map */

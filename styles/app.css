@@ -1770,6 +1770,10 @@ header .navbar .nav-item {
   .room_metas form > div {
     margin-top: 8px !important;
   }
+  .searchlist .item_details {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
 }
 
 .owl-carousel.off {

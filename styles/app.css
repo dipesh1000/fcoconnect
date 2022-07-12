@@ -1573,6 +1573,9 @@ header .navbar .nav-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .highlightsGroups .owl-nav {
+    top: 105% !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1654,6 +1657,11 @@ header .navbar .nav-item {
   .heightlights > .container {
     padding-right: 0 !important;
     padding-left: 0 !important;
+  }
+  .heightlights > .container .highlightsGroups .owl-nav {
+    top: 105%;
+    left: 50% !important;
+    transform: translateX(-50%);
   }
   .heightlights > .container .hightlight_content {
     margin-left: 0 !important;

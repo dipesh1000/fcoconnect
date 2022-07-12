@@ -50,6 +50,7 @@ $(document).ready(function () {
     nav: true,
     dots: false,
     items: 1,
+    margin: 10,
     smartSpeed: 1000,
     navText: [
       "<div class='nav-btn prev-slide'><i class='bi bi-arrow-left'></i></div>",

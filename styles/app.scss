@@ -1537,8 +1537,6 @@ header {
 
         .container{
             padding: 0!important;
-            > .row{
-            }
         }
     }
 
@@ -1546,6 +1544,12 @@ header {
         .nav{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .highlightsGroups{
+        .owl-nav{
+            top: 105%!important;
         }
     }
 }
@@ -1666,6 +1670,14 @@ header {
         > .container{
             padding-right: 0!important;
             padding-left: 0!important;
+
+            .highlightsGroups{
+                .owl-nav{
+                    top: 105%;
+                    left: 50%!important;
+                    transform: translateX(-50%);
+                }
+            }
 
             .hightlight_content{
                 margin-left: 0!important;

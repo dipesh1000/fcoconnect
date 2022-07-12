@@ -1497,6 +1497,21 @@ header .navbar .nav-item {
 }
 
 @media screen and (max-width: 992px) {
+  header .navbar .nav-item {
+    line-height: 32px;
+    padding-left: 0;
+  }
+  header .navbar .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   .banner .inner_content {
     width: 100%;
   }
@@ -1553,18 +1568,6 @@ header .navbar .nav-item {
 }
 
 @media screen and (max-width: 768px) {
-  header .navbar .nav-item {
-    line-height: 32px;
-    padding-left: 0;
-  }
-  header .navbar .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    background: white;
-    width: 93%;
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
   .banner .inner_content form {
     flex-direction: column;
   }

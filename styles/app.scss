@@ -1635,6 +1635,10 @@ header {
         .copylayout {
             flex-direction: column;
             text-align: center;
+
+            .copy_text:nth-child(2){
+                padding-bottom: 8px!important;
+            }
         }
     }
 
@@ -1649,10 +1653,6 @@ header {
 }
 
 @media screen and (max-width: 576px){
-    // .nav-item{
-    //     padding-left: 20px!important;
-    // }
-    // termsbox
     .termsgroup{
         padding-left: 0;
         grid-template-columns: 1fr!important;
@@ -1664,14 +1664,6 @@ header {
     .eventattraction{
         padding: 4em 1em;
     }
-
-    // .room_box{
-    //     padding-right: 20px!important;
-    //     padding-left: 20px!important;
-    //     .inner_room_meta{
-    //         flex-direction: column
-    //     }
-    // }
 
     .total_costing{
         flex-direction: column!important;

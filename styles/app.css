@@ -1626,6 +1626,9 @@ header .navbar .nav-item {
     flex-direction: column;
     text-align: center;
   }
+  .copyright .copylayout .copy_text:nth-child(2) {
+    padding-bottom: 8px !important;
+  }
   .heightlights {
     padding-left: 16px !important;
     padding-right: 16px !important;

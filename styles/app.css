@@ -1725,8 +1725,8 @@ header .navbar .nav-item {
     padding-right: 0 !important;
   }
   .mainfooter, .quickLinks, .copyright {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 }
 
@@ -1773,6 +1773,13 @@ header .navbar .nav-item {
   .searchlist .item_details {
     padding-right: 16px !important;
     padding-left: 16px !important;
+  }
+  .page_searchbox {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+  .page_searchbox > .container {
+    padding: 0 !important;
   }
 }
 

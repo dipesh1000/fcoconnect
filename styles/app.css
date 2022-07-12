@@ -1763,5 +1763,6 @@ header .navbar .nav-item {
 
 .main-holder {
   overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 /*# sourceMappingURL=app.css.map */

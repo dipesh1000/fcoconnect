@@ -1491,6 +1491,9 @@ header .navbar .nav-item {
     padding-left: 0px !important;
     padding-right: 4px !important;
   }
+  .highlightside .owl-nav {
+    left: 4% !important;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1574,6 +1577,10 @@ header .navbar .nav-item {
   .about_inner_bg {
     padding: 2em 0em !important;
   }
+  .aboutevent {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
   .room_box {
     flex-direction: column;
     border: none !important;
@@ -1618,6 +1625,14 @@ header .navbar .nav-item {
   .copyright .copylayout {
     flex-direction: column;
     text-align: center;
+  }
+  .heightlights {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .heightlights > .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 }
 
@@ -1666,6 +1681,18 @@ header .navbar .nav-item {
   .quickLinks .nav {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .previous_event {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .previous_event > .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .mainfooter, .quickLinks, .copyright {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
   }
 }
 

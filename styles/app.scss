@@ -1430,6 +1430,12 @@ header {
             }
         }
     }
+
+    &.highlightside{
+        .owl-nav{
+            left: 4%!important;
+        }
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -1560,6 +1566,11 @@ header {
         padding: 2em 0em!important;
     }
 
+    .aboutevent{
+        padding-left: 16px!important;
+        padding-right: 16px!important;
+    }
+
     .room_box{
         flex-direction: column;
         border: none!important;
@@ -1626,6 +1637,15 @@ header {
             text-align: center;
         }
     }
+
+    .heightlights{
+        padding-left: 16px!important;
+        padding-right: 16px!important;
+        > .container{
+            padding-right: 0!important;
+            padding-left: 0!important;
+        }
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -1680,16 +1700,6 @@ header {
         }
     }
 
-    // .room_box{
-    //     .inner_room_meta{
-    //         .price_details{
-    //             *{
-    //                 margin-right: 13px;
-    //             }
-    //         }
-    //     }
-    // }f
-
     .transfer_search{
         .ts_title{
             text-align: center;
@@ -1708,6 +1718,20 @@ header {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
         }
+    }
+
+    .previous_event{
+        padding-left: 16px!important;
+        padding-right: 16px!important;
+        > .container{
+            padding-left: 0!important;
+            padding-right: 0!important;
+        }
+    }
+
+    .mainfooter, .quickLinks, .copyright{
+        padding-left: 8px!important;
+        padding-right: 8px!important;
     }
 }
 
@@ -1745,18 +1769,6 @@ header {
                 padding-bottom: 5px;
             }
         }
-    }
-
-    .other_room_list{
-        // .room_box{
-        //     .inner_room_meta{
-        //         .price_details{
-        //             h2{
-        //                 font-size: 16px!important;
-        //             }
-        //         }
-        //     }
-        // }
     }
     .eventattraction {
         .event_title {

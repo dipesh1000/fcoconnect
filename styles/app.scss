@@ -1393,6 +1393,8 @@ header {
        .ads_img_contaainer{
         max-width: 250px;
         margin: 0 auto;
+        padding-right: 0!important;
+        padding-left: 0!important;
 
         &:first-child{
             margin-top: 2.7rem;
@@ -1697,11 +1699,6 @@ header {
 
     .eventattraction{
         padding: 4em 1em;
-    }
-
-    .ads_img_contaainer{
-        padding-right: 0!important;
-        padding-left: 0!important;
     }
 
     .aboutevent{

@@ -374,7 +374,7 @@ header {
         margin-bottom: 0;
         list-style: none;
         padding-left: 0!important;
-        display: grid!important;
+        display: grid;
         grid-template-columns: repeat(5, 1fr);
         column-gap: 2rem;
         row-gap: 3rem;
@@ -1277,8 +1277,7 @@ header {
 @media screen and (max-width: 1200px){
     // termsbox
     .termsgroup{
-        display: grid!important;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr)!important;
         column-gap: 2rem;
         row-gap: 3rem;
     }
@@ -1498,7 +1497,7 @@ header {
 
     // termsbox
     .termsgroup{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr)!important;
     }
 
     .about_inner_bg{
@@ -1576,7 +1575,7 @@ header {
     // termsbox
     .termsgroup{
         padding-left: 0;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr!important;
     }
     .termsgroup li{
         margin: 0 auto;

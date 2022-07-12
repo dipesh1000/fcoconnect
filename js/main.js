@@ -4,15 +4,9 @@ $(document).ready(function () {
   var preslides = $('.preeventslides');
   var footerslides = $('.footerslides');
   var card = $('.cardslider');
-  var searchInnerBoxPillsTab = $('.slidrss');
+  var searchInnerBoxPillsTab = $('.nav-pills.slidrss');
 
-    var li =  $(".owl-item li ");
-    $(".owl-item li").click(function(){
-    li.removeClass('active');
-    });
-
-  searchInnerBoxPillsTab.owlCarousel({
-    // items change number for slider display on desktop
+  var owlOptions = searchInnerBoxPillsTab.owlCarousel({
     loop: false,
     autoplay: false,
     dots: true,
@@ -32,6 +26,9 @@ $(document).ready(function () {
   }
   });
 
+  
+
+
   owl.owlCarousel({
     // items change number for slider display on desktop
     loop: true,
@@ -39,6 +36,7 @@ $(document).ready(function () {
     dots: false,
     nav: true,
     items: 1,
+    margin: 10,
     smartSpeed: 1000,
     navText: [
       "<div class='nav-btn prev-slide'><i class='bi bi-arrow-left'></i></div>",
@@ -71,11 +69,14 @@ $(document).ready(function () {
           items:1
       },
       600:{
-          items:3
+          items:2
       },
       1000:{
-          items:5
-      }
+          items:3
+      },
+      1200:{
+        items:4
+    }
   }
   });
   card.owlCarousel({

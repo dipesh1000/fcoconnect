@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel = "stylesheet" href = "js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class = "main-holder">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -90,27 +90,28 @@
                     <img src="img/searchad1.png" alt="">
                 </div>
                 <div class="form_field_group">
-                    <ul class="nav nav-pills slidrss owl-carousel owl-theme mb-3" id="pills-tab" role="tablist">
-                 
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Event</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Hotels</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Transfer</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-other-tab" data-bs-toggle="pill" data-bs-target="#pills-other" type="button" role="tab" aria-controls="pills-other" aria-selected="false">Visa</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-tour-tab" data-bs-toggle="pill" data-bs-target="#pills-tour" type="button" role="tab" aria-controls="pills-tour" aria-selected="false">Tour</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-restro-tab" data-bs-toggle="pill" data-bs-target="#pills-restro" type="button" role="tab" aria-controls="pills-restro" aria-selected="false">Restaurant</button>
-                          </li>
-                      </ul>
+                    <div class="nav_forsearch">
+                        <ul class="nav nav-pills form_item_slider mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Event</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Hotels</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Transfer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-other-tab" data-bs-toggle="pill" data-bs-target="#pills-other" type="button" role="tab" aria-controls="pills-other" aria-selected="false">Visa</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-tour-tab" data-bs-toggle="pill" data-bs-target="#pills-tour" type="button" role="tab" aria-controls="pills-tour" aria-selected="false">Tour</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-restro-tab" data-bs-toggle="pill" data-bs-target="#pills-restro" type="button" role="tab" aria-controls="pills-restro" aria-selected="false">Restaurant</button>
+                              </li>
+                          </ul>
+                    </div>
                       <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <form class="row g-3">
@@ -150,7 +151,7 @@
                                         <option>...</option>
                                       </select>
                                 </div>
-                                <div class="col-md-2 hide-block"></div>
+                                <div class="col-md-2 hide-empty-col"></div>
                                 <div class="col-md-4">
                                     <select id="inputState" class="form-select">
                                         <option selected>Check In</option>
@@ -165,7 +166,6 @@
                                 </div>
                                 <div class="col-md-2"></div>
                                 <div class="col-12 text-center">
-                                  <!-- <button  class="">Search Hotel</button> -->
                                   <a href="https://fcoconnect.vercel.app/hotelsearch.html" class="btn btn-primary btn-main">Search Hotel</a>
                                 </div>
                               </form>
@@ -276,6 +276,7 @@
                 <div class="ads_img_contaainer">
                     <img src="img/searchad1.png" alt="">
                 </div>
+                
             </div>
         </div>
     </section>
@@ -330,22 +331,22 @@
                             <div class="main_box d-flex flex-column">
                                 <h2>Come See Africa in all her splendor</h2>
                                 <img src="img/event/firstcol.png" alt="" class = "img-fluid">
-                                <a href="">Fashion</a>
+                                <a href="" class = "mb-3">Fashion</a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-md-6 ps-sm-5 p-0">
                             <div class="main_box headliners d-flex flex-column flex-xl-row">
                                 <img src="img/event/secondcol.png" alt="" class = "img-fluid">
-                                <a href="" class="justify-self-center">Headliners</a>
+                                <a href="" class="justify-self-center mb-3">Headliners</a>
                             </div>
                             <div class="d-md-flex justify-content-md-start">
                                 <div class="main_box d-flex flex-column">
                                     <img src="img/event/thirdcol;.png" alt="" class = "img-fluid">
-                                    <a href="">Food</a>
+                                    <a href="" class = "mb-3">Food</a>
                                 </div>
                                 <div class="main_box d-flex flex-column ms-md-3 ms-xl-5">
                                     <img src="img/event/fourthcol.png" alt="" class = "img-fluid">
-                                    <a href="">Unique Attraction</a>
+                                    <a href="" class = "mb-3">Unique Attraction</a>
                                 </div>
                             </div>
                         </div>
@@ -480,14 +481,14 @@
         <div class="mainfooter">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="footer_col about">
                             <h2>About</h2>
                             <p>In 2009, founder & CEO Dilan Fernando saw the need for a simpler more streamlined, secure and optimal way for Congress organizers to book and manage events. His vision was a simple but powerful one to create a tool for professionals to access, manage, and share event information from anywhere in real time. Not a novel concept today, but it was for the early 2000’s. In those days, no one was using 100% web-based software or “cloud based” as we know it today.
                                 PCO Connect not only survived the “dot com” burst of the early 2000s but steadily grew, Today, PCO Connect has serves over 100,000 customers and companies.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="footer_col m-0">
                             <h2>Testinomials</h2>
                             <img src="img/quote.png" alt="">
@@ -522,7 +523,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 m-0">
+                    <div class="col-lg-4 m-0">
                         <div class="footer_col info m-0">
                             <h2>Connect with us</h2>
                             <ul class="socialmedia">
@@ -585,6 +586,8 @@
         </div>
         
     </section>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

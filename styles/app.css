@@ -1068,7 +1068,12 @@ header .navbar .nav-item {
 }
 
 .details_page .dp_boxes .dp_box .dp_inner_box {
-  padding: 1.5em;
+  padding: 1.5em 1.3em !important;
+}
+
+.details_page .dp_boxes .dp_box .dp_inner_box .dp_aminities h6 {
+  font-weight: 600;
+  margin-bottom: -7px !important;
 }
 
 .details_page .dp_boxes .dp_box .dp_inner_box .dp_aminities ul {
@@ -1754,6 +1759,12 @@ header .navbar .nav-item {
   }
   .eventattraction .event_title {
     right: -19%;
+  }
+  .room_metas form {
+    margin-top: -5px !important;
+  }
+  .room_metas form > div {
+    margin-top: 8px !important;
   }
 }
 

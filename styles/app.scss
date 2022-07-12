@@ -986,8 +986,12 @@ header {
                 }
             }
             .dp_inner_box {
-                padding: 1.5em;
+                padding: 1.5em 1.3em!important;
                 .dp_aminities {
+                    h6{
+                        font-weight: 600;
+                        margin-bottom: -7px!important;
+                    }
                     ul {
                         list-style: none;
                         padding-left: 0;
@@ -1790,6 +1794,15 @@ header {
     .eventattraction {
         .event_title {
             right: -19%;
+        }
+    }
+
+    .room_metas{
+        form{
+            margin-top: -5px!important;
+            > div{
+                    margin-top: 8px!important;
+            }
         }
     }
 }

@@ -14,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class = "main-holder">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -89,26 +90,28 @@
                     <img src="img/searchad1.png" alt="">
                 </div>
                 <div class="form_field_group">
-                    <ul class="nav nav-pills form_item_slider owl-carousel mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Event</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Hotels</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Transfer</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-other-tab" data-bs-toggle="pill" data-bs-target="#pills-other" type="button" role="tab" aria-controls="pills-other" aria-selected="false">Visa</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-tour-tab" data-bs-toggle="pill" data-bs-target="#pills-tour" type="button" role="tab" aria-controls="pills-tour" aria-selected="false">Tour</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-restro-tab" data-bs-toggle="pill" data-bs-target="#pills-restro" type="button" role="tab" aria-controls="pills-restro" aria-selected="false">Restaurant</button>
-                          </li>
-                      </ul>
+                    <div class="nav_forsearch">
+                        <ul class="nav nav-pills form_item_slider mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Event</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Hotels</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Transfer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-other-tab" data-bs-toggle="pill" data-bs-target="#pills-other" type="button" role="tab" aria-controls="pills-other" aria-selected="false">Visa</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-tour-tab" data-bs-toggle="pill" data-bs-target="#pills-tour" type="button" role="tab" aria-controls="pills-tour" aria-selected="false">Tour</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-restro-tab" data-bs-toggle="pill" data-bs-target="#pills-restro" type="button" role="tab" aria-controls="pills-restro" aria-selected="false">Restaurant</button>
+                              </li>
+                          </ul>
+                    </div>
                       <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <form class="row g-3">
@@ -148,7 +151,7 @@
                                         <option>...</option>
                                       </select>
                                 </div>
-                                <div class="col-md-2"></div>
+                                <div class="col-md-2 hide-empty-col"></div>
                                 <div class="col-md-4">
                                     <select id="inputState" class="form-select">
                                         <option selected>Check In</option>
@@ -163,7 +166,6 @@
                                 </div>
                                 <div class="col-md-2"></div>
                                 <div class="col-12 text-center">
-                                  <!-- <button  class="">Search Hotel</button> -->
                                   <a href="https://fcoconnect.vercel.app/hotelsearch.html" class="btn btn-primary btn-main">Search Hotel</a>
                                 </div>
                               </form>
@@ -222,7 +224,7 @@
                                 <div class="col-md-2"></div>
                                 <div class="col-md-8">
                                     <form class="row g-3">
-                                        <div class="offset-2 col-md-4">
+                                        <div class="offset-md-2 col-md-4">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label" for="flexRadioDefault1">
@@ -281,7 +283,7 @@
     <section class="termsbox">
         <div class="container">
             <ul class="termsgroup">
-                <li>
+                <li class = "w-100">
                     <img src="img/terms/image1.png" alt="">
                     <p>No Booking Fees</p>
                 </li>
@@ -323,34 +325,34 @@
     <section class="eventattraction">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-11 mx-auto">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-xl-4 col-md-6 p-0">
                             <div class="main_box d-flex flex-column">
                                 <h2>Come See Africa in all her splendor</h2>
                                 <img src="img/event/firstcol.png" alt="" class = "img-fluid">
-                                <a href="">Fashion</a>
+                                <a href="" class = "mb-3">Fashion</a>
                             </div>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-xl-8 col-md-6 ps-sm-5 p-0">
                             <div class="main_box headliners d-flex flex-column flex-xl-row">
                                 <img src="img/event/secondcol.png" alt="" class = "img-fluid">
-                                <a href="" class="justify-self-center">Headliners</a>
+                                <a href="" class="justify-self-center mb-3">Headliners</a>
                             </div>
-                            <div class="d-xl-flex justify-content-xl-start">
+                            <div class="d-md-flex justify-content-md-start">
                                 <div class="main_box d-flex flex-column">
                                     <img src="img/event/thirdcol;.png" alt="" class = "img-fluid">
-                                    <a href="">Food</a>
+                                    <a href="" class = "mb-3">Food</a>
                                 </div>
-                                <div class="main_box d-flex flex-column ms-xl-5">
+                                <div class="main_box d-flex flex-column ms-md-3 ms-xl-5">
                                     <img src="img/event/fourthcol.png" alt="" class = "img-fluid">
-                                    <a href="">Unique Attraction</a>
+                                    <a href="" class = "mb-3">Unique Attraction</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-1">
                     <div class="event_title">
                         <h1>Event <span>Attractions</span></h1>
                     </div>
@@ -402,7 +404,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="hightlight_content">
-                                <h2>Upcoming Events</h2>
+                                <h2 class = "mt-4">Upcoming Events</h2>
                                 <h6>Live Perfomances from  International & Local Artists</h6>
                                 <p>Badlands is the story about dreams and cruel reality, about opportunities and insurmountable obstacles, about love and broken hearts.</p>
                             </div>
@@ -479,14 +481,14 @@
         <div class="mainfooter">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="footer_col about">
                             <h2>About</h2>
                             <p>In 2009, founder & CEO Dilan Fernando saw the need for a simpler more streamlined, secure and optimal way for Congress organizers to book and manage events. His vision was a simple but powerful one to create a tool for professionals to access, manage, and share event information from anywhere in real time. Not a novel concept today, but it was for the early 2000’s. In those days, no one was using 100% web-based software or “cloud based” as we know it today.
                                 PCO Connect not only survived the “dot com” burst of the early 2000s but steadily grew, Today, PCO Connect has serves over 100,000 customers and companies.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="footer_col m-0">
                             <h2>Testinomials</h2>
                             <img src="img/quote.png" alt="">
@@ -521,7 +523,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 m-0">
+                    <div class="col-lg-4 m-0">
                         <div class="footer_col info m-0">
                             <h2>Connect with us</h2>
                             <ul class="socialmedia">
@@ -584,47 +586,13 @@
         </div>
         
     </section>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script src="js/main.js"></script>
-    <script>
-
-        $(' .owl_1').owlCarousel({
-            loop:false,
-            margin:2,	
-            responsiveClass:true,autoplayHoverPause:true,
-            autoplay:true,
-             slideSpeed: 400,
-              paginationSpeed: 400,
-             autoplayTimeout:3000,
-            responsive:{
-                0:{
-                    items:3,
-                    nav:true,
-                      loop:false
-                },
-                600:{
-                    items:3,
-                    nav:true,
-                      loop:false
-                },
-                1000:{
-                    items:3,
-                    nav:true,
-                    loop:false
-                }
-            }
-        })
-        
-        $(document) .ready(function(){
-        var li =  $(".testtabs .owl-item li ");
-        $(".testtabs .owl-item li").click(function(){
-        li.removeClass('active');
-        });
-        });
-            </script>
 </body>
 </html>

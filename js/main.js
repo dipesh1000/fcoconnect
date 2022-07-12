@@ -4,6 +4,31 @@ $(document).ready(function () {
   var preslides = $('.preeventslides');
   var footerslides = $('.footerslides');
   var card = $('.cardslider');
+  var searchInnerBoxPillsTab = $('.nav-pills.slidrss');
+
+  var owlOptions = searchInnerBoxPillsTab.owlCarousel({
+    loop: false,
+    autoplay: false,
+    dots: true,
+    nav: false,
+    items: 3,
+    smartSpeed: 1000,
+    responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:6
+      }
+  }
+  });
+
+  
+
+
   owl.owlCarousel({
     // items change number for slider display on desktop
     loop: true,
@@ -11,6 +36,7 @@ $(document).ready(function () {
     dots: false,
     nav: true,
     items: 1,
+    margin: 10,
     smartSpeed: 1000,
     navText: [
       "<div class='nav-btn prev-slide'><i class='bi bi-arrow-left'></i></div>",
@@ -38,17 +64,20 @@ $(document).ready(function () {
     nav: true,
     smartSpeed: 1000,
     margin: 15,
-    responsive: {
-      0: {
-        items: 1,
+	responsive:{
+      0:{
+          items:1
       },
-      600: {
-        items: 3,
+      600:{
+          items:2
       },
-      1000: {
-        items: 5,
+      1000:{
+          items:3
       },
-    },
+      1200:{
+        items:4
+    }
+  }
   });
   card.owlCarousel({
     // items change number for slider display on desktop
@@ -67,10 +96,10 @@ $(document).ready(function () {
       0: {
         items: 1,
       },
-      600: {
+      800: {
         items: 2,
       },
-      1000: {
+      1200: {
         items: 3,
       },
     },
@@ -82,19 +111,6 @@ $(document).ready(function () {
     autoplay: true,
     nav: false,
     dots: true,
-    smartSpeed: 1000,
-    margin: 15,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-  });
-  form_item_slider.owlCarousel({
-    items: 3,
-    // items change number for slider display on desktop
-    loop: true,
-    autoplay: true,
-    nav: false,
-    dots: false,
     smartSpeed: 1000,
     margin: 15,
     autoplay: true,

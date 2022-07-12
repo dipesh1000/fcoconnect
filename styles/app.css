@@ -1543,6 +1543,7 @@ header .navbar .nav-item {
     width: 65px;
     margin-top: 0 !important;
     padding-left: 0 !important;
+    margin-left: -4px !important;
   }
   .search_inner_box .form_field_group {
     width: 100% !important;
@@ -1728,6 +1729,13 @@ header .navbar .nav-item {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
+  .page_searchbox {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+  .page_searchbox > .container {
+    padding: 0 !important;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1774,13 +1782,6 @@ header .navbar .nav-item {
     padding-right: 16px !important;
     padding-left: 16px !important;
   }
-  .page_searchbox {
-    padding-right: 16px !important;
-    padding-left: 16px !important;
-  }
-  .page_searchbox > .container {
-    padding: 0 !important;
-  }
 }
 
 .owl-carousel.off {
@@ -1798,6 +1799,9 @@ header .navbar .nav-item {
   }
   .mainfooter .container > .row .col-lg-4:nth-child(2) {
     padding-left: 40px !important;
+  }
+  .page_searchbox .search_box .search_submit {
+    padding-left: 16px !important;
   }
 }
 

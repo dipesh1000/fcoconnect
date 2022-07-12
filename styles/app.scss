@@ -1496,6 +1496,7 @@ header {
             width: 65px;
             margin-top: 0!important;
             padding-left: 0!important;
+            margin-left: -4px!important;
         }
     }
     
@@ -1760,6 +1761,13 @@ header {
         padding-left: 16px!important;
         padding-right: 16px!important;
     }
+    .page_searchbox{
+        padding-right: 16px!important;
+        padding-left: 16px!important;
+        > .container{
+            padding: 0!important;
+        }
+    }
 }
 
 
@@ -1818,13 +1826,6 @@ header {
             padding-left: 16px!important;
         }
     }
-    .page_searchbox{
-        padding-right: 16px!important;
-        padding-left: 16px!important;
-        > .container{
-            padding: 0!important;
-        }
-    }
 }
 
 .owl-carousel.off {
@@ -1848,6 +1849,14 @@ header {
                         padding-left: 40px!important;
                     }
                 }
+            }
+        }
+    }
+
+    .page_searchbox{
+        .search_box{
+            .search_submit{
+                padding-left: 16px!important;
             }
         }
     }

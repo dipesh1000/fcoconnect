@@ -158,6 +158,16 @@ a:hover {
 
 .item_details .room_galary a {
   margin-right: 20px;
+  width: 85px;
+  height: 72px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.item_details .room_galary a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .item_details .room_aminities span {
@@ -165,6 +175,10 @@ a:hover {
   display: inline-block;
   font-size: 13px !important;
   opacity: 0.8;
+}
+
+.item_details .room_aminities .room_meta_title {
+  opacity: 0.6;
 }
 
 .item_details .room_aminities ul {
@@ -175,21 +189,31 @@ a:hover {
   justify-content: flex-start;
 }
 
-.item_details .room_aminities ul li img {
-  display: block;
-  height: 33px;
+.item_details .room_aminities ul li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1 !important;
   margin-right: 35px;
 }
 
-.item_details .room_aminities ul li span {
+.item_details .room_aminities ul li a img {
+  display: block;
+  height: 33px;
+}
+
+.item_details .room_aminities ul li a span {
   margin-bottom: 0;
+  color: #000;
+  margin-top: 8px;
 }
 
 .item_details .room_aminities a {
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
-  opacity: 0.5;
+  opacity: 0.8;
   margin-bottom: 15px;
   display: inline-block;
   text-decoration: underline;
@@ -245,7 +269,7 @@ header .navbar .nav-item {
 }
 
 .banner .inner_content form {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: flex;
@@ -279,13 +303,28 @@ header .navbar .nav-item {
   display: flex;
 }
 
+.searchbox .search_inner_box .form_field_group {
+  background: rgba(255, 0, 0, 0.02);
+  border: 1px solid rgba(255, 0, 0, 0.05);
+}
+
 .searchbox .ads_img_contaainer {
+  margin-top: 56px;
   width: 19%;
-  padding: 0 25px;
 }
 
 .searchbox .ads_img_contaainer img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.searchbox .ads_img_contaainer:first-child {
+  margin-right: 25px;
+}
+
+.searchbox .ads_img_contaainer:last-child {
+  margin-left: 25px;
 }
 
 .searchbox .form_field_group {
@@ -336,8 +375,6 @@ header .navbar .nav-item {
 }
 
 .searchbox .form_field_group .tab-content {
-  background: rgba(255, 0, 0, 0.02);
-  border: 1px solid rgba(255, 0, 0, 0.05);
   padding: 2.5em 1em;
   margin-top: -13px;
 }
@@ -1465,6 +1502,7 @@ header .navbar .nav-item {
     font-size: 16px;
   }
   .search_inner_box {
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .search_inner_box .form_field_group {
@@ -1473,19 +1511,20 @@ header .navbar .nav-item {
   .search_inner_box .ads_img_contaainer {
     max-width: 250px;
     margin: 0 auto;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+    width: 100%;
   }
   .search_inner_box .ads_img_contaainer:first-child {
     margin-top: 2.7rem;
     order: 2;
     flex-basis: calc(50% - 10px);
     margin-left: 10px !important;
+    margin-right: 0;
   }
   .search_inner_box .ads_img_contaainer:last-child {
     margin-top: 2.7rem;
     flex-basis: calc(50% - 10px);
     margin-right: 10px !important;
+    margin-left: 0;
   }
   .other_room_list {
     border-left: none !important;
@@ -1557,9 +1596,6 @@ header .navbar .nav-item {
   }
   .room_box img {
     width: 150px !important;
-  }
-  .room_aminities a {
-    display: none !important;
   }
   .eventattraction {
     padding-right: 64px !important;
@@ -1757,9 +1793,6 @@ header .navbar .nav-item {
 @media screen and (max-width: 420px) {
   .item_details {
     padding-bottom: 0px !important;
-  }
-  .item_details > a {
-    display: block;
   }
   .item_details .room_aminities {
     width: 100%;

@@ -158,6 +158,15 @@ a {
 
         a{
             margin-right: 20px;
+            width: 85px;
+            height: 72px;
+            overflow: hidden;
+            border-radius: 4px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
     .room_aminities {
@@ -167,6 +176,9 @@ a {
             font-size: 13px!important;
             opacity: 0.8;
         }
+        .room_meta_title{
+            opacity: 0.6;
+        }
         ul {
             display: flex;
             list-style: none;
@@ -174,13 +186,22 @@ a {
             margin-bottom: 0;
             justify-content: flex-start;
             li {
-                img {
-                    display: block;
-                    height: 33px;
+                a{
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    opacity: 1!important;
                     margin-right: 35px;
-                }
-                span {
-                    margin-bottom: 0;
+                    img {
+                        display: block;
+                        height: 33px;
+                    }
+                    span {
+                        margin-bottom: 0;
+                        color: #000;
+                        margin-top: 8px;
+                    }
                 }
             }
         }
@@ -188,7 +209,7 @@ a {
             font-weight: 500;
             font-size: 12px;
             line-height: 20px;
-            opacity: 0.5;
+            opacity: 0.8;
             margin-bottom: 15px;
             display: inline-block;
             text-decoration: underline;
@@ -245,7 +266,7 @@ header {
         width: 65%;
         margin: 0 auto;
         form {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.4);
             box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             display: flex;
@@ -273,12 +294,25 @@ header {
     }
     .search_inner_box {
         display: flex;
+        .form_field_group{
+            background: rgba(255, 0, 0, 0.02);
+            border: 1px solid rgba(255, 0, 0, 0.05);
+        }
     }
     .ads_img_contaainer {
+        margin-top: 56px;
         width: 19%;
-        padding: 0 25px;
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:first-child{
+            margin-right: 25px;
+        }
+        &:last-child{
+            margin-left: 25px;
         }
     }
     .form_field_group {
@@ -330,8 +364,6 @@ header {
             }
         }
         .tab-content {
-            background: rgba(255, 0, 0, 0.02);
-            border: 1px solid rgba(255, 0, 0, 0.05);
             padding: 2.5em 1em;
             margin-top: -13px;
             .form-select {
@@ -1380,32 +1412,27 @@ header {
     }
 
     .search_inner_box{
-        // flex-direction: column;
+        justify-content: space-between;
         flex-wrap: wrap;
         .form_field_group{
             flex-basis: 100%;
-
-            // .nav-pills{
-            //     width: 100%!important;
-            //     grid: unset!important;
-            // }
         }
        .ads_img_contaainer{
         max-width: 250px;
         margin: 0 auto;
-        padding-right: 0!important;
-        padding-left: 0!important;
-
+        width: 100%;
         &:first-child{
             margin-top: 2.7rem;
             order: 2;
             flex-basis: calc(50% - 10px);
             margin-left: 10px!important;
+            margin-right: 0;
         }
         &:last-child{
             margin-top: 2.7rem;
             flex-basis: calc(50% - 10px);
             margin-right: 10px!important;
+            margin-left: 0;
         }
        }
     }
@@ -1519,12 +1546,6 @@ header {
     .room_box{
         img{
             width: 150px!important;
-        }
-    }
-
-    .room_aminities{
-        a{
-            display: none!important;
         }
     }
 
@@ -1811,9 +1832,6 @@ header {
 @media screen and (max-width: 420px){
     .item_details{
         padding-bottom: 0px!important;
-        > a{
-            display: block;
-        }
         .room_aminities{
             width: 100%;
             .room_meta_title{

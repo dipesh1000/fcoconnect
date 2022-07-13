@@ -1590,6 +1590,7 @@ header .navbar .navbar-contact-info img {
     padding-bottom: 10px;
     padding-left: 20px !important;
     padding-right: 20px !important;
+    z-index: 1001 !important;
   }
   header .navbar .navbar-collapse .nav-item {
     line-height: 32px;

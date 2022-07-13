@@ -254,6 +254,35 @@ header {
         .nav-item {
             color: #333333;
             padding-left: 35px;
+            .nav-link{
+                text-transform: uppercase;
+                font-weight: 700;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 20px;
+                    width: 3px;
+                    background-color: #0000008C;
+                }
+            }
+
+            &:first-child{
+                .nav-link{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .navbar-contact-info{
+            img{
+                width: 178px;
+            }
         }
     }
 }
@@ -428,7 +457,7 @@ header {
 
 
 .termsbox {
-    background: #FFF5F7;
+    background: rgba(0, 0, 255, 0.05);;
     padding: 3em;
     .termsgroup {
         margin-bottom: 0;
@@ -504,7 +533,8 @@ header {
 }
 
 .eventattraction {
-    background-image: url("../img/event/bg.png");
+    // background-image: url("../img/event/bg.png");
+    background-color: rgba(0, 0, 255, 0.05);
     padding: 4em 8em;
     position: relative;
     .main_box {
@@ -1476,10 +1506,6 @@ header {
 @media screen and (max-width: 992px){
     header {
         .navbar {
-            .nav-item {
-                line-height: 32px;
-                padding-left: 0;
-            }
             .navbar-collapse {
                 position: absolute;
                 top: 100%;
@@ -1490,6 +1516,17 @@ header {
                 padding-bottom: 10px;
                 padding-left: 20px!important;
                 padding-right: 20px!important;
+
+                .nav-item {
+                    line-height: 32px;
+                    padding-left: 0;
+
+                    .nav-link{
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1893,6 +1930,15 @@ header {
 }
 
 @media screen and (min-width: 992px){
+    .navbar-collapse{
+        .nav-item{
+            padding-left: 0!important;
+            .nav-link{
+                padding-right: 30px!important;
+                padding-left: 30px!important;
+            }
+        }
+    }
     .mainfooter{
         .container{
             > .row{

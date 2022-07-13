@@ -1508,6 +1508,16 @@ header {
             left: 4%!important;
         }
     }
+
+    .eventattraction{
+        .main_box {
+            &.headliners {
+                a {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 992px){

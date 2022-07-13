@@ -1399,11 +1399,13 @@ header {
         &:first-child{
             margin-top: 2.7rem;
             order: 2;
-            flex-basis: 50%;
+            flex-basis: calc(50% - 10px);
+            margin-left: 10px!important;
         }
         &:last-child{
             margin-top: 2.7rem;
-            flex-basis: 50%;
+            flex-basis: calc(50% - 10px);
+            margin-right: 10px!important;
         }
        }
     }
@@ -1789,6 +1791,20 @@ header {
             padding: 0!important;
         }
     }
+
+    // .dp_inner_box{
+    //     padding-left: 10em!important;
+    //     padding-right: 1em!important;
+    // }
+    // .dp_room_feature{
+    //     padding-left: 1em!important;
+    // }
+    // .dp_box_details{
+    //     padding-left: 1em!important;
+    // }
+    // .total_amt{
+
+    // }
 }
 
 

@@ -1479,11 +1479,13 @@ header .navbar .nav-item {
   .search_inner_box .ads_img_contaainer:first-child {
     margin-top: 2.7rem;
     order: 2;
-    flex-basis: 50%;
+    flex-basis: calc(50% - 10px);
+    margin-left: 10px !important;
   }
   .search_inner_box .ads_img_contaainer:last-child {
     margin-top: 2.7rem;
-    flex-basis: 50%;
+    flex-basis: calc(50% - 10px);
+    margin-right: 10px !important;
   }
   .other_room_list {
     border-left: none !important;

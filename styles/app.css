@@ -812,6 +812,12 @@ header .navbar .navbar-contact-info img {
   line-height: 24px;
 }
 
+.footer .footer_col .testimonials-slider .testimonials-slider-item img {
+  width: 40px;
+  margin-top: 3px;
+  margin-bottom: 16px;
+}
+
 .footer .quickLinks {
   background-color: #DC3545;
 }

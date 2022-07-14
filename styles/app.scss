@@ -763,6 +763,16 @@ header {
             font-size: 13px;
             line-height: 24px;
         }
+
+        .testimonials-slider{
+            .testimonials-slider-item{
+                img{
+                    width: 40px;
+                    margin-top: 3px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
     }
     .quickLinks {
         background-color: #DC3545;

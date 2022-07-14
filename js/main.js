@@ -5,6 +5,7 @@ $(document).ready(function () {
   var footerslides = $('.footerslides');
   var card = $('.cardslider');
   var searchInnerBoxPillsTab = $('.nav-pills.slidrss');
+  var testslides = $(".testimonials-slider");
 
   var owlOptions = searchInnerBoxPillsTab.owlCarousel({
     loop: false,
@@ -109,7 +110,6 @@ $(document).ready(function () {
     items: 1,
     // items change number for slider display on desktop
     loop: true,
-    autoplay: true,
     nav: false,
     dots: true,
     smartSpeed: 1000,
@@ -118,4 +118,15 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
   });
+
+  testslides.owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    dots: false,
+    smartSpeed: 1000,
+    margin: 15,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+  })
 });

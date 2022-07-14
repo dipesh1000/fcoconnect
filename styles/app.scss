@@ -199,7 +199,7 @@ a {
                     margin-right: 35px;
                     img {
                         display: block;
-                        height: 33px;
+                        height: 27px;
                     }
                     span {
                         margin-bottom: 0;
@@ -209,18 +209,19 @@ a {
                 }
             }
         }
-        a {
+        a.see_more_btn {
             font-weight: 500;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 20px;
             opacity: 0.8;
             margin-bottom: 15px;
             display: inline-block;
             text-decoration: underline;
+            margin-top: 7px;
         }
     }
     .customer_review {
-        margin-top: 15px;
+        margin-top: 10px;
         .c_reviewlist {
             display: flex;
             color: $review;
@@ -239,6 +240,11 @@ a {
             li {
                 padding-right: 15px;
                 font-size: 16px;
+                a{
+                    img{
+                        width: 18px;
+                    }
+                }
             }
         }
     }
@@ -448,24 +454,21 @@ header {
         }
     }
     padding-bottom: 0px!important;
-}
+    &::-webkit-scrollbar {
+        height: 5px!important;
+    }
 
-.form_item_slider::-webkit-scrollbar {
-    height: 5px!important;
-}
-   
-.form_item_slider::-webkit-scrollbar-track {
-    border-radius: 15px!important;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
-}
-   
-.form_item_slider::-webkit-scrollbar-thumb {
-    border-radius: 15px!important;
-    background-color: #DC3545;
-    outline: -1px solid #b32e3b;
-}
+    &::-webkit-scrollbar-track {
+        border-radius: 15px!important;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    }
 
-
+    &::-webkit-scrollbar-thumb {
+        border-radius: 15px!important;
+        background-color: #DC3545;
+        outline: -1px solid #b32e3b;
+    }
+}
 
 .termsbox {
     background: #F2FAFF;
@@ -775,6 +778,7 @@ header {
         }
     }
     .quickLinks {
+        padding: 16px 0;
         background-color: #DC3545;
         .nav {
             .nav-link {
@@ -782,9 +786,11 @@ header {
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 28px;
-                padding-left: 0!important;
-                padding-right: 25px!important;
                 text-transform: capitalize;
+                padding: 0 25px 0 0;
+                &:hover{
+                    opacity: 0.9;
+                }
             }
         }
     }
@@ -1632,6 +1638,7 @@ header {
         .nav{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            row-gap: 8px;
         }
     }
 
@@ -1782,65 +1789,24 @@ header {
 }
 
 @media screen and (max-width: 576px){
+    // index page
     .searchbox{
-        > .container{
+        .container{
             padding-right: 16px!important;
             padding-left: 16px!important;
         }
     }
-    .termsgroup{
-        padding-left: 0;
-        grid-template-columns: 1fr!important;
-    }
-    .termsgroup li{
-        margin: 0 auto;
-    }
 
-    .eventattraction{
-        padding: 4em 1em;
-    }
-
-    .aboutevent{
-        > .container{
-            padding-right: 0!important;
-            padding-left: 0!important;
-        }
-    }
-
-    .total_costing{
-        flex-direction: column!important;
-        align-items: flex-start!important;
-        > div:first-child{
-            display: flex;
-            align-items: center;
-            h2{
-                margin-right: 8px;
-                font-size: 20px!important;
-            }
-        }
-
-        .ttal_amt{
-            margin-top: 10px!important;
-            flex-direction: column!important;
-            align-items: flex-start!important;
-
-            h2{
-                font-size: 20px!important;
-            }
-            a, button{
-                margin-left: 0!important;
-                margin-top: 12px!important;
+    .termsbox{
+        .termsgroup{
+            padding-left: 0;
+            grid-template-columns: 1fr!important;
+            li{
+                margin: 0 auto;
             }
         }
     }
-
-    .transfer_search{
-        .ts_title{
-            text-align: center;
-            margin-bottom: 20px;
-        }
-    }
-
+    
     .eventattraction {
         padding-right: 12px!important;
         padding-left: 12px!important;
@@ -1849,10 +1815,10 @@ header {
         }
     }
 
-    .quickLinks{
-        .nav{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
+    .aboutevent{
+        .container{
+            padding-right: 0!important;
+            padding-left: 0!important;
         }
     }
 
@@ -1865,15 +1831,66 @@ header {
         }
     }
 
-    .mainfooter, .quickLinks, .copyright{
-        padding-left: 16px!important;
-        padding-right: 16px!important;
+    .footer{
+        .quickLinks{
+            .nav{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .mainfooter, .quickLinks, .copyright{
+            padding-left: 16px!important;
+            padding-right: 16px!important;
+        }
     }
+
+    // hotel search page
+    .searchlist{
+        .searchitem{
+            .other_room_list{
+                .total_costing{
+                    flex-direction: column!important;
+                    align-items: flex-start!important;
+                    > div:first-child{
+                        display: flex;
+                        align-items: center;
+                        h2{
+                            margin-right: 8px;
+                            font-size: 20px!important;
+                        }
+                    }
+            
+                    .ttal_amt{
+                        margin-top: 10px!important;
+                        flex-direction: column!important;
+                        align-items: flex-start!important;
+            
+                        h2{
+                            font-size: 20px!important;
+                        }
+                        a, button{
+                            margin-left: 0!important;
+                            margin-top: 12px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .page_searchbox{
         padding-right: 16px!important;
         padding-left: 16px!important;
         > .container{
             padding: 0!important;
+        }
+    }
+
+    .transfer_search{
+        .ts_title{
+            text-align: center;
+            margin-bottom: 20px;
         }
     }
 
@@ -1892,49 +1909,57 @@ header {
     // }
 }
 
-
 @media screen and (max-width: 420px){
-    .item_details{
-        padding-bottom: 0px!important;
-        .room_aminities{
-            width: 100%;
-            .room_meta_title{
-                padding-top: 0!important;
-            }
-            li{
-                img{
-                    margin-right: auto;
-                    margin-left: auto;
-                }
-            }
-        }
-
-        .customer_review{
-            margin-top: 15px!important;
-            .room_meta_title{
-                display: block!important;
-                padding-bottom: 5px;
-            }
-        }
-        .hotel_terms{
-            margin-top: 15px!important;
-            .room_meta_title{
-                display: block!important;
-                padding-bottom: 5px;
-            }
-        }
-    }
+    // index page
     .eventattraction {
         .event_title {
             right: -19%;
         }
     }
 
-    .room_metas{
-        form{
-            margin-top: -5px!important;
-            > div{
-                    margin-top: 8px!important;
+    // hotel search page
+    .searchlist{
+        .item_details{
+            padding-bottom: 0px!important;
+            .room_aminities{
+                width: 100%;
+                .room_meta_title{
+                    padding-top: 0!important;
+                }
+                li{
+                    img{
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+            }
+    
+            .customer_review{
+                margin-top: 15px!important;
+                .room_meta_title{
+                    display: block!important;
+                    padding-bottom: 5px;
+                }
+            }
+            .hotel_terms{
+                margin-top: 15px!important;
+                .room_meta_title{
+                    display: block!important;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+
+        .other_room_list{
+            .room_box{
+                .room_metas{
+                    form{
+                        margin-top: -5px!important;
+                        > div{
+                                margin-top: 8px!important;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1947,40 +1972,37 @@ header {
     }
 }
 
-.owl-carousel.off {
-    display: block;
-}
-
-.main-holder{
-    overflow-x: hidden!important;
-    overflow-y: hidden!important;
-}
-
 @media screen and (min-width: 992px){
-    .navbar-collapse{
-        .nav-item{
-            padding-left: 0!important;
-            .nav-link{
-                padding-right: 30px!important;
-                padding-left: 30px!important;
-            }
-        }
-    }
-    .mainfooter{
-        .container{
-            > .row{
-                .col-lg-4{
-                    &:nth-child(3){
-                        padding-left: 40px!important;
-                    }
-                    &:nth-child(2){
-                        padding-left: 40px!important;
-                    }
+    .navbar{
+        .navbar-collapse{
+            .nav-item{
+                padding-left: 0!important;
+                .nav-link{
+                    padding-right: 30px!important;
+                    padding-left: 30px!important;
                 }
             }
         }
     }
 
+    .footer{
+        .mainfooter{
+            .container{
+                > .row{
+                    .col-lg-4{
+                        &:nth-child(3){
+                            padding-left: 40px!important;
+                        }
+                        &:nth-child(2){
+                            padding-left: 40px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // hotel search page
     .page_searchbox{
         .search_box{
             .search_submit{
@@ -2005,4 +2027,35 @@ header {
             }
         }
     }
+}
+
+// main holder for all pages to prevent overflow
+.main-holder{
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
+}
+
+.modal{
+    height: 100%;
+    overflow-y: hidden;
+}
+.modal-body{
+    &::-webkit-scrollbar {
+        width: 5px!important;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 15px!important;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 15px!important;
+        background-color: #DC3545;
+        outline: -1px solid #b32e3b;
+    }
+}
+.modal-content{
+    max-height: 720px!important;
+    
 }

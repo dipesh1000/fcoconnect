@@ -204,7 +204,7 @@ a:hover {
 
 .item_details .room_aminities ul li a img {
   display: block;
-  height: 33px;
+  height: 27px;
 }
 
 .item_details .room_aminities ul li a span {
@@ -213,18 +213,19 @@ a:hover {
   margin-top: 8px;
 }
 
-.item_details .room_aminities a {
+.item_details .room_aminities a.see_more_btn {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   opacity: 0.8;
   margin-bottom: 15px;
   display: inline-block;
   text-decoration: underline;
+  margin-top: 7px;
 }
 
 .item_details .customer_review {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .item_details .customer_review .c_reviewlist {
@@ -247,6 +248,10 @@ a:hover {
 .item_details .hotel_terms ul li {
   padding-right: 15px;
   font-size: 16px;
+}
+
+.item_details .hotel_terms ul li a img {
+  width: 18px;
 }
 
 .item_details > a {
@@ -819,6 +824,7 @@ header .navbar .navbar-contact-info img {
 }
 
 .footer .quickLinks {
+  padding: 16px 0;
   background-color: #DC3545;
 }
 
@@ -827,9 +833,12 @@ header .navbar .navbar-contact-info img {
   font-weight: 500;
   font-size: 14px;
   line-height: 28px;
-  padding-left: 0 !important;
-  padding-right: 25px !important;
   text-transform: capitalize;
+  padding: 0 25px 0 0;
+}
+
+.footer .quickLinks .nav .nav-link:hover {
+  opacity: 0.9;
 }
 
 .footer .copyright {
@@ -1658,6 +1667,7 @@ header .navbar .navbar-contact-info img {
   .quickLinks .nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 8px;
   }
   .highlightsGroups .owl-nav {
     top: 105% !important;
@@ -1757,51 +1767,16 @@ header .navbar .navbar-contact-info img {
 }
 
 @media screen and (max-width: 576px) {
-  .searchbox > .container {
+  .searchbox .container {
     padding-right: 16px !important;
     padding-left: 16px !important;
   }
-  .termsgroup {
+  .termsbox .termsgroup {
     padding-left: 0;
     grid-template-columns: 1fr !important;
   }
-  .termsgroup li {
+  .termsbox .termsgroup li {
     margin: 0 auto;
-  }
-  .eventattraction {
-    padding: 4em 1em;
-  }
-  .aboutevent > .container {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-  }
-  .total_costing {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-  }
-  .total_costing > div:first-child {
-    display: flex;
-    align-items: center;
-  }
-  .total_costing > div:first-child h2 {
-    margin-right: 8px;
-    font-size: 20px !important;
-  }
-  .total_costing .ttal_amt {
-    margin-top: 10px !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-  }
-  .total_costing .ttal_amt h2 {
-    font-size: 20px !important;
-  }
-  .total_costing .ttal_amt a, .total_costing .ttal_amt button {
-    margin-left: 0 !important;
-    margin-top: 12px !important;
-  }
-  .transfer_search .ts_title {
-    text-align: center;
-    margin-bottom: 20px;
   }
   .eventattraction {
     padding-right: 12px !important;
@@ -1810,9 +1785,9 @@ header .navbar .navbar-contact-info img {
   .eventattraction .event_title {
     right: -14%;
   }
-  .quickLinks .nav {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  .aboutevent .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
   .previous_event {
     padding-left: 16px !important;
@@ -1822,9 +1797,37 @@ header .navbar .navbar-contact-info img {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .mainfooter, .quickLinks, .copyright {
+  .footer .quickLinks .nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer .mainfooter, .footer .quickLinks, .footer .copyright {
     padding-left: 16px !important;
     padding-right: 16px !important;
+  }
+  .searchlist .searchitem .other_room_list .total_costing {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .searchlist .searchitem .other_room_list .total_costing > div:first-child {
+    display: flex;
+    align-items: center;
+  }
+  .searchlist .searchitem .other_room_list .total_costing > div:first-child h2 {
+    margin-right: 8px;
+    font-size: 20px !important;
+  }
+  .searchlist .searchitem .other_room_list .total_costing .ttal_amt {
+    margin-top: 10px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .searchlist .searchitem .other_room_list .total_costing .ttal_amt h2 {
+    font-size: 20px !important;
+  }
+  .searchlist .searchitem .other_room_list .total_costing .ttal_amt a, .searchlist .searchitem .other_room_list .total_costing .ttal_amt button {
+    margin-left: 0 !important;
+    margin-top: 12px !important;
   }
   .page_searchbox {
     padding-right: 16px !important;
@@ -1833,43 +1836,47 @@ header .navbar .navbar-contact-info img {
   .page_searchbox > .container {
     padding: 0 !important;
   }
+  .transfer_search .ts_title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .item_details {
-    padding-bottom: 0px !important;
-  }
-  .item_details .room_aminities {
-    width: 100%;
-  }
-  .item_details .room_aminities .room_meta_title {
-    padding-top: 0 !important;
-  }
-  .item_details .room_aminities li img {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .item_details .customer_review {
-    margin-top: 15px !important;
-  }
-  .item_details .customer_review .room_meta_title {
-    display: block !important;
-    padding-bottom: 5px;
-  }
-  .item_details .hotel_terms {
-    margin-top: 15px !important;
-  }
-  .item_details .hotel_terms .room_meta_title {
-    display: block !important;
-    padding-bottom: 5px;
-  }
   .eventattraction .event_title {
     right: -19%;
   }
-  .room_metas form {
+  .searchlist .item_details {
+    padding-bottom: 0px !important;
+  }
+  .searchlist .item_details .room_aminities {
+    width: 100%;
+  }
+  .searchlist .item_details .room_aminities .room_meta_title {
+    padding-top: 0 !important;
+  }
+  .searchlist .item_details .room_aminities li img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .searchlist .item_details .customer_review {
+    margin-top: 15px !important;
+  }
+  .searchlist .item_details .customer_review .room_meta_title {
+    display: block !important;
+    padding-bottom: 5px;
+  }
+  .searchlist .item_details .hotel_terms {
+    margin-top: 15px !important;
+  }
+  .searchlist .item_details .hotel_terms .room_meta_title {
+    display: block !important;
+    padding-bottom: 5px;
+  }
+  .searchlist .other_room_list .room_box .room_metas form {
     margin-top: -5px !important;
   }
-  .room_metas form > div {
+  .searchlist .other_room_list .room_box .room_metas form > div {
     margin-top: 8px !important;
   }
   .searchlist .item_details {
@@ -1878,27 +1885,18 @@ header .navbar .navbar-contact-info img {
   }
 }
 
-.owl-carousel.off {
-  display: block;
-}
-
-.main-holder {
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-}
-
 @media screen and (min-width: 992px) {
-  .navbar-collapse .nav-item {
+  .navbar .navbar-collapse .nav-item {
     padding-left: 0 !important;
   }
-  .navbar-collapse .nav-item .nav-link {
+  .navbar .navbar-collapse .nav-item .nav-link {
     padding-right: 30px !important;
     padding-left: 30px !important;
   }
-  .mainfooter .container > .row .col-lg-4:nth-child(3) {
+  .footer .mainfooter .container > .row .col-lg-4:nth-child(3) {
     padding-left: 40px !important;
   }
-  .mainfooter .container > .row .col-lg-4:nth-child(2) {
+  .footer .mainfooter .container > .row .col-lg-4:nth-child(2) {
     padding-left: 40px !important;
   }
   .page_searchbox .search_box .search_submit {
@@ -1913,5 +1911,34 @@ header .navbar .navbar-contact-info img {
   .mainfooter .container > .row .col-lg-4:nth-child(2) {
     padding-left: 60px !important;
   }
+}
+
+.main-holder {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.modal {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  border-radius: 15px !important;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  border-radius: 15px !important;
+  background-color: #DC3545;
+  outline: -1px solid #b32e3b;
+}
+
+.modal-content {
+  max-height: 720px !important;
 }
 /*# sourceMappingURL=app.css.map */

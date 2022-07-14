@@ -1221,11 +1221,13 @@ header {
     .back_to {
         background-color: $primary;
         color: #fff;
-        padding: .5em 2em;
+        padding: .8em 2em;
         display: inline-block;
         margin: 0 auto;
         margin-top: 20px;
-
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
     }
 }
 

@@ -118,15 +118,4 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
   });
-
-  testslides.owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    dots: false,
-    smartSpeed: 1000,
-    margin: 15,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-  })
 });

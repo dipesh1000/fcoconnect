@@ -790,24 +790,39 @@ header .navbar .navbar-contact-info img {
   display: block;
 }
 
+.footer .footer_col .footerslides-item-info p {
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.footer .footer_col .footerslides .owl-dots {
+  display: flex;
+  justify-content: start;
+  margin-top: 22px;
+}
+
+.footer .footer_col .footerslides .owl-dots .owl-dot span {
+  width: 10px !important;
+  height: 10px !important;
+  background: #C7C7C7;
+  display: block;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+  margin-right: 12px !important;
+}
+
+.footer .footer_col .footerslides .owl-dots .owl-dot span:first-child {
+  margin-left: 0 !important;
+}
+
+.footer .footer_col .footerslides .owl-dots .owl-dot.active span {
+  background: #DC3545;
+  width: 10px !important;
+}
+
 .footer .footer_col ul {
   padding-left: 0;
   list-style: none;
-}
-
-.footer .footer_col ul.footerslides .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #C7C7C7;
-  display: block;
-  -webkit-backface-visibility: visible;
-  transition: opacity .2s ease;
-  border-radius: 30px;
-}
-
-.footer .footer_col ul.footerslides .owl-dots .owl-dot.active span, .footer .footer_col ul.footerslides .owl-theme .owl-dots .owl-dot:hover span {
-  background: #DC3545;
 }
 
 .footer .footer_col ul.socialmedia {
@@ -838,7 +853,7 @@ header .navbar .navbar-contact-info img {
   line-height: 24px;
 }
 
-.footer .footer_col .testimonials-slider .testimonials-slider-item img {
+.footer .footer_col .footerslides .footerslides-item img {
   width: 40px;
   margin-top: 3px;
   margin-bottom: 16px;

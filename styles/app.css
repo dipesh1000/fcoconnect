@@ -444,8 +444,9 @@ header .navbar .navbar-contact-info img {
   margin-top: 10px;
   background-color: #DC3545;
   border: 1px solid #DC3545;
-  padding: .5em 2em;
+  padding: .7em 2em;
   color: #fff;
+  font-weight: 600;
 }
 
 .nav_forsearch {
@@ -514,14 +515,16 @@ header .navbar .navbar-contact-info img {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  opacity: 0.8;
 }
 
 .aboutevent {
   background: #fff;
-}
-
-.aboutevent {
   padding: 2em;
+  min-height: 464px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutevent .about_inner {
@@ -545,6 +548,9 @@ header .navbar .navbar-contact-info img {
 
 .aboutevent .about_inner .about_inner_bg h2 {
   line-height: 200%;
+  font-weight: 700;
+  margin-bottom: 18px;
+  position: relative;
 }
 
 .aboutevent .about_inner .about_inner_bg h2 span {
@@ -552,10 +558,14 @@ header .navbar .navbar-contact-info img {
 }
 
 .aboutevent .about_inner .about_inner_bg h2::before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
   content: '';
-  width: 50px;
+  width: 72px;
   height: 2px;
-  background-color: red;
+  background-color: #DC3545;
   display: block;
   margin: 0 auto;
 }
@@ -683,6 +693,8 @@ header .navbar .navbar-contact-info img {
 
 .previous_event h1 {
   margin-bottom: 15px;
+  font-size: 27px;
+  font-weight: 700;
 }
 
 .previous_event ul.eventcards {
@@ -697,7 +709,7 @@ header .navbar .navbar-contact-info img {
 }
 
 .previous_event ul.eventcards .eventcard h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .previous_event ul.eventcards .eventcard h4 a {
@@ -708,6 +720,11 @@ header .navbar .navbar-contact-info img {
 
 .previous_event ul.eventcards .eventcard h4 a:hover {
   color: #DC3545;
+}
+
+.previous_event ul.eventcards .eventcard span {
+  font-size: 16px;
+  opacity: 0.7;
 }
 
 .previous_event ul.eventcards .owl-nav .owl-next {

@@ -432,8 +432,9 @@ header {
             margin-top: 10px;
             background-color: $primary;
             border: 1px solid $primary;
-            padding: .5em 2em;
+            padding: .7em 2em;
             color: #fff;
+            font-weight: 600;
         }
     }
 }
@@ -495,6 +496,7 @@ header {
                 font-weight: 700;
                 font-size: 14px;
                 line-height: 20px;
+                opacity: 0.8;
             }
         }
     }
@@ -502,10 +504,11 @@ header {
 
 .aboutevent {
     background: #fff;
-}
-
-.aboutevent {
     padding: 2em;
+    min-height: 464px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .about_inner {
         width: 70%;
         margin: 0 auto;
@@ -523,14 +526,21 @@ header {
             text-align: center;
             h2 {
                 line-height: 200%;
+                font-weight: 700;
+                margin-bottom: 18px;
+                position: relative;
                 span {
                     font-weight: 300;
                 }
                 &::before {
+                    position: absolute;
+                    top: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
                     content: '';
-                    width: 50px;
+                    width: 72px;
                     height: 2px;
-                    background-color: red;
+                    background-color: $primary;
                     display: block;
                     margin: 0 auto;
                 }
@@ -643,6 +653,8 @@ header {
     padding: 4em 0;
     h1 {
         margin-bottom: 15px;
+        font-size: 27px;
+        font-weight: 700;
     }
     ul {
         &.eventcards {
@@ -655,7 +667,7 @@ header {
                     margin-bottom: 15px;
                 }
                 h4 {
-                    font-size: 20px;
+                    font-size: 18px;
                     a {
                         color: #0F0000;
                         list-style: none;
@@ -664,6 +676,10 @@ header {
                             color:#DC3545;
                         }
                     }
+                }
+                span{
+                    font-size: 16px;
+                    opacity: 0.7;
                 }
            }
            .owl-nav {

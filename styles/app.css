@@ -590,8 +590,9 @@ header .navbar .navbar-contact-info img {
 }
 
 .eventattraction .main_box h2 {
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 30px;
+  font-size: 37px;
 }
 
 .eventattraction .main_box img {
@@ -602,7 +603,9 @@ header .navbar .navbar-contact-info img {
 .eventattraction .main_box a {
   display: inline-block;
   color: #DC3545;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
   text-decoration: none;
 }
 
@@ -624,6 +627,7 @@ header .navbar .navbar-contact-info img {
 
 .eventattraction .event_title h1 {
   color: #000;
+  font-weight: 700;
 }
 
 .eventattraction .event_title h1 span {
@@ -1902,6 +1906,12 @@ header .navbar .navbar-contact-info img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .eventattraction .event-main-title {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .navbar .navbar-collapse .nav-item {
     padding-left: 0 !important;
@@ -1927,6 +1937,21 @@ header .navbar .navbar-contact-info img {
   }
   .mainfooter .container > .row .col-lg-4:nth-child(2) {
     padding-left: 60px !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .eventattraction .main_box img {
+    width: 345px !important;
+  }
+  .eventattraction .event-main-title {
+    padding-right: 20px;
+  }
+  .eventattraction .event-lg-cng {
+    padding-left: 0 !important;
+  }
+  .eventattraction .event-lg-1 {
+    padding-right: 30px !important;
   }
 }
 

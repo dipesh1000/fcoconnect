@@ -841,7 +841,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    // opacity: 0.25;
     h1 {
         color: #fff;
         padding: .5em 0;
@@ -896,8 +895,18 @@ header {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.3);
                 padding: 2em;
                 display: flex;
-                img {
+
+                &_img{
+                    border-radius: 7px;
+                    overflow: hidden;
                     width: 213px;
+                    height: 160px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
                 .inner_room_meta {
                     flex: 1;
@@ -1156,18 +1165,26 @@ header {
     text-align: center;
     .booking_card {
         text-align: center;
+        max-width: 735px;
+        box-shadow: 4px 4px 15px 0px #D3D3D340;
+        border-radius: 30px;
+        border: 1px solid #E3E3E3;
+
         .banner_card {
-            padding: 2em;
-            background-color: green;
+            padding: 5em 2em 3em 2em;
+            background-color: #0B8C56;
             color: #fff;
             border-radius: 20px 20px 0 0;
             i {
                 font-size: 50px;
             }
+
+            p{
+                font-weight: 500;
+                font-size: 25px;
+            }
         }
         .card_meta {
-            border: 1px solid #ddd;
-            border-radius: 0 0 20px 20px;
             padding: 40px;
         }
         a {
@@ -1634,12 +1651,6 @@ header {
         }
     }
 
-    .room_box{
-        img{
-            width: 150px!important;
-        }
-    }
-
     .eventattraction{
         padding-right: 64px!important;
         padding-left: 64px!important;
@@ -1713,9 +1724,11 @@ header {
         border: none!important;
         padding: 17px!important;
 
-        img{
+        &_img{
             width: 100%!important;
+            height: 100%!important;
         }
+
         .inner_room_meta{
             padding: 0!important;
             margin-top: 20px!important;

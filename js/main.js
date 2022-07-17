@@ -5,30 +5,7 @@ $(document).ready(function () {
   var footerslides = $('.footerslides');
   var card = $('.cardslider');
   var searchInnerBoxPillsTab = $('.nav-pills.slidrss');
-  var testslides = $(".testimonials-slider");
-
-  var owlOptions = searchInnerBoxPillsTab.owlCarousel({
-    loop: false,
-    autoplay: false,
-    dots: true,
-    nav: false,
-    items: 3,
-    smartSpeed: 1000,
-    responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:6
-      }
-  }
-  });
-
-  
-
+  var featuredSlides = $('.featured-slider');
 
   owl.owlCarousel({
     // items change number for slider display on desktop
@@ -109,6 +86,18 @@ $(document).ready(function () {
   footerslides.owlCarousel({
     items: 1,
     // items change number for slider display on desktop
+    loop: true,
+    nav: false,
+    dots: true,
+    smartSpeed: 1000,
+    margin: 15,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+  });
+
+  featuredSlides.owlCarousel({
+    items: 1,
     loop: true,
     nav: false,
     dots: true,

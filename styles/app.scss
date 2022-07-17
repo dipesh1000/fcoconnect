@@ -92,6 +92,39 @@ a {
     }
 }
 
+// section title
+.section-title{
+    text-align: center;
+    &-h{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 46.5px;
+        color: $primary;
+        position: relative;
+        margin-bottom: 31px;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 5px;
+            width: 52px;
+            background-color: $primary;
+        }
+    }
+
+    &-p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        max-width: 555px;
+        color: #6C757D;
+    }
+}
+
 .room_meta_title {
     font-weight: 500;
     font-size: 12px;
@@ -1411,6 +1444,55 @@ header {
 /** End Transfer Page **/
 
 
+// Transfer Main Page
+.featured{
+    padding: 30px 0 60px 0;
+    &-block{
+        margin-top: 5rem;
+    }
+    &-item{
+        .col-right{
+            .featured-item-title{
+                color: $primary;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 25px;
+            }
+            .featured-item-list{
+                max-width: 450px;
+                li{
+                    img{
+                        max-width: 17px;
+                    }
+                    span{
+                        color: rgba(0, 0, 0, 0.7);
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .featured-item-info{
+                p{
+                    font-size: 28px;
+                    color: #000;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .owl-dots{
+        margin-top: 83px!important;
+        .owl-dot.active{
+            span{
+                background-color: $primary!important;
+            }
+        }
+    }
+}
+
+
 /** Transfer Details **/
 .td_arrival {
     h4 {
@@ -1459,6 +1541,221 @@ header {
     }
 }
 /** End Transfer Details **/
+
+// tours page
+.tours-pg{
+    .featured{
+        &-item{
+            &-title{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 27.5px;
+            }
+            &-text{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 21px;
+            }
+            &-info{
+                .price-tag{
+                    color: $primary!important;
+                    span{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #8e8e8e;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tours-search-pg{
+    .tours-search{
+        .container{
+            .tours-search-block-1{
+                background-color: #f2faff;
+                border: 1px solid #00000033;
+    
+                .tours-search-item{
+                    &-img{
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    &-content{
+                        h6{
+                            color: $primary;
+                            font-weight: 700;
+                            font-size: 18px;
+                        }
+                        span{
+                            color: #494949;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                        p{
+                            color: #8e8d8e;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                    }
+    
+                    .price-tag{
+                        font-weight: 700;
+                        font-size: 28px;
+                        color: $primary;
+                        span{
+                            color: #8e8d8e;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                    .theme_btn.btn-outline-secondary:hover{
+                        background-color: $primary!important;
+                    }
+                }
+            }
+
+            .tours-search-block-2{
+                &-top{
+                    h3{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    label{
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                    .form-select{
+                        height: 49px;
+                        color: rgba(29, 28, 29, 0.7);
+                    }
+                }
+
+                .tours-search-cards{
+                    .tours-card{
+                        border: 1px solid #00000033!important;
+                        box-shadow: 0px 4px 15px 0px #0000001A;
+
+                        .card-body{
+                            .card-title{
+                                font-weight: 700;
+                                font-size: 18px;
+                                color: $primary;
+                            }
+                            .card-sub-title{
+                                font-size: 14px;
+                                font-weight: 600;
+                                line-height: 19px;
+                            }
+                            .card-text{
+                                font-size: 14px;
+                                line-height: 19px;
+                                font-weight: 400;
+                                color: #8e8d8e;
+                            }
+                            .card-body-bottom{
+                                .price-tag{
+                                    font-size: 28px;
+                                    font-weight: 700;
+                                    color: $primary;
+                                    span{
+                                        color: #8e8d8e;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .bg-white:hover{
+                                    background-color: $primary!important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+
+.tours-details-pg{
+    .tours-details{
+        padding: 62px 0;
+        .tours-details-block-1{
+            .tours-details-item{
+                border: 1px solid #B3B3B3;
+                .col-img{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .tours-details-badge{
+                    background-color: $primary;
+                    height: 31px;
+                    border-radius: 25px;
+                    padding: 6px 20px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: white;
+                }
+
+                &-title{
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
+                .col-text{
+                    > p{
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #494949;
+                    }
+
+                    &-list{
+                        li{
+                            span:first-child{
+                                width: 20px!important;
+                            }
+                            &:nth-child(1){
+                                span:first-child{
+                                    width: 17px;
+                                }
+                            }
+                            &:nth-child(2){
+                                span:first-child{
+                                    width: 13px;
+                                }
+                            }
+                            &:nth-child(3){
+                                span:first-child{
+                                    width: 16px;
+                                }
+                            }
+                            &:nth-child(4){
+                                span:first-child{
+                                    width: 14px;
+                                }
+                            }
+
+                            span:last-child{
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1200px){
     // termsbox
@@ -2038,6 +2335,17 @@ header {
     .eventattraction{
         .event-main-title{
             text-align: left;
+        }
+    }
+
+    // featured section slider
+    .featured{
+        &-item{
+            .col-left{
+                img{
+                    max-width: 372px;
+                }
+            }
         }
     }
 }

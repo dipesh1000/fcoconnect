@@ -2004,6 +2004,34 @@ header {
             top: 105%!important;
         }
     }
+
+    .room_box{
+        flex-direction: column;
+        border: none!important;
+        padding: 17px!important;
+
+        &_img{
+            width: 100%!important;
+            height: 100%!important;
+        }
+
+        .inner_room_meta{
+            padding: 0!important;
+            margin-top: 20px!important;
+            .price_details{
+                border: none!important;
+                padding-left: 0!important;
+                width: 40%!important;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end!important;
+
+                span{
+                    margin-top: 5px!important;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -2043,34 +2071,6 @@ header {
     .aboutevent{
         padding-left: 16px!important;
         padding-right: 16px!important;
-    }
-
-    .room_box{
-        flex-direction: column;
-        border: none!important;
-        padding: 17px!important;
-
-        &_img{
-            width: 100%!important;
-            height: 100%!important;
-        }
-
-        .inner_room_meta{
-            padding: 0!important;
-            margin-top: 20px!important;
-            .price_details{
-                border: none!important;
-                padding-left: 0!important;
-                width: 40%!important;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end!important;
-
-                span{
-                    margin-top: 5px!important;
-                }
-            }
-        }
     }
 
     .total_costing{
@@ -2456,5 +2456,108 @@ header {
 }
 .modal-content{
     max-height: 720px!important;
+}
+
+// hote details modal
+.detailsModal{
+    .modal-content{
+        padding: 20px;
+    }
+    .modal-block{
+        border: 0.5px solid #00000066;
+        padding: 10px 25px;
+    }
+    .modal-header{
+        padding: 25px 15px 0 15px;
+        border-bottom: 0!important;
+        .modal-title{
+            color: $primary;
+        }
+    }
     
+    .modal-body-text{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    .details-items{
+        .detail-item{
+            &:nth-child(1){
+                .detail-item-text{
+                    span{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        color: #333;
+                    }
+                }
+            }
+
+            &:nth-child(2), &:nth-child(3){
+                .detail-item-title{
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 16.5px;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+                .detail-item-text{
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+.termsModal{
+    .modal-content{
+        padding: 20px;
+    }
+    .terms-items{
+        .terms-item{
+            &-title{
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+            }
+            &-text{
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 24px;
+                text-align: justify;
+                color: #333;
+            }
+        }
+    }
+}
+
+.deluxeModal{
+    .modal-content{
+        padding: 20px;
+    }
+    .modal-block:nth-child(2){
+        border: 0.5px solid #00000066;
+        padding: 10px 25px;
+    }
+    .modal-header{
+        padding: 25px 15px 0 15px;
+        border-bottom: 0!important;
+        .modal-title{
+            color: $primary;
+        }
+    }
+    
+    .modal-body-text{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    .del-item-text{
+        font-size: 14px;
+        font-weight: 400;
+        color: #5c5c5c;
+    }
 }

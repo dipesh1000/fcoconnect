@@ -1794,6 +1794,7 @@ header .navbar .navbar-contact-info img {
   font-size: 14px;
   font-weight: 600;
   color: #494949;
+  opacity: 0.5;
 }
 
 .tours-details-pg .tours-details .tours-details-block-1 .tours-details-item .col-text-list li span:first-child {
@@ -1819,6 +1820,41 @@ header .navbar .navbar-contact-info img {
 .tours-details-pg .tours-details .tours-details-block-1 .tours-details-item .col-text-list li span:last-child {
   font-size: 14px;
   font-weight: 700;
+}
+
+.tours-details-pg .tours-details .tours-details-block-1 .tours-details-item .tours-details-item-top {
+  padding: 22px 0;
+  border-bottom: 1px solid #00000033;
+}
+
+.tours-details-pg .tours-details .tours-details-block-1 .tours-details-item .tours-details-item-bottom h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.tours-details-pg .tours-details .tours-details-block-1 .tours-details-item .tours-details-item-bottom p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333;
+  opacity: 0.5;
+  margin-bottom: 7px;
+}
+
+.tours-details-pg .tours-details .tours-details-block-1 .tours-details-item .tours-details-item-bottom a {
+  color: #DC3545;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.tours-details-pg .tours-details .tours-details-block-1 .tours-details-item .tours-details-item-bottom .price-tag {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34.05px;
+  color: #DC3545;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1717,6 +1717,7 @@ header {
                         font-size: 14px;
                         font-weight: 600;
                         color: #494949;
+                        opacity: 0.5;
                     }
 
                     &-list{
@@ -1752,6 +1753,38 @@ header {
                         }
                     }
                 } 
+                .tours-details-item-top{
+                    padding: 22px 0;
+                    border-bottom: 1px solid #00000033
+                }
+                .tours-details-item-bottom{
+                    h5{
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                    p{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #333;
+                        opacity: 0.5;
+                        margin-bottom: 7px;
+                    }
+                    a{
+                        color: $primary;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                    .price-tag{
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 34.05px;
+                        color: $primary;
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
@@ -2549,7 +2582,6 @@ header {
             color: $primary;
         }
     }
-    
     .modal-body-text{
         font-size: 16px;
         font-weight: 300;

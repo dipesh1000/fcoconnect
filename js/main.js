@@ -6,6 +6,7 @@ $(document).ready(function () {
   var card = $('.cardslider');
   var searchInnerBoxPillsTab = $('.nav-pills.slidrss');
   var featuredSlides = $('.featured-slider');
+  var placesSlides = $('.placesSlides');
 
   owl.owlCarousel({
     // items change number for slider display on desktop
@@ -106,5 +107,26 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
+  });
+
+  placesSlides.owlCarousel({
+    items: 4,
+    // items change number for slider display on desktop
+    loop: true,
+    autoplay: false,
+    nav: true,
+    smartSpeed: 1000,
+    margin: 15,
+	responsive:{
+      0:{
+          items:1
+      },
+      800:{
+          items:2
+      },
+      1000:{
+          items:3
+      },
+  }
   });
 });

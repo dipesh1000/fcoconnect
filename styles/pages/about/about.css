@@ -1,0 +1,461 @@
+.single_p_banner {
+  max-width: 453px;
+}
+
+.about_wrap .main_content {
+  position: relative;
+  text-align: center;
+  width: 70%;
+  padding: 3em;
+  background: #fff;
+  margin: -100px auto auto auto;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.about_wrap .main_content h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.about_wrap .main_content h2::after {
+  content: '';
+  width: 100px;
+  background: #DC3545;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.about_wrap .main_content .main_c_para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #828282;
+}
+
+.about_services {
+  margin-top: 4em;
+}
+
+.about_services .service_title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.about_services .service_title h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.about_services .service_list .service_item {
+  height: 309px;
+  margin: 3em 0;
+}
+
+.about_services .service_list .service_item .service_contain_card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 2em;
+  width: 115%;
+  position: relative;
+  height: 250px;
+}
+
+.about_services .service_list .service_item .service_contain_card h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.about_services .service_list .service_item .service_contain_card p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 0.2px;
+  color: #828282;
+}
+
+.about_services .service_list .service_item .image_container {
+  width: 100%;
+}
+
+.about_services .service_list .service_item .image_container img {
+  width: 100%;
+}
+
+.about_services .service_list .service_item.reverse_order .service_contain_card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 2em;
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+.about_services .service_list .service_item.reverse_order .service_contain_card .service_title {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.about_services .service_list .service_item.reverse_order .service_contain_card .service_title h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.about_services .service_list .service_item.reverse_order .service_contain_card p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 0.2px;
+  color: #828282;
+}
+
+.about_services .service_list .service_item.reverse_order .image_container {
+  height: 309px;
+  overflow: hidden;
+  width: 115%;
+}
+
+.about_services .service_list .service_item.reverse_order .image_container img {
+  width: 100%;
+}
+
+.about_team_wrap {
+  padding: 3em;
+}
+
+.about_team_wrap .team_title {
+  margin-bottom: 2em;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto 20px auto;
+}
+
+.about_team_wrap .team_title h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.about_team_wrap .team_lists .team_item img {
+  margin-bottom: 15px;
+}
+
+.about_team_wrap .team_lists .team_item .team_content h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.about_team_wrap .team_lists .team_item span {
+  color: #DC3545;
+}
+
+.about_team_wrap .team_lists.team-slides {
+  position: relative;
+}
+
+.about_team_wrap .team_lists.team-slides .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.about_team_wrap .team_lists.team-slides .owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+@media screen and (max-width: 560px) {
+  .about_wrap .main_content {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    padding: 2em 1em;
+  }
+  .about_services {
+    margin-top: 4em;
+  }
+  .about_services .service_title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about_services .service_title h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .about_services .service_list .service_item {
+    height: auto;
+    margin: 3em 0;
+  }
+  .about_services .service_list .service_item .service_contain_card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    width: auto;
+    position: relative;
+    height: auto;
+  }
+  .about_services .service_list .service_item .image_container {
+    width: 100%;
+  }
+  .about_services .service_list .service_item .image_container img {
+    width: 100%;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card .service_title {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card .service_title h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  }
+  .about_services .service_list .service_item.reverse_order .image_container {
+    height: auto;
+    overflow: visible;
+    width: auto;
+  }
+  .about_services .service_list .service_item.reverse_order .image_container img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 561px) {
+  .about_wrap .main_content {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .about_services {
+    margin-top: 4em;
+  }
+  .about_services .service_title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about_services .service_title h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .about_services .service_list .service_item {
+    height: auto;
+    margin: 3em 0;
+  }
+  .about_services .service_list .service_item .service_contain_card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    width: auto;
+    position: relative;
+    height: auto;
+  }
+  .about_services .service_list .service_item .image_container {
+    width: 100%;
+  }
+  .about_services .service_list .service_item .image_container img {
+    width: 100%;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card .service_title {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card .service_title h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  }
+  .about_services .service_list .service_item.reverse_order .image_container {
+    height: auto;
+    overflow: visible;
+    width: auto;
+  }
+  .about_services .service_list .service_item.reverse_order .image_container img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about_wrap .main_content {
+    position: relative;
+    text-align: center;
+    width: 80%;
+  }
+  .about_services {
+    margin-top: 4em;
+  }
+  .about_services .service_title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about_services .service_title h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .about_services .service_list .service_item {
+    height: auto;
+    margin: 3em 0;
+  }
+  .about_services .service_list .service_item .service_contain_card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    width: auto;
+    position: relative;
+    height: auto;
+  }
+  .about_services .service_list .service_item .image_container {
+    width: 100%;
+  }
+  .about_services .service_list .service_item .image_container img {
+    width: 100%;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card .service_title {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card .service_title h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  }
+  .about_services .service_list .service_item.reverse_order .image_container {
+    height: auto;
+    overflow: visible;
+    width: auto;
+  }
+  .about_services .service_list .service_item.reverse_order .image_container img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about_services {
+    margin-top: 4em;
+  }
+  .about_services .service_title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about_services .service_title h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .about_services .service_list .service_item {
+    height: 309px;
+    margin: 3em 0;
+  }
+  .about_services .service_list .service_item .service_contain_card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    width: 115%;
+    position: relative;
+    height: 250px;
+  }
+  .about_services .service_list .service_item .service_contain_card h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  }
+  .about_services .service_list .service_item .service_contain_card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    color: #828282;
+  }
+  .about_services .service_list .service_item .image_container {
+    width: 100%;
+  }
+  .about_services .service_list .service_item .image_container img {
+    width: 100%;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    position: relative;
+    height: 250px;
+    width: 100%;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card .service_title {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card .service_title h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  }
+  .about_services .service_list .service_item.reverse_order .service_contain_card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    color: #828282;
+  }
+  .about_services .service_list .service_item.reverse_order .image_container {
+    height: 309px;
+    overflow: hidden;
+    width: 115%;
+  }
+  .about_services .service_list .service_item.reverse_order .image_container img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=about.css.map */

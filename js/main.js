@@ -6,6 +6,7 @@ $(document).ready(function () {
   var card = $('.cardslider');
   var searchInnerBoxPillsTab = $('.nav-pills.slidrss');
   var featuredSlides = $('.featured-slider');
+  var teamslides = $('.team-slides');
 
   owl.owlCarousel({
     // items change number for slider display on desktop
@@ -43,20 +44,20 @@ $(document).ready(function () {
     nav: true,
     smartSpeed: 1000,
     margin: 15,
-	responsive:{
-      0:{
-          items:1
+    responsive: {
+      0: {
+        items: 1,
       },
-      600:{
-          items:2
+      600: {
+        items: 2,
       },
-      1000:{
-          items:3
+      1000: {
+        items: 3,
       },
-      1200:{
-        items:4
-    }
-  }
+      1200: {
+        items: 4,
+      },
+    },
   });
   card.owlCarousel({
     // items change number for slider display on desktop
@@ -106,5 +107,31 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
+  });
+
+  teamslides.owlCarousel({
+    // items change number for slider display on desktop
+    loop: true,
+    autoplay: false,
+    dots: false,
+    stagePadding: 22,
+    nav: true,
+    smartSpeed: 1000,
+    margin: 60,
+    navText: [
+      "<div class='nav-btn prev-slide'><i class='bi bi-chevron-left'></i></div>",
+      "<div class='nav-btn next-slide'><i class='bi bi-chevron-right'></i></div>",
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      800: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
   });
 });

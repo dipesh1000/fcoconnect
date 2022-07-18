@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/app.css">
+    <title>FCO Connect</title>
+</head>
+<body>
+    <div class = "main-holder invoice-pg">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mx-auto mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class = "navbar-contact-info">
+                        <img src = "img/header-contact-img.png">
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <section class="page_title">
+            <div class="container">
+                <h1 class = "text-capitalize">My Bookings</h1>
+            </div>
+        </section>
+        
+        <section class=" my-5 px-3">
+            <div class="container px-0">
+                <div class = "invoice">
+                    <div class = "invoice-block-1 d-flex flex-column">
+                        <div class = "invoice-item d-flex align-items-center">
+                            <div class = "invoice-item-img mb-3 me-3">
+                                <img src = "img/invoice/invoice-icon.png" alt = "" class = "img-fluid">
+                            </div>
+                            <div class = "invoice-item-info">
+                                <h5 class = "mb-1">Mariot Hotel</h5>
+                                <div>
+                                    <span><i class="bi bi-geo-alt"></i></span>
+                                    <span>Dubai, United Arab Emirates</span>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div class = "invoice-item">
+                            <div class = "row py-5 justify-content-between mx-0">
+                                <div class = "col-md-5 px-0 py-1">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <span class = "me-2 invoice-item-icon"><i class="bi bi-building"></i></span>
+                                            <span class = "invoice-item-title">No. of Rooms:</span>
+                                        </div>
+                                        <div class = "invoice-item-value">5</div>
+                                    </div>
+                                </div>
+                                <div class = "col-md-5 px-0 py-1">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <span class = "me-2 invoice-item-icon"><i class="bi bi-calendar"></i></span>
+                                            <span class = "invoice-item-title">Check in:</span>
+                                        </div>
+                                        <div class = "invoice-item-value">2022/11/10</div>
+                                    </div>
+                                </div>
+                                <div class = "col-md-5 px-0 py-1">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <span class = "me-2 invoice-item-icon"><i class="bi bi-calendar"></i></span>
+                                            <span class = "invoice-item-title">Check Out:</span>
+                                        </div>
+                                        <div class = "invoice-item-value">2022/11/10</div>
+                                    </div>
+                                </div>
+                                <div class = "col-md-5 px-0 py-1">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <span class = "me-2 invoice-item-icon"><i class="bi bi-house"></i></span>
+                                            <span class = "invoice-item-title">Room Type:</span>
+                                        </div>
+                                        <div class = "invoice-item-value">Deluxe</div>
+                                    </div>
+                                </div>
+                                <div class = "col-md-5 px-0 py-1">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <span class = "me-2 invoice-item-icon"><i class="bi bi-calendar-date"></i></span>
+                                            <span class = "invoice-item-title">Days:</span>
+                                        </div>
+                                        <div class = "invoice-item-value">1</div>
+                                    </div>
+                                </div>
+                                <div class = "col-md-5 px-0 py-1">
+                                    <div class = "d-flex align-items-start justify-content-between text-end">
+                                        <div>
+                                            <span class = "me-2 invoice-item-icon"><i class="bi bi-people"></i></span>
+                                            <span class = "invoice-item-title">Total Guests:</span>
+                                        </div>
+                                        <div class = "d-lg-flex align-items-center">
+                                            <span class = "invoice-item-value me-lg-3">0</span>
+                                            <div class = "me-lg-3 small text-black-50">
+                                                <span class = "fw-bold">Adults:</span>
+                                                <span>0</span>
+                                            </div>
+                                            <div class = "small text-black-50">
+                                                <span class = "fw-bold">Children:</span>
+                                                <span>0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "invoice-item mt-5">
+                            <div class = "row mx-0">
+                                <div class = "col-md-8 col-left p-4">
+                                    <ul class = "invoice-item-list list-unstyled m-0">
+                                        <li class = "d-flex align-items-center justify-content-between">
+                                            <span>Invoice Number</span>
+                                            <span>INV-2022-010</span>
+                                        </li>
+                                        <li class = "d-flex align-items-center justify-content-between">
+                                            <span>Issed Date: </span>
+                                            <span>11 Jan 2022</span>
+                                        </li>
+                                        <li class = "d-flex align-items-center justify-content-between">
+                                            <span>Due Date: </span>
+                                            <span>11 Jan 2022</span>
+                                        </li>
+                                        <li class = "d-flex align-items-center justify-content-between">
+                                            <span>Billed to</span>
+                                            <span>Zaky Brizzlys</span>
+                                        </li>
+                                        <li class = "d-flex align-items-center justify-content-between">
+                                            <span>Location</span>
+                                            <span>UAE, Capital</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class = "col-md-4 col-right py-4 pe-0">
+                                    <ul class = "price-info list-unstyled m-0 text-md-end">
+                                       <li>
+                                        <span>Subtotal:</span>
+                                        <span>AED 200</span>
+                                       </li> 
+                                       <li>
+                                        <span>Discount:</span>
+                                        <span>AED 20</span>
+                                       </li> 
+                                       <li>
+                                        <span>Tax: 10</span>
+                                        <span>AED 170</span>
+                                       </li> 
+                                    </ul>
+                                    <p class = "price-tag text-md-end mt-3">
+                                        <span class = "text-uppercase">Total: </span>
+                                        <span class = 'text-uppercase'>aed 0</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href = "#" class = "theme_btn btn-secondary active text-capitalize align-self-center mt-sm-5">make my booking</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="footer">
+            <div class="mainfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 px-0 mb-4 mb-lg-0">
+                            <div class="footer_col about">
+                                <h2>About</h2>
+                                <p>In 2009, founder & CEO Dilan Fernando saw the need for a simpler more streamlined, secure and optimal way for Congress organizers to book and manage events. His vision was a simple but powerful one to create a tool for professionals to access, manage, and share event information from anywhere in real time. Not a novel concept today, but it was for the early 2000’s. In those days, no one was using 100% web-based software or “cloud based” as we know it today.
+                                    PCO Connect not only survived the “dot com” burst of the early 2000s but steadily grew, Today, PCO Connect has serves over 100,000 customers and companies.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-0 mb-4 mb-lg-0">
+                            <div class="footer_col m-0">
+                                <h2>Testinomials</h2>
+                                <div class = "footerslides owl-carousel owl-theme">
+                                    <div class = "footerslides-item">
+                                        <img src="img/quote.png" alt="">
+                                        <p class = "mb-4">Excellent pre- and during-event results. Well-planned customer service solved all problems. I'd recommend the Services to any event organizer in Dubai or the Gulf Region. Thanks for attending.</p>
+                                        <hr>
+                                        <div class = "footerslides-item-info mt-4">
+                                            <h6>Drew Donavan</h6>
+                                            <p class = "mb-0">International Telecommuication Union Head, Safety and Security Division</p>
+                                        </div>
+                                    </div>
+                                    <div class = "footerslides-item">
+                                        <img src="img/quote.png" alt="">
+                                        <p>Excellent pre- and during-event results. Well-planned customer service solved all problems. I'd recommend the Services to any event organizer in Dubai or the Gulf Region. Thanks for attending.</p>
+                                        <hr>
+                                        <div class = "footerslides-item-info">
+                                            <h6>Drew Donavan</h6>
+                                            <p class = "mb-0">International Telecommuication Union Head, Safety and Security Division</p>
+                                        </div>
+                                    </div>
+                                    <div class = "footerslides-item">
+                                        <img src="img/quote.png" alt="">
+                                        <p>Excellent pre- and during-event results. Well-planned customer service solved all problems. I'd recommend the Services to any event organizer in Dubai or the Gulf Region. Thanks for attending.</p>
+                                        <hr>
+                                        <div class = "footerslides-item-info">
+                                            <h6>Drew Donavan</h6>
+                                            <p class = "mb-0">International Telecommuication Union Head, Safety and Security Division</p>
+                                        </div>
+                                    </div>
+                                    <div class = "footerslides-item">
+                                        <img src="img/quote.png" alt="">
+                                        <p>Excellent pre- and during-event results. Well-planned customer service solved all problems. I'd recommend the Services to any event organizer in Dubai or the Gulf Region. Thanks for attending.</p>
+                                        <hr>
+                                        <div class = "footerslides-item-info">
+                                            <h6>Drew Donavan</h6>
+                                            <p class = "mb-0">International Telecommuication Union Head, Safety and Security Division</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-0 m-0">
+                            <div class="footer_col info m-0">
+                                <h2>Connect with us</h2>
+                                <ul class="socialmedia">
+                                    <li>
+                                        <a href="">
+                                            <img src="img/social/facebook.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/social/linkedin.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/social/twitter.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/social/instagram.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="address_title">Travel Synergies Tourism LLC</h6>
+                                <ul class="addresses">
+                                    <li>
+                                        Al Nassima Towers
+                                    </li>
+                                    <li>Sheikh Zayed Road
+                                    </li>
+                                    <li>Dubai, UAE</li>
+                                </ul>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quickLinks">
+                <div class="container px-0">
+                    <nav class="nav">
+                        <a class="nav-link active" aria-current="page" href="#">About us</a>
+                        <a class="nav-link" href="#">Add your property</a>
+                        <a class="nav-link" href="#">customer Service</a>
+                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#">Careers</a>
+                        <a class="nav-link" href="#">Terms & Conditions</a>
+                        <a class="nav-link" href="#">Privacy and Cookies</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="copylayout">
+                        <div class="copy_text">Copyright 2022 PCO Connect | Design and Developed By</div>
+                        <div class="copy_text">A Sub Division Of</div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

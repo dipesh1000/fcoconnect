@@ -3267,3 +3267,86 @@ header {
         }
     }
 }
+
+// invoice page
+.invoice-pg{
+    .theme_btn{
+        border-radius: 3px;
+    }
+    .invoice-block-1{
+        .invoice-item:nth-child(1){
+            .invoice-item-img{
+                width: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+            .invoice-item-info{
+                h5{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                > div{
+                    span{
+                        font-size: 14px;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+
+        .invoice-item:nth-child(2){
+            border-bottom: 2px solid #DC3545;
+            > .row{
+                background-color: rgba(220, 53, 69, 0.02);
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            .invoice-item-title{
+                font-weight: 300;
+                opacity: 0.9;
+            }
+            .invoice-item-value{
+                font-weight: 500;
+            }
+        }
+
+        .invoice-item:nth-child(3){
+            .col-left{
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+
+                .invoice-item-list{
+                    li{
+                        font-size: 15px;
+                        padding: 2px;
+                        span:first-child{
+                            font-weight: 600;
+                        }
+                        span:last-child{
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+            .col-right{
+                .price-info{
+                    li{
+                        font-size: 14px;
+                        margin-bottom: 4px;
+                        font-weight: 600;
+                    }
+                }
+                .price-tag{
+                    font-weight: 700;
+                    font-size: 20px;
+                    span:last-child{
+                        color: $primary;
+                        font-size: 22px;
+                    }
+                }
+            }
+            
+        }
+    }
+}

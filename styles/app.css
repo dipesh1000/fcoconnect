@@ -3060,4 +3060,79 @@ header .navbar .navbar-contact-info img {
     width: 100%;
   }
 }
+
+.invoice-pg .theme_btn {
+  border-radius: 3px;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(1) .invoice-item-img {
+  width: 100px;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(1) .invoice-item-img img {
+  width: 100%;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(1) .invoice-item-info h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(1) .invoice-item-info > div span {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(2) {
+  border-bottom: 2px solid #DC3545;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(2) > .row {
+  background-color: rgba(220, 53, 69, 0.02);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(2) .invoice-item-title {
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(2) .invoice-item-value {
+  font-weight: 500;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(3) .col-left {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(3) .col-left .invoice-item-list li {
+  font-size: 15px;
+  padding: 2px;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(3) .col-left .invoice-item-list li span:first-child {
+  font-weight: 600;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(3) .col-left .invoice-item-list li span:last-child {
+  opacity: 0.7;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(3) .col-right .price-info li {
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(3) .col-right .price-tag {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.invoice-pg .invoice-block-1 .invoice-item:nth-child(3) .col-right .price-tag span:last-child {
+  color: #DC3545;
+  font-size: 22px;
+}
 /*# sourceMappingURL=app.css.map */

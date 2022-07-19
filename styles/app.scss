@@ -2806,6 +2806,9 @@ header {
     .modal-content{
         padding: 20px;
     }
+    .modal-title{
+        color: $primary;
+    }
     .terms-items{
         .terms-item{
             &-title{
@@ -2814,40 +2817,125 @@ header {
                 line-height: 17px;
             }
             &-text{
-                font-size: 16px;
+                font-size: 13.5px;
                 font-weight: 300;
-                line-height: 24px;
+                line-height: 19px;
                 text-align: justify;
                 color: #333;
+                padding: 2px 0;
+                margin-bottom: 7px;
+                border-bottom: 0.5px solid rgba(0, 0, 0, 0.06);
             }
         }
     }
 }
 
-.deluxeModal{
+.roomModal{
     .modal-content{
         padding: 20px;
     }
-    .modal-block:nth-child(2){
-        border: 0.5px solid #00000066;
-        padding: 10px 25px;
-    }
     .modal-header{
-        padding: 25px 15px 0 15px;
+        padding: 25px 15px 10px 15px;
         border-bottom: 0!important;
         .modal-title{
             color: $primary;
         }
     }
-    .modal-body-text{
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 24px;
+    .modal-block:nth-child(1){
+        padding: 15px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+        .modal-body-img{
+            border-radius: 6px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .modal-body-text{
+            font-size: 13.5px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+        .modal-body-info{
+            ul{
+                li{
+                    span:first-child{
+                        img{
+                            width: 15px;
+                        }
+                    }
+                    span:last-child{
+                        font-size: 13px;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
     }
-    .del-item-text{
-        font-size: 14px;
-        font-weight: 400;
-        color: #5c5c5c;
+    .modal-block:nth-child(2){
+        border: 0.5px solid #00000066;
+        padding: 10px;
+        margin: 15px 0;
+        border-radius: 6px;
+
+        .room-items{
+            .room-item{
+                .room-item-img{
+                    width: 18px;
+                }
+                .room-item-content{
+                    .room-item-title{
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    ul{
+                        li{
+                            font-size: 13.5px;
+                            margin-bottom: 3px;
+                            position: relative;
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: -28px;
+                                height: 2px;
+                                width: 7px;
+                                background-color: rgba(220, 53, 69, 0.5);
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+// amenities modal
+.amenitiesModal{
+    .modal-title{
+        color: $primary;
+    }
+    .modal-body-item-title{
+        font-size: 16px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        padding-bottom: 10px;
+        span:first-child{
+            img{
+                width: 20px;
+            }
+        }
+    }
+    ul{
+        li{
+            opacity: 0.8;
+            font-size: 13.5px;
+        }
     }
 }
 

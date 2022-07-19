@@ -2691,6 +2691,7 @@ header {
 .modal-body{
     &::-webkit-scrollbar {
         width: 5px!important;
+        height: 5px!important;
     }
 
     &::-webkit-scrollbar-track {
@@ -2713,8 +2714,30 @@ header {
     .small{
         font-size: 12px!important;
     }
+    .modal-header{
+        border-bottom: 0!important;
+        .modal-title{
+            color: $primary;
+        }
+    }
     .modal-content{
         padding: 20px;
+    }
+    .modal-body-text{
+        font-size: 13.5px;
+        font-weight: 300;
+        opacity: 0.9;
+        line-height: 20px;
+    }
+    .modal-body-img{
+        min-height: 245px;
+        overflow: hidden!important;
+        border-radius: 6px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     .modal-block{
         padding: 0;
@@ -2739,29 +2762,7 @@ header {
             }
         }
     }
-    .modal-header{
-        border-bottom: 0!important;
-        .modal-title{
-            color: $primary;
-        }
-    }
-    
-    .modal-body-text{
-        font-size: 13.5px;
-        font-weight: 300;
-        opacity: 0.9;
-        line-height: 20px;
-    }
-    .modal-body-img{
-        min-height: 245px;
-        overflow: hidden!important;
-        border-radius: 6px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+   
     .details-items{
         border: 1px solid rgba(0, 0, 0, 0.2);
         box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
@@ -2798,6 +2799,32 @@ header {
                 }
             }
             
+        }
+    }
+
+    .modal-block:nth-child(3){
+        .details-fulls{
+            .details-full{
+                .details-full-title{
+                    font-size: 14px;
+                    background-color: #f2faff;
+                    padding: 4px 10px;
+                    span:first-child{
+                        img{
+                            width: 17px;
+                        }
+                    }
+                }
+
+                .details-full-list{
+                    li{
+                        margin-bottom: 2px;
+                        span{
+                            font-size: 13.5px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -2878,7 +2905,7 @@ header {
     }
     .modal-block:nth-child(2){
         border: 0.5px solid #00000066;
-        padding: 10px;
+        padding: 10px 20px;
         margin: 15px 0;
         border-radius: 6px;
 

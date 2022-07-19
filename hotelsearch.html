@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/app.css">
     <title>Search Result</title>
 </head>
@@ -796,7 +797,7 @@
 
     <!-- hotel details modal -->
     <div class="modal fade detailsModal modal-dialog-scrollable" tabindex="-1" aria-labelledby="detailsModal" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="detailsModal">About Hotel</h5>
@@ -804,43 +805,43 @@
                 </div>
                 <div class="modal-body">
                     <div class = "modal-block py-0">
-                        <div class = "row">
-                            <div class = "modal-body-img col-xl-6">
-                                <img src="img/room2.jpg" alt="" class = "img-fluid">
+                        <div class = "row mx-0">
+                            <div class = "modal-body-img col-lg-5 px-0">
+                                <img src="img/room2.jpg" alt="">
                             </div>
-                            <div class = "col-xl-6">
-                                <h5 class = "mt-4 mt-xl-0">Mariot Hotel</h5>
+                            <div class = "col-lg-7 ps-lg-4 px-0">
+                                <h5 class = "mt-4 mt-xl-0 mb-0">Mariot Hotel</h5>
                                 <span class="small text-black-75"><i class="bi bi-geo-alt me-1"></i>Dubai, United Arab Emirates</span>
                                 <hr>
                                 <p class = "modal-body-text mb-0">Marriott Hotels & Resorts is Marriott International's brand of full-service hotels and resorts based in Bethesda, Maryland. As of June 30, 2020, there were 582 hotels and resorts with 205,053 rooms operating under the brand, in addition to 160 hotels with 47,765 rooms planned for development.</p>
                             </div>
                         </div>
                         
-                        <div class = "details-items row mt-4">
+                        <div class = "details-items row mt-4 mx-0">
                             <div class = "detail-item col-lg-6 col-xl-4 mb-3 mb-xl-0 px-0">
-                                <div class = "d-flex align-items-center mb-2">
+                                <div class = "d-flex align-items-center mb-1">
                                     <span class = "me-2"><i class="bi bi-clock"></i></span>
                                     <div class = "detail-item-text">
-                                        <span>Check In : 3:00 pm</span>
+                                        <span><b>Check In :</b> 3:00 pm</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2">
+                                <div class = "d-flex align-items-center mb-1">
                                     <span class = "me-2"><i class="bi bi-clock"></i></span>
                                     <div class = "detail-item-text">
-                                        <span>Check Out : 3:00 pm</span>
+                                        <span><b>Check Out :</b> 3:00 pm</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2">
+                                <div class = "d-flex align-items-center mb-1">
                                     <span class = "me-2"><i class="bi bi-clock"></i></span>
                                     <div class = "detail-item-text">
-                                        <span>Check In : 3:00 pm</span>
+                                        <span><b>Check In :</b> 3:00 pm</span>
                                     </div>
                                 </div>
                             </div>
     
                             <div class = "detail-item col-lg-6 col-xl-4 mb-3 mb-xl-0 px-0">
                                 <div class = "d-flex">
-                                    <span class = "me-2"><i class="bi bi-list-check"></i></span>
+                                    <span class = "me-2"><i class="bi bi-record-circle"></i></span>
                                     <div>
                                         <span class = "detail-item-title">Pet Policy</span>
                                         <p class = "detail-item-text mb-0">Pets Allowed Dogs only. <br>There is cleaning service free</p>
@@ -850,7 +851,7 @@
     
                             <div class = "detail-item col-lg-6 col-xl-4 mb-xl-0 px-0">
                                 <div class = "d-flex">
-                                    <span class = "me-2"><i class="bi bi-calendar"></i></span>
+                                    <span class = "me-2"><i class="bi bi-record-circle"></i></span>
                                     <div>
                                         <span class = "detail-item-title">Check In : 3:00 pm</span>
                                         <p class = "detail-item-text mb-0">Pets Allowed Dogs only. There is cleaning service free</p>
@@ -864,58 +865,58 @@
                         <h6>Amenities Includes:</h6>
                         <div class = "details-items mt-3">
                             <div class = "detail-item row">
-                                <div class = "d-flex align-items-center mb-2 col-md-6 col-lg-4">
-                                    <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                <div class = "d-flex align-items-center mb-1 col-md-6 col-lg-4">
+                                    <span class = "me-2"><img src = "img/hotel/swimming-pool.png"></span>
                                     <div class = "detail-item-text">
-                                        <span>Dinner</span>
+                                        <span>Pool</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2 col-md-6 col-lg-4">
-                                    <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                <div class = "d-flex align-items-center mb-1 col-md-6 col-lg-4">
+                                    <span class = "me-2"><img src = "img/hotel/wifi.png"></span>
                                     <div class = "detail-item-text">
-                                        <span>Breakfast</span>
+                                        <span>Free WiFi</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2 col-md-6 col-lg-4">
-                                    <span class = "me-2"><i class="bi bi-tv-fill"></i></span>
+                                <div class = "d-flex align-items-center mb-1 col-md-6 col-lg-4">
+                                    <span class = "me-2"><img src = "img/hotel/parking.png"></span>
                                     <div class = "detail-item-text">
-                                        <span>AC</span>
+                                        <span>Parking included</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2 col-md-6 col-lg-4">
-                                    <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                <div class = "d-flex align-items-center mb-1 col-md-6 col-lg-4">
+                                    <span class = "me-2"><img src = "img/hotel/air-conditioner.png"></span>
                                     <div class = "detail-item-text">
-                                        <span>Dry Cleaning Service</span>
+                                        <span>Air Conditioning</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2 col-md-6 col-lg-4">
-                                    <span class = "me-2"><i class="bi bi-tv-fill"></i></span>
+                                <div class = "d-flex align-items-center mb-1 col-md-6 col-lg-4">
+                                    <span class = "me-2"><img src = "img/hotel/restaurant.png"></span>
                                     <div class = "detail-item-text">
-                                        <span>TV</span>
+                                        <span>Restaurant</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2 col-md-6 col-lg-4">
-                                    <span class = "me-2"><i class="bi bi-tv-fill"></i></span>
+                                <div class = "d-flex align-items-center mb-1 col-md-6 col-lg-4">
+                                    <span class = "me-2"><img src = "img/hotel/room-service.png"></span>
                                     <div class = "detail-item-text">
-                                        <span>Meeting Space</span>
+                                        <span>Room service</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2 col-md-6 col-lg-4">
-                                    <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                <div class = "d-flex align-items-center mb-1 col-md-6 col-lg-4">
+                                    <span class = "me-2"><img src = "img/hotel/laundry.png"></span>
                                     <div class = "detail-item-text">
-                                        <span>Dinner</span>
+                                        <span>Laundry</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2 col-md-6 col-lg-4">
-                                    <span class = "me-2"><i class="bi bi-tv-fill"></i></span>
+                                <div class = "d-flex align-items-center mb-1 col-md-6 col-lg-4">
+                                    <span class = "me-2"><img src = "img/hotel/breakfast.png"></span>
                                     <div class = "detail-item-text">
-                                        <span>Fitness Center</span>
+                                        <span>Breakfast available</span>
                                     </div>
                                 </div>
-                                <div class = "d-flex align-items-center mb-2 col-md-6 col-lg-4">
-                                    <span class = "me-2"><i class="bi bi-tv-fill"></i></span>
+                                <div class = "d-flex align-items-center mb-1 col-md-6 col-lg-4">
+                                    <span class = "me-2"><img src = "img/hotel/front-desk.png"></span>
                                     <div class = "detail-item-text">
-                                        <span>Wake up call</span>
+                                        <span>24/7 front desk</span>
                                     </div>
                                 </div>
                             </div>

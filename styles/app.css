@@ -2517,6 +2517,10 @@ header .navbar .navbar-contact-info img {
   max-height: 720px !important;
 }
 
+.detailsModal .small {
+  font-size: 12px !important;
+}
+
 .detailsModal .modal-content {
   padding: 20px;
 }
@@ -2528,10 +2532,20 @@ header .navbar .navbar-contact-info img {
 }
 
 .detailsModal .modal-block:nth-child(1) .details-items {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #DC3545;
+  border: 1px solid rgba(220, 53, 69, 0.8);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding-bottom: 8px;
   margin-left: 6px;
   margin-right: 6px;
+}
+
+.detailsModal .modal-block:nth-child(1) .details-items .detail-item {
+  color: white;
+}
+
+.detailsModal .modal-block:nth-child(1) .details-items .detail-item .detail-item-text, .detailsModal .modal-block:nth-child(1) .details-items .detail-item .detail-item-text span {
+  color: white !important;
 }
 
 .detailsModal .modal-header {
@@ -2543,16 +2557,15 @@ header .navbar .navbar-contact-info img {
 }
 
 .detailsModal .modal-body-text {
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 300;
   opacity: 0.9;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 .detailsModal .modal-body-img {
-  min-width: 387px;
   min-height: 245px;
-  overflow: hidden;
+  overflow: hidden !important;
   border-radius: 6px;
 }
 
@@ -2562,25 +2575,36 @@ header .navbar .navbar-contact-info img {
   object-fit: cover;
 }
 
+.detailsModal .details-items {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  padding: 15px;
+  border-radius: 6px;
+}
+
 .detailsModal .details-items .detail-item:nth-child(1) .detail-item-text span {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 17px;
   color: #333;
 }
 
+.detailsModal .details-items .detail-item:nth-child(1) img {
+  width: 17px;
+}
+
 .detailsModal .details-items .detail-item:nth-child(2) .detail-item-title, .detailsModal .details-items .detail-item:nth-child(3) .detail-item-title {
   margin-top: 4px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16.5px;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   display: block;
 }
 
 .detailsModal .details-items .detail-item:nth-child(2) .detail-item-text, .detailsModal .details-items .detail-item:nth-child(3) .detail-item-text {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 13.5px;
   line-height: 18px;
   color: #333;
 }

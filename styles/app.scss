@@ -1,15 +1,12 @@
 
+// colors
 $primary: #DC3545;
-
 $link: #333;
 $heading: #111;
 $secondary: #00225f;
 $subTitle: rgba(0, 0, 0, 0.4);
-
 $primarylite: #FFF2F2;
 $metatitle: rgba(0, 0, 0, 0.5);
-
-
 $review: #82C188;
 
 /** Global CSS **/
@@ -1534,7 +1531,7 @@ header {
         }
     }
     .form-control {
-        height: 49px;
+        
     }
     .btn-outline-secondary {
         border-color: transparent!important;
@@ -1906,8 +1903,14 @@ header {
 .visa-details-pg{
     .visa{
         .visa-details-block-1{
-            padding: 51px 0;
+            padding: 51px 0 20px 0;
 
+            h5{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24.51px;
+                margin-bottom: 21px;
+            }
             .visa-details-item{
                 background: #F2FAFF;
                 border: 1px solid rgba(0, 0, 0, 0.2);
@@ -1971,25 +1974,163 @@ header {
 
         .visa-details-block-2{
             .visa-details-form{
+                .form-control, .form-select{
+                    border: 1px solid #CED4DA!important;
+                    min-height: 49px;
+                    border-radius: 4px!important;
+                    &::placeholder{
+                        color: #ABB5BE!important;
+                    }
+                }
+                .form-item-elem-title{
+                    color: #333;
+                    font-size: 16p;
+                    font-weight: 600;
+                    line-height: 22px;
+                }
                 .visa-details-form-title{
                     color: $primary;
                     font-weight: 700;
                     font-size: 25px;
                     line-height: 30px;
                 }
+                .visa-details-form-item{
+                    .visa-badge{
+                        background-color: $primary;
+                        border-radius: 25px;
+                        height: 31px;
+                        padding: 0 15px;
+                        font-weight: 700;
+                    }
 
-                .visa-badge{
-                    background-color: $primary;
-                    border-radius: 25px;
-                    height: 31px;
-                    padding: 0 15px;
-                    font-weight: 700;
+                    form{
+                        border: 1px solid #00000026
+                    }
                 }
             }
         }
     }
 }
 
+// restaurant page
+.rest-pg{
+    .rest{
+        padding: 70px 0;
+        .rest-form{
+            form{
+                .form-control, .form-select{
+                    min-height: 49px;
+                }
+            }
+        }
+
+        .rest-featured{
+            .rest-featured-title{
+                margin-bottom: 29px;
+                h3{
+                    font-weight: 700;
+                    color: #333;
+                    font-size: 28px;
+                    line-height: 33.89px;
+                }
+            }
+            .rest-featured-items{
+                .rest-featured-item{
+                    border-radius: 10px;
+                    overflow: hidden;
+                    border: 1px solid #0000001A;
+                    &-img{
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &-text{
+                        h5{
+                            color: #333;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 35px;
+                        }
+                        p{
+                            color: rgba(51, 51, 51, 0.5);
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            margin-top: -6px;
+                        }
+                    }
+                }
+
+                // owl navs
+                .owl-nav{
+                    background: red;
+                }
+            }
+        }
+    }
+}
+
+
+.invo-pg{
+    .invo-main-title h6{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25.5px;
+        margin-bottom: 25px;
+    }
+    .invo-items{
+        .invo-item{
+            margin-bottom: 58px;
+            .invo-item-title{
+                height: 56px;
+                background-color: #b5373e;
+                p{
+                    padding: 0 45px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24.51px;
+                    color: white;
+                }
+            }
+
+            .table{
+                td, th{
+                    height: 38px;
+                    line-height: 38px;
+                }
+                th{
+                    border-bottom: none;
+                }
+            }
+
+            &:last-child{
+                border: 1px solid #00000033;
+                padding: 30px 40px;
+                h6{
+                    color: $primary;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19.07px;
+                }
+                span{
+                    color: #e71d23;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .theme_btn{
+        margin: 30px 0 80px 0;
+    }
+}
 
 
 
@@ -2381,6 +2522,7 @@ header {
             }
         }
     }
+
 }
 
 @media screen and (max-width: 576px){
@@ -2489,20 +2631,6 @@ header {
         }
     }
 
-    // .dp_inner_box{
-    //     padding-left: 10em!important;
-    //     padding-right: 1em!important;
-    // }
-    // .dp_room_feature{
-    //     padding-left: 1em!important;
-    // }
-    // .dp_box_details{
-    //     padding-left: 1em!important;
-    // }
-    // .total_amt{
-
-    // }
-
     // visa page - places
     .visa-pg{
         .places{
@@ -2596,6 +2724,13 @@ header {
                     max-width: 372px;
                 }
             }
+        }
+    }
+
+    // restaurant page
+    .rest-featured-items{
+        .rest-featured-item{
+            max-width: 300px;
         }
     }
 }
@@ -2883,17 +3018,42 @@ header {
         }
 
         .modal-body-text{
-            font-size: 13.5px;
-            font-weight: 300;
-            line-height: 24px;
+            border-radius: 6px;
+            .modal-body-text-content{
+                padding: 15px;
+                border-radius: 6px;
+                margin-bottom: 0;
+                background-color: $primary;
+                p{
+                    margin-bottom: 0;
+                    font-size: 13.5px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    color: white;
+                }
+            }
         }
         .modal-body-info{
             ul{
+                height: 100%;
                 li{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
                     span:first-child{
+                        background: rgba(0, 0, 0, 0.9);
+                        border-radius: 50%;
+                        height: 27px!important;
+                        width: 27px!important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: 0px 0px 1px 0.5px #dfdfdf;
                         img{
-                            width: 15px;
+                            width: 50%;
+                            filter: invert(100%);
                         }
+                        margin-right: 7px;
                     }
                     span:last-child{
                         font-size: 13px;
@@ -2904,35 +3064,41 @@ header {
         }
     }
     .modal-block:nth-child(2){
-        border: 0.5px solid #00000066;
-        padding: 10px 20px;
+        border-top: 2px solid $primary;
+        padding: 10px 0;
         margin: 15px 0;
-        border-radius: 6px;
 
         .room-items{
             .room-item{
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                padding: 15px!important;
+                box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px;
+                border-radius: 6px;
+                background: rgba(0, 0, 0, 0.02);
                 .room-item-img{
                     width: 18px;
                 }
                 .room-item-content{
                     .room-item-title{
                         font-size: 14px;
-                        font-weight: 600;
+                        font-weight: 700;
+                        margin-bottom: 15px;
                     }
                     ul{
                         li{
                             font-size: 13.5px;
-                            margin-bottom: 3px;
+                            margin-bottom: 4px;
                             position: relative;
                             &::after{
                                 content: "";
                                 position: absolute;
+                                left: -28px;
                                 top: 50%;
                                 transform: translateY(-50%);
-                                left: -28px;
-                                height: 2px;
-                                width: 7px;
-                                background-color: rgba(220, 53, 69, 0.5);
+                                background-color: rgba(0, 0, 0, 0.9);
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
                             }
                         }
                     }
@@ -2950,18 +3116,37 @@ header {
     }
     .modal-body-item-title{
         font-size: 16px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        padding-bottom: 10px;
+        background-color: $primary;
+        padding: 7px;
+        box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+        color: #fff;
+        border-radius: 4px;
         span:first-child{
             img{
                 width: 20px;
+                filter: invert(100%);
             }
         }
     }
+    .modal-body-item-text{
+        font-size: 13.5px;
+        opacity: 0.9;
+        line-height: 22px;
+        margin: 15px 0!important;
+    }
     ul{
         li{
-            opacity: 0.8;
             font-size: 13.5px;
+            position: relative;
+            margin-bottom: 4px!important;
+            span:first-child{
+                color: $primary;
+            }
+            span:last-child{
+                line-height: 1.4;
+                font-weight: 500;
+                margin-left: 11px;
+            }
         }
     }
 }

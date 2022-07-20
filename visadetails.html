@@ -107,7 +107,7 @@
                 <div class = "visa-details-block-2 py-5 d-flex flex-column">
                     <div class = "visa-details-form">
                         <h4 class = "mb-3 visa-details-form-title">Visa Application Form</h4>
-                        <p class = "info-text">
+                        <p class = "info-text mb-5">
                             <span class = "info-text-icon me-2">
                                 <i class="bi bi-info-circle-fill"></i>
                             </span>
@@ -115,48 +115,50 @@
                         </p>
 
                         <div class = "visa-details-form-item">
-                            <span class = "d-inline-flex align-items-center justify-content-center text-white visa-badge mb-3">Visa # 1</span>
-                            <form>
+                            <span class = "d-inline-flex align-items-center justify-content-center text-white visa-badge mb-4">Visa # 1</span>
+                            <form class = "p-5">
                                 <div class = "form-item-block row">
-                                    <div class = "mb-3 row">
-                                        <label for = "" class = "col-form-label col-sm-3 form-item-elem-title">Visa Applying From</label>
-                                        <div class = "col-sm-9">
+                                    <div class = "mb-3 row col-lg-6 align-items-center">
+                                        <label for = "" class = "col-form-label col-sm-6 col-xl-4 form-item-elem-title">Visa Applying From</label>
+                                        <div class = "col-sm-6 col-xl-8">
                                             <select class = "form-select">
-                                                <option selected>Select a country</option>
+                                                <option selected disabled>Select a country</option>
+                                                <option value="">UAE</option>
+                                                <option value="">Saudi Arabia</option>
                                             </select>
                                         </div>
                                     </div>
 
-                                    <div class = "mb-3 row">
-                                        <label for = "" class = "col-form-label col-sm-3 form-item-elem-title">Visa Applying From</label>
-                                        <div class = "col-sm-9">
+                                    <div class = "mb-3 row col-lg-6 align-items-center">
+                                        <label for = "" class = "col-form-label col-sm-6 col-xl-4 form-item-elem-title">Visa Applying From</label>
+                                        <div class = "col-sm-6 col-xl-8">
                                             <select class = "form-select">
-                                                <option selected>Select a country</option>
+                                                <option selected disabled>Select a country</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class = "form-item-block">
+                                <div class = "form-item-block mt-3">
                                     <p class = "form-item-elem-title">Traveler Information</p>
                                     <div class = "row">
-                                        <div class = "mb-3">
+                                        <div class = "mb-3 col-md-6 col-xl-2">
                                             <select class = "form-select">
                                                 <option selected disabled>Title</option>
                                                 <option value = "">Mr.</option>
                                                 <option value="">Mrs.</option>
                                             </select>
                                         </div>
-                                        <div class = "mb-3">
+                                        <div class = "mb-3 col-md-6 col-xl-5">
                                             <input type = "text" class = "form-control" placeholder="First Name">
                                         </div>
-                                        <div class = "mb-3">
+                                        <div class = "mb-3 col-md-6 col-xl-5">
                                             <input type = "text" class = "form-control" placeholder="Contact Number">
                                         </div>
-                                        <div class = "mb-3">
+                                        <div class = "mb-3 col-md-6">
                                             <input type = "text" class = "form-control" placeholder="Country of Citizenship *">
                                         </div>
-                                        <div class = "mb-3">
+                                        <div class = "mb-3 col-md-6">
                                             <select class = "form-select">
                                                 <option selected disabled>Country of Birth *</option>
                                                 <option value="">UAE</option>
@@ -166,31 +168,28 @@
                                     </div>
                                 </div>
 
-                                <div class = "form-item-block">
-                                    <p class = "form-item-elem-title">Traveler Information</p>
+                                <div class = "form-item-block mt-3">
+                                    <p class = "form-item-elem-title">Country of passport</p>
                                     <div class = "row">
-                                        <div class = "mb-3">
+                                        <div class = "mb-3 col-md-6">
                                             <select class = "form-select">
-                                                <option selected disabled>Title</option>
-                                                <option value = "">Mr.</option>
-                                                <option value="">Mrs.</option>
-                                            </select>
-                                        </div>
-                                        <div class = "mb-3">
-                                            <input type = "text" class = "form-control" placeholder="First Name">
-                                        </div>
-                                        <div class = "mb-3">
-                                            <input type = "text" class = "form-control" placeholder="Contact Number">
-                                        </div>
-                                        <div class = "mb-3">
-                                            <input type = "text" class = "form-control" placeholder="Country of Citizenship *">
-                                        </div>
-                                        <div class = "mb-3">
-                                            <select class = "form-select">
-                                                <option selected disabled>Country of Birth *</option>
-                                                <option value="">UAE</option>
+                                                <option selected disabled>Country of Passport</option>
+                                                <option value = "">UAE</option>
                                                 <option value="">USA</option>
                                             </select>
+                                        </div>
+                                        <div class = "mb-3 col-md-6">
+                                            <select class = "form-select">
+                                                <option selected disabled>Passport Number</option>
+                                                <option value = "">UAE</option>
+                                                <option value="">USA</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-md-6 mb-3 mb-sm-0">
+                                            <input type = "date" class = "form-control" placeholder="Passport Date of Issue">
+                                        </div>
+                                        <div class = "col-md-6">
+                                            <input type = "date" class = "form-control" placeholder="Passwport Expiry Date">
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +197,10 @@
                         </div>
                     </div>
 
-                    <a href = "#" class = "btn btn-secondary active theme_btn align-self-center">Make My Booking</a>
+                    <div class="button_container d-flex justify-content-center mt-5">
+                        <button class="btn theme_btn btn-outline-primary me-2 btn-white">Back</button>
+                        <button class="btn theme_btn active btn-primary" id="handleclick">Continue</button>
+                    </div>
                 </div>
             </div>
         </div>

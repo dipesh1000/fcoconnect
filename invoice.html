@@ -15,134 +15,195 @@
 </head>
 <body>
     <div class = "main-holder invo-pg">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                  <img src="img/logo.png" />
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mx-auto mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-
-                  <div class = "navbar-contact-info">
-                    <img src = "img/header-contact-img.png">
-                  </div>
-              </div>
-            </div>
-          </nav>
-    </header>
     <section class="page_title">
         <div class="container">
-            <h1>My Booking Summary</h1>
+            <h1>Billing Information</h1>
         </div>
     </section>
     
-    <section class="invo mt-5">
-        <div class="container px-3 d-flex flex-column">
-            <div class = "invo-row row">
-                <div class = "col-left col-lg-3">
-                    <div class = "invo-block invo-block-1">
-                        <div class = "invo-block-title">
-                            <h6 class = "mb-0">Guest Information</h6>
+    <section class="invo mt-5 mb-3">
+        <div class="container invo-wrapper px-3 d-flex flex-column">
+            <div class = "invo-top d-md-flex align-items-center justify-content-between">
+                <div class = "col-left">
+                    <img src = "img/logo.png" alt = "">
+                </div>
+                <div class = "col-right">
+                    <ul class = "list-unstyled mx-0">
+                        <li>Sheik Zayad Road, Dubai, UAE</li>
+                        <li>Phone: +971-474848993, +971-474848993 </li>
+                        <li>Email: support@pcoconnect.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "invo-body mt-3">
+                <div class = "invo-body-wrapper">
+                    <div class = "invoice-top d-flex justify-content-between align-items-center py-3">
+                        <div class = "col-left">
+                            <p class = "mb-0"><span class = "fw-bold">Invoice Number:</span> <span>564454566</span></p>
                         </div>
-                        <div class = "invo-block-content">
-                            <div class = "mb-1 invo-item">
-                                <p class = "invo-item-label">Name</p>
-                                <div class = "info-val">Mr. Ahamed Khan</div>
+                        <div class = "col-mid">
+                            <p class = "fw-bold text-uppercase mb-0">proforma invoice</p>
+                        </div>
+                        <div class = "col-right">
+                            <p class = "mb-0"><span class = "fw-bold">Issue Date:</span> <span>31/08/2022</span></p>
+                        </div>
+                    </div>
+    
+                    <div class = "invoice-tbl my-4">
+                        <div class = "invoice-tbl-h text-center">
+                            <div>Particulars</div>
+                            <div>Arrival / Tour</div>
+                            <div>Departure</div>
+                            <div>Nights</div>
+                            <div>Avg/Room</div>
+                            <div>Total AED</div>
+                        </div>
+    
+                        <div class = "invoice-tbl-b">
+                            <div class = "invoice-tbl-item">
+                                <div class = "d-block invoice-tbl-item-title px-4">Hotel: Marriot Hotels</div>
+                                <div class = "invoice-tbl-item-dat">
+                                    <div>
+                                        2 Bedroom Luxury room - Unit (Lunch and breakfast)<br>
+                                        3 Adult
+                                    </div>
+                                    <div class = "text-center">25 Jul, 2022</div>
+                                    <div class = "text-center">5 Aug, 2022</div>
+                                    <div class = "text-center">4</div>
+                                    <div class = "text-center">500.00</div>
+                                    <div class = "text-center">2000.00</div>
+                                </div>
                             </div>
-                            <div class = "mb-1 invo-item">
-                                <p class = "invo-item-label">Phone</p>
-                                <div class = "info-val">+88 3434 394</div>
+    
+                            <div class = "invoice-tbl-item">
+                                <div class = "d-block invoice-tbl-item-title px-4">Transfer: 7 Seater Car</div>
+                                <div class = "invoice-tbl-item-dat">
+                                    <div>
+                                        <span><b>From:</b> Dubai Airport </span>
+                                        <span><b>To:</b> Hotel Hyatt Regency</span> 
+                                    </div>
+                                    <div class = "text-center">25 Jul, 2022</div>
+                                    <div class = "text-center">5 Aug, 2022</div>
+                                    <div class = "text-center">4</div>
+                                    <div class = "text-center">500.00</div>
+                                    <div class = "text-center">2000.00</div>
+                                </div>
                             </div>
-                            <div class = "mb-1 invo-item">
-                                <p class = "invo-item-label">Mobile</p>
-                                <div class = "info-val">+978 3439485345</div>
+    
+                            <div class = "invoice-tbl-item">
+                                <div class = "d-block invoice-tbl-item-title px-4">Tours: Miracle Garden</div>
+                                <div class = "invoice-tbl-item-dat">
+                                    <div>
+                                        <span><b>Trip:</b>  Miracle garden with ticket</span>
+                                        <span><b>Packs:</b> 7</span> 
+                                    </div>
+                                    <div class = "text-center">25 Jul, 2022</div>
+                                    <div class = "text-center">5 Aug, 2022</div>
+                                    <div class = "text-center">4</div>
+                                    <div class = "text-center">500.00</div>
+                                    <div class = "text-center">2000.00</div>
+                                </div>
                             </div>
-                            <div class = "mb-1 invo-item">
-                                <p class = "invo-item-label">Email</p>
-                                <div class = "info-val">ahmed@gmail.com</div>
+    
+                            <div class = "invoice-tbl-item">
+                                <div class = "d-block invoice-tbl-item-title px-4">Meet & Greet</div>
+                                <div class = "invoice-tbl-item-dat">
+                                    <div>
+                                        <span><b>Packs: </b>   Family Pack Service (Marhabba) on Arrival</span>
+                                        <span><b>Packs:</b> Family Pack Service (Marhabba) on Departure</span> 
+                                    </div>
+                                    <div class = "text-center">25 Jul, 2022</div>
+                                    <div class = "text-center">5 Aug, 2022</div>
+                                    <div class = "text-center">4</div>
+                                    <div class = "text-center">500.00</div>
+                                    <div class = "text-center">2000.00</div>
+                                </div>
                             </div>
+                        </div>
+    
+                        <div class = "invoice-tbl-f text-center">
+                            <div><span class = "fw-bold">In Words: </span>Five Thousand five hunderd fifty only.</div>
+                            <div class = "fw-bold">Grand Total </div>
+                            <div class = "fw-bold">8000.00</div>
                         </div>
                     </div>
                 </div>
-                <div class = "col-right col-lg-9">
-                    <div class = "invo-block info-block-2">
-                        <div class = "invo-block-title">
-                            <h6>Marriot Hotel</h6>
-                        </div>
-                        <div class = " invo-block-content">
-                            <div class = "row">
-                                <div class = "col-lg-8">
-                                    <div class = "info-row row">
-                                        <div class = "col-md-6">
-                                            <div class = "info-block">
-                                                <p class = "info-label">Nights:</p>
-                                                <div>3</div>
-                                            </div>
-                                        </div>
-                                        <div class = "col-md-6">
-                                            <div class = "info-block">
-                                                <p class = "info-label">Cost Per Night:</p>
-                                                <div>50 AED</div>
-                                            </div>
-                                        </div>
-                                        <div class = "col-md-6">
-                                            <div class = "info-block">
-                                                <p class = "info-label">Rooms:</p>
-                                                <div>3</div>
-                                            </div>
-                                        </div>
-                                        <div class = "col-md-6">
-                                            <div class = "info-block">
-                                                <p class = "info-label">Check In:</p>
-                                                <div>15 July 2022</div>
-                                            </div>
-                                        </div>
-                                        <div class = "col-md-6">
-                                            <div class = "info-block">
-                                                <p class = "info-label">Check Out:</p>
-                                                <div>15 July 2022</div>
-                                            </div>
-                                        </div>
-                                        <div class = "col-md-6">
-                                            <div class = "info-block">
-                                                <p class = "info-label">Guests:</p>
-                                                <div>10</div>
-                                            </div>
-                                        </div>
-                                    </div>
+            </div> 
+
+            <div class = "invo-bottom mt-3">
+                <form class = "invo-pay">
+                    <div class = "row mx-0">
+                        <div class = "col-md-6 col-lg-4 px-0 pe-3">
+                            <div class = "col-left py-4 px-3 h-100">
+                                <p class = "fw-bold">Select a payment method</p>
+                                <div class = "mb-3">
+                                    <input type="radio" class="checkbox-round" name = "payment_method" />
+                                    <span class = "ms-2 fw-bold">Pay from my Account</span>
                                 </div>
-                                <div class = "col-lg-4">
-                                    <div class = "invo-text">
-                                        <span class = "d-block">Rajman Street</span>
-                                        <span class = "d-block">PO Box 15786</span>
-                                        <span class = "d-block">Dubai, UAE</span>
-                                        <div class = "info-price-tag text-uppercase">
-                                            AED 567
-                                        </div>
+                                <div class="mb-3">
+                                    <input type="radio" class="checkbox-round" name = "payment_method" />
+                                    <span class = "ms-2 fw-bold">Pay Later (Bank Transfer)</span>
+                                </div>
+                                <div>
+                                    <input type="radio" class="checkbox-round" name = "payment_method" />
+                                    <span class = "ms-2 fw-bold">Credit Card</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col-md-6 col-lg-8 px-0 ps-3">
+                            <div class = "col-right h-100">
+                                <p class = "fw-bold px-3 py-2 text-white">Select a payment method</p>
+                                <div class = "px-4 pb-3">
+                                    <div class = "pay-info-item d-flex align-items-center justify-content-between mb-2 pb-2">
+                                        <span>Available Balance:</span>
+                                        <span class = "ms-2 fw-bold">AED 576.00</span>
+                                    </div>
+                                    <div class = "pay-info-item d-flex align-items-center justify-content-between mb-2 pb-2">
+                                        <span>Transaction Amount:</span>
+                                        <span class = "ms-2 fw-bold">AED 576.00</span>
+                                    </div>
+                                    <div class = "pay-info-item d-flex align-items-center justify-content-between mb-2 pb-2">
+                                        <span>Balance after Payment:</span>
+                                        <span class = "ms-2 fw-bold">AED 576.00</span>
+                                    </div>
+                                    <div class = "form-check mt-3">
+                                        <input type = "checkbox" class = "form-check-input"> 
+                                        <label class="form-check-label" for="">I agree to pay from my Account</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </form>
+
+                <div class = "invo-policy my-5">
+                    <h6 class = "mb-4">Cancellation Policy</h6>
+                    <div class = "policy-item mb-4">
+                        <p class = "fw-bold policy-item-title">1.1 Orders cancellation fee - Standard fee</p>
+                        <ul class = "list-unstyled">
+                            <li>1.1.1 Cancelling 45 days or more before departure: the customer is charged a service fee of AUD 20.</li>
+                            <li>1.1.2 Cancelling between 44 and 21 days before departure: the customer is charged a service fee of AUD 40. </li>
+                        </ul>
+                    </div>
+                    <div class = "policy-item mb-4">
+                        <p class = "fw-bold policy-item-title">1.2 Orders cancellation fee - Orders with the Timetravels flexible cancellation fee</p>
+                        <p>If you have selected the Timetravels flexible cancellation fee when booking the trip, the cancellation fees are:</p>
+                        <ul class = "list-unstyled">
+                            <li>1.2.1 Cancelling 45 days or more before departure: the customer is charged a discounted service fee of AUD12.</li>
+                            <li>1.2.2 Cancelling between 44 and 21 days before departure: the customer is charged a discounted service fee of AUD12. </li>
+                            <li>1.2.3 Cancelling between 20 and 7 days before departure: the customer is charged a service fee of 40% of the total order value.</li>
+                            <li>1.2.4a Cancelling between 6 and 3 days before departure: the customer is charged a service fee of 75% of the total order value.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="">
+                <label class="form-check-label" for="">I Confirm I have read the Cancellation Policy.</label>
+            </div>
+            <a href = "#" class = "btn theme_btn active btn-secondary me-auto mt-5 mb-4">Print Invoice</a>
         </div>
     </section>
 
@@ -235,7 +296,6 @@
                                 </li>
                                 <li>Dubai, UAE</li>
                             </ul>
-                    
                         </div>
                     </div>
                 </div>

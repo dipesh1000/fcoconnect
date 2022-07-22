@@ -3944,3 +3944,128 @@ header {
         }
     }
 }
+
+.summary-pg{
+    .border-block{
+        border: 1px solid #CED4DA
+    }
+
+    .summary-block{
+        .border-block{
+            padding: 28px;
+            position: relative;
+            legend{
+                position: absolute;
+                top: -15px;
+                color: $primary;
+                font-size: 18px;
+                font-weight: 700;
+                background-color: white;
+                display: inline-block;
+                width: auto;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+
+            .summary-block-head{
+                h3{
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                ul{
+                    li{
+                        color: $primary;
+                    }
+                }
+                span{
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+                .small{
+                    font-weight: 300!important;
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.5)!important;
+                }
+            }
+        }
+    }
+    .summary-block-1{
+        .form-control, .form-select{
+            border: 1px solid #CED4DA;
+            height: 54px;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+    }
+    .summary-block-2{
+        .border-block{
+            .summary-items{
+                .summary-item{
+                    border: 1px solid #CED4DA;
+                    .summary-pills{
+                        background-color: $primary;
+                        min-width: 86px;
+                        height: 23px;
+                        border-radius: 20px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #fff;
+                        padding: 0 4px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        top: -11.5px;
+                    }
+                    .col-right{
+                        .btn{
+                            border: 1.15px solid #DC3545;
+                            height: 30px;
+                            min-width: 80px;
+                            border-radius: 4.5px;
+                            background: #FFF2F2;
+                            color: $primary;
+                        }
+                        .btn-sm-icon{
+                            width: 34px!important;
+                            height: 30px;
+                            background-color: $primary!important;
+                            border-radius: 4px;
+                        }
+                    }
+                    ul{
+                        li{
+                            color: rgba(0, 0, 0, 0.5);
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+            .summary-block-foot{
+                border: 1px solid #0000004D;
+                background: #F2FAFF;
+
+                span{
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .summary-block-3{
+        background-color: $primary;
+        height: 99px;
+        p{
+            font-weight: 700;
+            font-size: 24px;
+            span{
+                font-weight: 400;
+                font-size: 12px;
+                display: block;
+            }
+        }
+    }
+}

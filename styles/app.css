@@ -3832,4 +3832,35 @@ header .navbar .navbar-contact-info img {
   font-size: 12px;
   display: block;
 }
+
+.ptmt-pg .ptmt-wrapper .ptmt-note {
+  color: #DC3545;
+}
+
+.ptmt-pg .ptmt-wrapper .ptmt-block-title {
+  background-color: #DC3545;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ptmt-pg .ptmt-wrapper .ptmt-block-content {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.ptmt-pg .ptmt-wrapper .form-control, .ptmt-pg .ptmt-wrapper .form-select {
+  min-height: 50px;
+  border: 1px solid #CED4DA !important;
+}
+
+.ptmt-pg .ptmt-wrapper .col-form-label {
+  opacity: 0.9;
+}
+
+.ptmt-pg .ptmt-wrapper .ptmt-block-2 .ptmt-cards > div {
+  margin-right: 10px;
+}
+
+.ptmt-pg .ptmt-wrapper .ptmt-block-2 .ptmt-cards > div img {
+  width: 52px;
+}
 /*# sourceMappingURL=app.css.map */

@@ -4069,3 +4069,36 @@ header {
         }
     }
 }
+
+.ptmt-pg{
+    .ptmt-wrapper{
+        .ptmt-note{
+            color: $primary;
+        }
+        .ptmt-block-title{
+            background-color: $primary;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .ptmt-block-content{
+            background: rgba(0, 0, 0, 0.02);
+        }
+        .form-control, .form-select{
+            min-height: 50px;
+            border: 1px solid #CED4DA!important;
+        }
+        .col-form-label{
+            opacity: 0.9;
+        }
+        .ptmt-block-2{
+            .ptmt-cards{
+                > div{
+                    margin-right: 10px;
+                    img{
+                        width: 52px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3641,7 +3641,7 @@ header .navbar .navbar-contact-info img {
 .invo-pg .invo-body .invoice-tbl .invoice-tbl-f > div:first-child {
   padding-left: 20px;
   align-items: flex-start;
-  flex-direction: column;
+  justify-content: flex-start;
   background: #FBEBEC;
 }
 

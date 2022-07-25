@@ -3795,51 +3795,61 @@ header {
             }
         }
 
-        .smry-block-3, .smry-block-4{
-            .col-form-label{
-                font-size: 13px;
-                font-weight: 600;
-            }
-            .form-control, .form-select{
-                border: 1px solid rgba(0, 0, 0, 0.7)!important;
-                border-radius: 0!important;
-                font-size: 13px;
-                height: 40px;
-            }
-            .smry-block-foot{
-                border: 1px solid #0000004D;
-                background: #F2FAFF;
-                color: #DC3545;
-                border-top: none;
-                p, span{
-                    font-weight: 700;
-                    font-size: 24px;
+        .smry-main-block{
+            .smry-block{
+                .col-form-label{
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+                .form-control, .form-select{
+                    border: 1px solid rgba(0, 0, 0, 0.7)!important;
+                    border-radius: 0!important;
+                    font-size: 13px;
+                    height: 40px;
+                }
+                .smry-block-foot{
+                    border: 1px solid #0000004D;
+                    background: #F2FAFF;
+                    color: #DC3545;
+                    border-top: none;
+                    p, span{
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
                 }
             }
         }
+        
     }
 
     .smry-main-block{
         padding: 20px;
         margin-bottom: 60px;
         border: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.01);
 
         .smry-main-block-head{
-            background-color: #B5373E;
-            margin-bottom: 15px;
-            padding: 10px 22px;
-            color: white;
-            border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+            margin-bottom: 10px;
+            padding: 0px 22px 10px 22px;
             text-align: center;
             span{
                 display: block;
                 font-size: 18px;
-                font-weight: 700;
+                font-weight: 600;
             }
         }
     }
     .theme_btn{
         background-color: #B5373E!important;
+    }
+
+    .nav-link{
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: 600;
+    }
+    .nav-link.active{
+        background-color: #B5373E;
+        color: white!important;
     }
 }
 
@@ -4173,7 +4183,7 @@ header {
             .smry-block-content{
                 .smry-block-item{
                     .col-right{
-                        border-left: 1px solid #CED4DA
+                        border-left: 1px solid #CED4DA!important;
                     }
                 }
             }

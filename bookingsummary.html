@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "js/scrollable_tabs/dist/jquery.bs4-scrolling-tabs.css">
     <link rel="stylesheet" href="styles/app.css">
     <title>FCO Connect</title>
 </head>
@@ -54,87 +55,101 @@
         </div>
     </section>
     
-    <main>
-        <section class="smry my-5 py-3">
-            <div class="container">
-                <!-- main guest block -->
-                <div class = "smry-main-block-1 smry-main-block">
-                    <div class = "smry-main-block-head mx-1">
-                        <span>Guest # 1</span>
-                    </div>
-                    <div class = "smry-row row">
-                        <div class = "col-lg-3 col-xl-3 px-3 pe-lg-0">
-                            <div class = "smry-block-1 smry-block mb-4">
-                                <div class = "smry-block-head">
-                                    <h6>Guest Information</h6>
-                                </div>
-                                <div class = "smry-block-content">
-                                    <div>
-                                        <div class = "row">
-                                            <div class = "col-sm-6 col-lg-12">
-                                                <div class = "mb-3">
-                                                    <label class = "form-label">Name</label>
-                                                    <input type = "text" class = "form-control" placeholder="" value = "Mr. Faijal Khan">
-                                                </div>
-                                            </div>
-                                            <div class = "col-sm-6 col-lg-12">
-                                                <div class = "mb-3">
-                                                    <label class = "form-label">Phone</label>
-                                                    <input type = "text" class = "form-control" placeholder="" value = "+56 6879 343">
-                                                </div>
-                                            </div>
-                                            <div class = "col-sm-6 col-lg-12">
-                                                <div class = "mb-3">
-                                                    <label class = "form-label">Mobile</label>
-                                                    <input type = "text" class = "form-control" placeholder="" value = "+978 7978 6756">
-                                                </div>
-                                            </div>
-                                            <div class = "col-sm-6 col-lg-12">
-                                                <div class = "mb-3">
-                                                    <label class = "form-label">Email</label>
-                                                    <input type = "text" class = "form-control" placeholder="" value = "faijal@gmail.com">
-                                                </div>
-                                            </div>
+    <section class="smry my-5 py-3">
+        <div class="container">
+            <div class = "smry-row row">
+                <div class = "col-lg-3 col-xl-3 px-3 pe-lg-0">
+                    <div class = "smry-block-1 smry-block mb-4">
+                        <div class = "smry-block-head">
+                            <h6>Guest Information</h6>
+                        </div>
+                        <div class = "smry-block-content">
+                            <form>
+                                <div class = "row">
+                                    <div class = "col-sm-6 col-lg-12">
+                                        <div class = "mb-3">
+                                            <label class = "form-label">Name</label>
+                                            <input type = "text" class = "form-control" placeholder="" value = "Mr. Faijal Khan">
+                                        </div>
+                                    </div>
+                                    <div class = "col-sm-6 col-lg-12">
+                                        <div class = "mb-3">
+                                            <label class = "form-label">Phone</label>
+                                            <input type = "text" class = "form-control" placeholder="" value = "+56 6879 343">
+                                        </div>
+                                    </div>
+                                    <div class = "col-sm-6 col-lg-12">
+                                        <div class = "mb-3">
+                                            <label class = "form-label">Mobile</label>
+                                            <input type = "text" class = "form-control" placeholder="" value = "+978 7978 6756">
+                                        </div>
+                                    </div>
+                                    <div class = "col-sm-6 col-lg-12">
+                                        <div class = "mb-3">
+                                            <label class = "form-label">Email</label>
+                                            <input type = "text" class = "form-control" placeholder="" value = "faijal@gmail.com">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-        
-                            <div class = "smry-block-2 smry-block">
-                                <div class = "smry-block-head">
-                                    <h6>Total Booking Price</h6>
-                                </div>
-                                <div class = "smry-block-content">
-                                    <ul class = "list-unstyled mx-0 mb-0">
-                                        <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
-                                            <span>Hotel</span>
-                                            <span>AED 568</span>
-                                        </li>
-                                        <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
-                                            <span>Transfer</span>
-                                            <span>AED 568</span>
-                                        </li>
-                                        <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
-                                            <span>Tour</span>
-                                            <span>AED 568</span>
-                                        </li>
-                                        <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
-                                            <span>Visa</span>
-                                            <span>AED 568</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class = "smry-block-foot">
-                                    <div class = "d-flex align-items-center justify-content-between w-100">
-                                        <p class = "mb-0">Total <span class = "d-block">(Inclusive of all taxes)</span></p>
-                                        <span>AED 456.90</span>
-                                    </div>
-                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class = "smry-block-2 smry-block">
+                        <div class = "smry-block-head">
+                            <h6>Total Booking Price</h6>
+                        </div>
+                        <div class = "smry-block-content">
+                            <ul class = "list-unstyled mx-0 mb-0">
+                                <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
+                                    <span>Hotel</span>
+                                    <span>AED 568</span>
+                                </li>
+                                <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
+                                    <span>Transfer</span>
+                                    <span>AED 568</span>
+                                </li>
+                                <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
+                                    <span>Tour</span>
+                                    <span>AED 568</span>
+                                </li>
+                                <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
+                                    <span>Visa</span>
+                                    <span>AED 568</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "smry-block-foot">
+                            <div class = "d-flex align-items-center justify-content-between w-100">
+                                <p class = "mb-0">Total <span class = "d-block">(Inclusive of all taxes)</span></p>
+                                <span>AED 456.90</span>
                             </div>
                         </div>
-        
-                        <div class = "col-lg-9 col-xl-9 px-3 ps-lg-4 mt-5 mt-lg-0">
-                            <div class = "smry-block-3 smry-block mb-5">
+                    </div>
+                </div>
+
+                <div class = "col-lg-9 col-xl-9 px-3 ps-lg-4 mt-5 mt-lg-0">
+                    <ul class = "nav nav-tabs" id = "smry-tabs" role = "tablist">
+                        <li class = "nav-item" role = "presentation">
+                            <button class = 'nav-link active' id = "block-1-tab" data-bs-toggle="tab" data-bs-target="#block1" type = "button" role = "tab" aria-controls="block1" aria-selected="true">Guest 1</button>
+                        </li>
+                        <li class = "nav-item" role = "presentation">
+                            <button class = 'nav-link' id = "block-2-tab" data-bs-toggle="tab" data-bs-target="#block2" type = "button" role = "tab" aria-controls="block2" aria-selected="true">Guest 2</button>
+                        </li>
+                        <li class = "nav-item" role = "presentation">
+                            <button class = 'nav-link' id = "block-3-tab" data-bs-toggle="tab" data-bs-target="#block3" type = "button" role = "tab" aria-controls="block3" aria-selected="true">Guest 3</button>
+                        </li>
+                        <li class = "nav-item" role = "presentation">
+                            <button class = 'nav-link' id = "block-2-tab" data-bs-toggle="tab" data-bs-target="#block2" type = "button" role = "tab" aria-controls="block1" aria-selected="true">Guest 4</button>
+                        </li>
+                    </ul>
+                    <div class = "tab-content" id = "smry-tabs-content">
+                        <!-- single guest block -->
+                        <div class = "smry-main-block tab-pane fade show active" id = "block1" role = "tabpanel" aria-labelledby="block-1-tab">
+                            <div class = "smry-main-block-head">
+                                <span>Guest # 1</span>
+                            </div>
+                            <div class = "smry-block-3 smry-block mb-5 bg-white">
                                 <div class = "smry-block-head row mx-0 align-items-center justify-content-between">
                                     <div class = "col-6 px-0">
                                         <h6>Hotel Booking</h6>
@@ -162,7 +177,7 @@
                                             <li class = "me-2">5 Star Hotel</li>
                                         </ul>
                                     </div>
-        
+
                                     <div class = "smry-block-item position-relative mb-5">
                                         <div class = "row">
                                             <span class = "smry-pills position-absolute">Room #1</span>
@@ -198,7 +213,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6 pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -229,7 +244,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -270,7 +285,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class = "smry-block-item position-relative">
                                         <div class = "row">
                                             <span class = "smry-pills position-absolute">Room #2</span>
@@ -306,7 +321,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6 pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -337,7 +352,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -386,8 +401,7 @@
                                     </div>
                                 </div>
                             </div>
-        
-                            <div class = "smry-block-4 smry-block">
+                            <div class = "smry-block-4 smry-block bg-white">
                                 <div class = "smry-block-head row mx-0 align-items-center justify-content-between">
                                     <div class = "col-6 px-0">
                                         <h6>Transfer Information</h6>
@@ -434,7 +448,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6 pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -462,7 +476,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -494,7 +508,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -535,7 +549,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class = "smry-block-item position-relative mb-5">
                                         <div class = "row">
                                             <span class = "smry-pills position-absolute">Trip #1</span>
@@ -570,7 +584,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6 pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -598,7 +612,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -630,7 +644,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -679,92 +693,15 @@
                                     </div>
                                 </div>
                             </div>
-        
-                            <!-- <div class = "d-flex align-items-center justify-content-center mt-5">
-                                <a href = "#" class = "btn theme_btn btn-secondary active">Complete My Booking</a>
-                            </div> -->
-                        </div> 
-                    </div>
-                </div>
-                <!-- end of main guest block -->
-                <!-- main guest block -->
-                <div class = "smry-main-block-2 smry-main-block">
-                    <div class = "smry-main-block-head mx-1">
-                        <span>Guest # 2</span>
-                    </div>
-                    <div class = "smry-row row">
-                        <div class = "col-lg-3 col-xl-3 px-3 pe-lg-0">
-                            <div class = "smry-block-1 smry-block mb-4">
-                                <div class = "smry-block-head">
-                                    <h6>Guest Information</h6>
-                                </div>
-                                <div class = "smry-block-content">
-                                    <form>
-                                        <div class = "row">
-                                            <div class = "col-sm-6 col-lg-12">
-                                                <div class = "mb-3">
-                                                    <label class = "form-label">Name</label>
-                                                    <input type = "text" class = "form-control" placeholder="" value = "Mr. Faijal Khan">
-                                                </div>
-                                            </div>
-                                            <div class = "col-sm-6 col-lg-12">
-                                                <div class = "mb-3">
-                                                    <label class = "form-label">Phone</label>
-                                                    <input type = "text" class = "form-control" placeholder="" value = "+56 6879 343">
-                                                </div>
-                                            </div>
-                                            <div class = "col-sm-6 col-lg-12">
-                                                <div class = "mb-3">
-                                                    <label class = "form-label">Mobile</label>
-                                                    <input type = "text" class = "form-control" placeholder="" value = "+978 7978 6756">
-                                                </div>
-                                            </div>
-                                            <div class = "col-sm-6 col-lg-12">
-                                                <div class = "mb-3">
-                                                    <label class = "form-label">Email</label>
-                                                    <input type = "text" class = "form-control" placeholder="" value = "faijal@gmail.com">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-        
-                            <div class = "smry-block-2 smry-block">
-                                <div class = "smry-block-head">
-                                    <h6>Total Booking Price</h6>
-                                </div>
-                                <div class = "smry-block-content">
-                                    <ul class = "list-unstyled mx-0 mb-0">
-                                        <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
-                                            <span>Hotel</span>
-                                            <span>AED 568</span>
-                                        </li>
-                                        <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
-                                            <span>Transfer</span>
-                                            <span>AED 568</span>
-                                        </li>
-                                        <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
-                                            <span>Tour</span>
-                                            <span>AED 568</span>
-                                        </li>
-                                        <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
-                                            <span>Visa</span>
-                                            <span>AED 568</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class = "smry-block-foot">
-                                    <div class = "d-flex align-items-center justify-content-between w-100">
-                                        <p class = "mb-0">Total <span class = "d-block">(Inclusive of all taxes)</span></p>
-                                        <span>AED 456.90</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-        
-                        <div class = "col-lg-9 col-xl-9 px-3 ps-lg-4 mt-5 mt-lg-0">
-                            <div class = "smry-block-3 smry-block mb-5">
+                        <!-- end of single guest block -->
+
+                        <!-- single guest block -->
+                        <div class = "smry-main-block tab-pane fade" id = "block2" role = "tabpanel" aria-labelledby="block-2-tab">
+                            <div class = "smry-main-block-head">
+                                <span>Guest # 2</span>
+                            </div>
+                            <div class = "smry-block-3 smry-block mb-5 bg-white">
                                 <div class = "smry-block-head row mx-0 align-items-center justify-content-between">
                                     <div class = "col-6 px-0">
                                         <h6>Hotel Booking</h6>
@@ -792,7 +729,7 @@
                                             <li class = "me-2">5 Star Hotel</li>
                                         </ul>
                                     </div>
-        
+
                                     <div class = "smry-block-item position-relative mb-5">
                                         <div class = "row">
                                             <span class = "smry-pills position-absolute">Room #1</span>
@@ -828,7 +765,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6 pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -859,7 +796,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -900,7 +837,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class = "smry-block-item position-relative">
                                         <div class = "row">
                                             <span class = "smry-pills position-absolute">Room #2</span>
@@ -936,7 +873,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6 pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -967,7 +904,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -1016,8 +953,7 @@
                                     </div>
                                 </div>
                             </div>
-        
-                            <div class = "smry-block-4 smry-block">
+                            <div class = "smry-block-4 smry-block bg-white">
                                 <div class = "smry-block-head row mx-0 align-items-center justify-content-between">
                                     <div class = "col-6 px-0">
                                         <h6>Transfer Information</h6>
@@ -1064,7 +1000,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6 pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -1092,7 +1028,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -1124,7 +1060,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -1165,7 +1101,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class = "smry-block-item position-relative mb-5">
                                         <div class = "row">
                                             <span class = "smry-pills position-absolute">Trip #1</span>
@@ -1200,7 +1136,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6 pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -1228,7 +1164,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -1260,7 +1196,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class = "row px-4">
                                                     <div class = "col-md-6  pe-md-3">
                                                         <div class = "mb-3 row align-items-center">
@@ -1309,20 +1245,571 @@
                                     </div>
                                 </div>
                             </div>
-        
-                            <!-- <div class = "d-flex align-items-center justify-content-center mt-5">
-                                <a href = "#" class = "btn theme_btn btn-secondary active">Complete My Booking</a>
-                            </div> -->
-                        </div> 
+                        </div>
+                        <!-- end of single guest block -->
+
+                        <!-- single guest block -->
+                        <div class = "smry-main-block tab-pane fade" id = "block3" role = "tabpanel" aria-labelledby="block-3-tab">
+                            <div class = "smry-main-block-head">
+                                <span>Guest # 3</span>
+                            </div>
+                            <div class = "smry-block-3 smry-block mb-5 bg-white">
+                                <div class = "smry-block-head row mx-0 align-items-center justify-content-between">
+                                    <div class = "col-6 px-0">
+                                        <h6>Hotel Booking</h6>
+                                    </div>
+                                    <div class = "col-6 px-0 d-flex justify-content-end">
+                                        <div class = "smry-block-head-btns">
+                                            <a href = "#" class = "btn-text d-inline-block me-2">Modify</a>
+                                            <a href = "#" class = "btn-icon d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "smry-block-content">
+                                    <div class = "smry-block-content-top">
+                                        <h5>Mariot Hotel</h5>
+                                        <p class = "mb-0 pb-1">
+                                            <span><i class="bi bi-geo-alt"></i></span>
+                                            <span>Dubai, United Arab Emirates</span>
+                                        </p>
+                                        <ul class = "rating list-unstyled mx-0 mb-4 d-flex">
+                                            <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                            <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                            <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                            <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                            <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                            <li class = "me-2">5 Star Hotel</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class = "smry-block-item position-relative mb-5">
+                                        <div class = "row">
+                                            <span class = "smry-pills position-absolute">Room #1</span>
+                                            <div class = "col-xxl-10 px-0 col-left pe-xxl-3">
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6 pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Night</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option selected>Deluxed Room</option>
+                                                                    <option>Super Deluxed Room</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6  ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Type</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option selected>3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6 pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Check In</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>Ajman Int'l Airport</option>
+                                                                    <option selected>Dubai Int’l Airport</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Check Out</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>Ajman Int'l Airport</option>
+                                                                    <option selected>Dubai Int’l Airport</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6  pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Adult</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option selected>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Check Out</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-xxl-2 px-3 col-right d-flex align-items-center justify-content-center mt-3 mt-xxl-0 pe-xxl-0">
+                                                <div class = "price-tag text-uppercase text-white d-flex align-items-center justify-content-center">AED 565</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class = "smry-block-item position-relative">
+                                        <div class = "row">
+                                            <span class = "smry-pills position-absolute">Room #2</span>
+                                            <div class = "col-xxl-10 px-0 col-left pe-xxl-3">
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6 pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Night</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option selected>Deluxed Room</option>
+                                                                    <option>Super Deluxed Room</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6  ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Type</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option selected>3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6 pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Check In</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>Ajman Int'l Airport</option>
+                                                                    <option selected>Dubai Int’l Airport</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Check Out</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>Ajman Int'l Airport</option>
+                                                                    <option selected>Dubai Int’l Airport</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6  pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Adult</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option selected>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Check Out</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-xxl-2 px-3 col-right d-flex align-items-center justify-content-center mt-3 mt-xxl-0 pe-xxl-0">
+                                                <div class = "price-tag text-uppercase text-white d-flex align-items-center justify-content-center">AED 565</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "smry-block-foot">
+                                    <div class = "d-flex align-items-center justify-content-between w-100">
+                                        <p class = "mb-0">Total</p>
+                                        <span>AED 500</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "smry-block-4 smry-block bg-white">
+                                <div class = "smry-block-head row mx-0 align-items-center justify-content-between">
+                                    <div class = "col-6 px-0">
+                                        <h6>Transfer Information</h6>
+                                    </div>
+                                    <div class = "col-6 px-0">
+                                        <div class = "smry-block-head-btns d-flex justify-content-end">
+                                            <a href = "#" class = "btn-text d-inline-block me-2">Modify</a>
+                                            <a href = "#" class = "btn-icon d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "smry-block-content">
+                                    <div class = "smry-block-item position-relative mb-5">
+                                        <div class = "row">
+                                            <span class = "smry-pills position-absolute">Trip #1</span>
+                                            <div class = "col-xxl-10 px-0 col-left pe-xxl-3">
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6 pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Pick Up</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option selected>Dubai Int'l Airport</option>
+                                                                    <option>Super Deluxed Room</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6  ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Drop Of</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option selected>Mariiot Hotel</option>
+                                                                    <option>Shazam Hotel</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6 pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Arrival Date</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <input type = "date" class = "form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Total Pax</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>1</option>
+                                                                    <option selected>2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6  pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>No of Vehicle</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option selected>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Trip Type</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option selected>Round</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6  pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Minimum Require</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option selected>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Seating Capacity</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-xxl-2 px-3 col-right d-flex align-items-center justify-content-center mt-3 mt-xxl-0 pe-xxl-0">
+                                                <div class = "price-tag text-uppercase text-white d-flex align-items-center justify-content-center">AED 565</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class = "smry-block-item position-relative mb-5">
+                                        <div class = "row">
+                                            <span class = "smry-pills position-absolute">Trip #1</span>
+                                            <div class = "col-xxl-10 px-0 col-left pe-xxl-3">
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6 pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Pick Up</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option selected>Dubai Int'l Airport</option>
+                                                                    <option>Super Deluxed Room</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6  ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Drop Of</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option selected>Mariiot Hotel</option>
+                                                                    <option>Shazam Hotel</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6 pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Arrival Date</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <input type = "date" class = "form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Total Pax</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>1</option>
+                                                                    <option selected>2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6  pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>No of Vehicle</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option selected>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Trip Type</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option selected>Round</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row px-4">
+                                                    <div class = "col-md-6  pe-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Minimum Require</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option selected>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class = "col-md-6 ps-md-3">
+                                                        <div class = "mb-3 row align-items-center">
+                                                            <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                                <span>Seating Capacity</span>
+                                                                <span>:</span>
+                                                            </label>
+                                                            <div class = "col-md-8 px-0">
+                                                                <select class = "form-select">
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-xxl-2 px-3 col-right d-flex align-items-center justify-content-center mt-3 mt-xxl-0 pe-xxl-0">
+                                                <div class = "price-tag text-uppercase text-white d-flex align-items-center justify-content-center">AED 565</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "smry-block-foot">
+                                    <div class = "d-flex align-items-center justify-content-between w-100">
+                                        <p class = "mb-0">Total</p>
+                                        <span>AED 500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of single guest block -->
                     </div>
-                </div>
-                <!-- end of main guest block -->
+                    
+                    <div class = "d-flex align-items-center justify-content-center mt-5">
+                        <a href = "#" class = "btn theme_btn btn-secondary active">Complete My Booking</a>
+                    </div>
+                </div> 
             </div>
-            <div class = "d-flex align-items-center justify-content-center mt-5">
-                <a href = "#" class = "btn theme_btn btn-secondary active">Complete My Booking</a>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    
    
     <section class="footer">
         <div class="mainfooter">
@@ -1447,6 +1934,10 @@
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src = "js/scrollable_tabs/dist/jquery.bs4-scrolling-tabs.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $('.nav-tabs').scrollingTabs({})
+    </script>
 </body>
 </html>

@@ -3578,26 +3578,26 @@ header .navbar .navbar-contact-info img {
   font-size: 15px;
 }
 
-.smry-pg .smry-row .smry-block-3 .col-form-label, .smry-pg .smry-row .smry-block-4 .col-form-label {
+.smry-pg .smry-row .smry-main-block .smry-block .col-form-label {
   font-size: 13px;
   font-weight: 600;
 }
 
-.smry-pg .smry-row .smry-block-3 .form-control, .smry-pg .smry-row .smry-block-3 .form-select, .smry-pg .smry-row .smry-block-4 .form-control, .smry-pg .smry-row .smry-block-4 .form-select {
+.smry-pg .smry-row .smry-main-block .smry-block .form-control, .smry-pg .smry-row .smry-main-block .smry-block .form-select {
   border: 1px solid rgba(0, 0, 0, 0.7) !important;
   border-radius: 0 !important;
   font-size: 13px;
   height: 40px;
 }
 
-.smry-pg .smry-row .smry-block-3 .smry-block-foot, .smry-pg .smry-row .smry-block-4 .smry-block-foot {
+.smry-pg .smry-row .smry-main-block .smry-block .smry-block-foot {
   border: 1px solid #0000004D;
   background: #F2FAFF;
   color: #DC3545;
   border-top: none;
 }
 
-.smry-pg .smry-row .smry-block-3 .smry-block-foot p, .smry-pg .smry-row .smry-block-3 .smry-block-foot span, .smry-pg .smry-row .smry-block-4 .smry-block-foot p, .smry-pg .smry-row .smry-block-4 .smry-block-foot span {
+.smry-pg .smry-row .smry-main-block .smry-block .smry-block-foot p, .smry-pg .smry-row .smry-main-block .smry-block .smry-block-foot span {
   font-weight: 700;
   font-size: 24px;
 }
@@ -3606,25 +3606,33 @@ header .navbar .navbar-contact-info img {
   padding: 20px;
   margin-bottom: 60px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.01);
 }
 
 .smry-pg .smry-main-block .smry-main-block-head {
-  background-color: #B5373E;
-  margin-bottom: 15px;
-  padding: 10px 22px;
-  color: white;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  padding: 0px 22px 10px 22px;
   text-align: center;
 }
 
 .smry-pg .smry-main-block .smry-main-block-head span {
   display: block;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .smry-pg .theme_btn {
   background-color: #B5373E !important;
+}
+
+.smry-pg .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.smry-pg .nav-link.active {
+  background-color: #B5373E;
+  color: white !important;
 }
 
 .ptmt-pg .ptmt-wrapper .ptmt-note {
@@ -3929,7 +3937,7 @@ header .navbar .navbar-contact-info img {
     width: 100%;
   }
   .smry-pg .smry-block .smry-block-content .smry-block-item .col-right {
-    border-left: 1px solid #CED4DA;
+    border-left: 1px solid #CED4DA !important;
   }
 }
 /*# sourceMappingURL=app.css.map */

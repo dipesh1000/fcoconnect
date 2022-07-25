@@ -15,7 +15,7 @@
     <title>FCO Connect</title>
 </head>
 <body>
-    <div class = "main-holder summary-pg">
+    <div class = "main-holder smry-pg">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -54,444 +54,630 @@
         </div>
     </section>
     
-    <section class="summary my-5">
+    <section class="smry my-5 py-3">
         <div class="container">
-            <div class = "summary-block summary-block-1 py-3 mb-4">
-                <form>
-                    <fieldset class = "border-block">
-                        <legend>Guest Information</legend>
-                        <div class = "row">
-                           <div class = "mb-3 col-md-6 mb-xl-0 col-xl-1">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Title</option>
-                                </select>
-                           </div>
-                           <div class = "mb-3 col-md-6 mb-xl-0 col-xl-3" >
-                            <input type = "text" class = "form-control" placeholder="Full Name">
-                           </div>
-                           <div class = "mb-3 col-md-6 mb-xl-0 col-xl-4" >
-                            <input type = "text" class = "form-control" placeholder="Contact Number">
-                           </div>
-                           <div class = "mb-3 col-md-6 mb-xl-0 col-xl-4" >
-                            <input type = "text" class = "form-control" placeholder="Email Address">
-                           </div>
+            <div class = "smry-row row">
+                <div class = "col-lg-3 col-xl-3 px-3 pe-lg-0">
+                    <div class = "smry-block-1 smry-block mb-4">
+                        <div class = "smry-block-head">
+                            <h6>Guest Information</h6>
                         </div>
-                    </fieldset>
-                </form>
-            </div>
+                        <div class = "smry-block-content">
+                            <form>
+                                <div class = "row">
+                                    <div class = "col-sm-6 col-lg-12">
+                                        <div class = "mb-3">
+                                            <label class = "form-label">Name</label>
+                                            <input type = "text" class = "form-control" placeholder="" value = "Mr. Faijal Khan">
+                                        </div>
+                                    </div>
+                                    <div class = "col-sm-6 col-lg-12">
+                                        <div class = "mb-3">
+                                            <label class = "form-label">Phone</label>
+                                            <input type = "text" class = "form-control" placeholder="" value = "+56 6879 343">
+                                        </div>
+                                    </div>
+                                    <div class = "col-sm-6 col-lg-12">
+                                        <div class = "mb-3">
+                                            <label class = "form-label">Mobile</label>
+                                            <input type = "text" class = "form-control" placeholder="" value = "+978 7978 6756">
+                                        </div>
+                                    </div>
+                                    <div class = "col-sm-6 col-lg-12">
+                                        <div class = "mb-3">
+                                            <label class = "form-label">Email</label>
+                                            <input type = "text" class = "form-control" placeholder="" value = "faijal@gmail.com">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-            <div class = "summary-block summary-block-2 py-3">
-                <div class = "summary-block-item mb-5">
-                    <div class = "border-block">
-                        <legend>Hotel Information</legend>
-                        <div class = "summary-block-head">
-                            <div class = "d-flex align-items-center flex-wrap">
-                                <h3 class = "me-3 mb-0">Mariot Hotel</h3>
-                                <ul class = "mx-0 list-unstyled d-flex me-2 mb-0">
-                                    <li class = "me-1"><i class="bi bi-star-fill"></i></li>
-                                    <li class = "me-1"><i class="bi bi-star-fill"></i></li>
-                                    <li class = "me-1"><i class="bi bi-star-fill"></i></li>
-                                    <li class = "me-1"><i class="bi bi-star-fill"></i></li>
-                                    <li class = "me-1"><i class="bi bi-star-fill"></i></li>
+                    <div class = "smry-block-2 smry-block">
+                        <div class = "smry-block-head">
+                            <h6>Total Booking Price</h6>
+                        </div>
+                        <div class = "smry-block-content">
+                            <ul class = "list-unstyled mx-0 mb-0">
+                                <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
+                                    <span>Hotel</span>
+                                    <span>AED 568</span>
+                                </li>
+                                <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
+                                    <span>Transfer</span>
+                                    <span>AED 568</span>
+                                </li>
+                                <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
+                                    <span>Tour</span>
+                                    <span>AED 568</span>
+                                </li>
+                                <li class = "my-2 pb-2 d-flex align-items-center justify-content-between">
+                                    <span>Visa</span>
+                                    <span>AED 568</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "smry-block-foot">
+                            <div class = "d-flex align-items-center justify-content-between w-100">
+                                <p class = "mb-0">Total <span class = "d-block">(Inclusive of all taxes)</span></p>
+                                <span>AED 456.90</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-9 col-xl-9 px-3 ps-lg-4 mt-5 mt-lg-0">
+                    <div class = "smry-block-3 smry-block mb-5">
+                        <div class = "smry-block-head row mx-0 align-items-center justify-content-between">
+                            <div class = "col-6 px-0">
+                                <h6>Hotel Booking</h6>
+                            </div>
+                            <div class = "col-6 px-0 d-flex justify-content-end">
+                                <div class = "smry-block-head-btns">
+                                    <a href = "#" class = "btn-text d-inline-block me-2">Modify</a>
+                                    <a href = "#" class = "btn-icon d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "smry-block-content">
+                            <div class = "smry-block-content-top">
+                                <h5>Mariot Hotel</h5>
+                                <p class = "mb-0 pb-1">
+                                    <span><i class="bi bi-geo-alt"></i></span>
+                                    <span>Dubai, United Arab Emirates</span>
+                                </p>
+                                <ul class = "rating list-unstyled mx-0 mb-4 d-flex">
+                                    <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                    <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                    <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                    <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                    <li class = "me-2"><i class="bi bi-star-fill"></i></li>
+                                    <li class = "me-2">5 Star Hotel</li>
                                 </ul>
-                                <span class = 'text-danger'>5 Star Hotel</span>
                             </div>
-                            <div class = "small mt-2">
-                                <span class = "me-1"><i class="bi bi-geo-alt"></i></span>
-                                <span>Dubai, United Arab Emirates</span>
-                            </div>
-                        </div>
 
-                        <div class = "summary-items">
-                            <div class = "summary-item p-4 position-relative mt-5">
-                                <span class = "summary-pills position-absolute">Room #1</span>
+                            <div class = "smry-block-item position-relative mb-5">
                                 <div class = "row">
-                                    <div class = "col-left col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Type</span>
-                                                <span>: Deluxe Room</span>
-                                            </li>
-                                            <li>
-                                                <span>Nights</span>
-                                                <span>: 5</span>
-                                            </li>
-                                            <li>
-                                                <span>Check In</span>
-                                                <span>: 14 Aug, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>Check Out</span>
-                                                <span>: 19 Aug, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>Kids</span>
-                                                <span>: 0</span>
-                                            </li>
-                                        </ul>
-                                    </div> 
-
-                                    <div class = "col-mid col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Full Name</span>
-                                                <span>: Mr. John Doe</span>
-                                            </li>
-                                            <li>
-                                                <span>Contact</span>
-                                                <span>: +91 533874783</span>
-                                            </li>
-                                            <li>
-                                                <span>Email</span>
-                                                <span>: johndoe@gmail.com</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class = "col-right col-md-6 col-lg-2 d-flex align-items-center mt-2 mt-lg-0">
-                                        <div class = "d-flex">
-                                            <a href = "#" class = "btn d-inline-flex justify-content-center align-items-center me-3">Modify</a>
-                                            <a href = "#" class = "btn-sm-icon d-flex align-items-center justify-content-center text-white">
-                                                <i class="bi bi-trash3"></i> 
-                                            </a>
+                                    <span class = "smry-pills position-absolute">Room #1</span>
+                                    <div class = "col-xxl-10 px-0 col-left pe-xxl-3">
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6 pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Night</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option selected>Deluxed Room</option>
+                                                            <option>Super Deluxed Room</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6  ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Type</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option selected>3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>  
+
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6 pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Check In</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>Ajman Int'l Airport</option>
+                                                            <option selected>Dubai Int’l Airport</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Check Out</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>Ajman Int'l Airport</option>
+                                                            <option selected>Dubai Int’l Airport</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6  pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Adult</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option selected>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Check Out</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option selected>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "col-xxl-2 px-3 col-right d-flex align-items-center justify-content-center mt-3 mt-xxl-0 pe-xxl-0">
+                                        <div class = "price-tag text-uppercase text-white d-flex align-items-center justify-content-center">AED 565</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class = "summary-item p-4 position-relative mt-5">
-                                <span class = "summary-pills position-absolute">Room #1</span>
+
+                            <div class = "smry-block-item position-relative">
                                 <div class = "row">
-                                    <div class = "col-left col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Type</span>
-                                                <span>: Deluxe Room</span>
-                                            </li>
-                                            <li>
-                                                <span>Nights</span>
-                                                <span>: 5</span>
-                                            </li>
-                                            <li>
-                                                <span>Check In</span>
-                                                <span>: 14 Aug, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>Check Out</span>
-                                                <span>: 19 Aug, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>Kids</span>
-                                                <span>: 0</span>
-                                            </li>
-                                        </ul>
-                                    </div> 
-
-                                    <div class = "col-mid col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Full Name</span>
-                                                <span>: Mr. John Doe</span>
-                                            </li>
-                                            <li>
-                                                <span>Contact</span>
-                                                <span>: +91 533874783</span>
-                                            </li>
-                                            <li>
-                                                <span>Email</span>
-                                                <span>: johndoe@gmail.com</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class = "col-right col-md-6 col-lg-2 d-flex align-items-center mt-2 mt-lg-0">
-                                        <div class = "d-flex">
-                                            <a href = "#" class = "btn d-inline-flex justify-content-center align-items-center me-3">Modify</a>
-                                            <a href = "#" class = "btn-sm-icon d-flex align-items-center justify-content-center text-white">
-                                                <i class="bi bi-trash3"></i> 
-                                            </a>
+                                    <span class = "smry-pills position-absolute">Room #2</span>
+                                    <div class = "col-xxl-10 px-0 col-left pe-xxl-3">
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6 pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Night</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option selected>Deluxed Room</option>
+                                                            <option>Super Deluxed Room</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6  ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Type</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option selected>3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>  
+
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6 pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Check In</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>Ajman Int'l Airport</option>
+                                                            <option selected>Dubai Int’l Airport</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Check Out</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>Ajman Int'l Airport</option>
+                                                            <option selected>Dubai Int’l Airport</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6  pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Adult</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option selected>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Check Out</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option selected>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "col-xxl-2 px-3 col-right d-flex align-items-center justify-content-center mt-3 mt-xxl-0 pe-xxl-0">
+                                        <div class = "price-tag text-uppercase text-white d-flex align-items-center justify-content-center">AED 565</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class = "summary-block-foot">
-                            <div class = "p-4 d-flex align-items-center justify-content-between">
-                                <span>Total</span>
-                                <span class = "text-uppercase">aed 500</span>
+                        <div class = "smry-block-foot">
+                            <div class = "d-flex align-items-center justify-content-between w-100">
+                                <p class = "mb-0">Total</p>
+                                <span>AED 500</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class = "summary-block-item mb-5">
-                    <div class = "border-block">
-                        <legend>Transfer Information</legend>
-                        <div class = "summary-items">
-                            <div class = "summary-item p-4 position-relative mt-2">
-                                <span class = "summary-pills position-absolute">Trip  #1</span>
-                                <div class = "row">
-                                    <div class = "col-left col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Pick Up</span>
-                                                <span>: Abu Dhabi Airport</span>
-                                            </li>
-                                            <li>
-                                                <span>Drop Off</span>
-                                                <span>: Dubai Marina</span>
-                                            </li>
-                                            <li>
-                                                <span>Total Pax</span>
-                                                <span>: 1</span>
-                                            </li>
-                                            <li>
-                                                <span>No of Vehicle</span>
-                                                <span>: Single</span>
-                                            </li>
-                                            <li>
-                                                <span>Trip Type</span>
-                                                <span>: One Way</span>
-                                            </li>
-                                        </ul>
-                                    </div> 
 
-                                    <div class = "col-mid col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Arrival Date</span>
-                                                <span>: 21 Sep, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>No of Car(s)</span>
-                                                <span>: 1</span>
-                                            </li>
-                                            <li>
-                                                <span>Seating Capacity</span>
-                                                <span>: 4 Seater</span>
-                                            </li>
-                                            <li>
-                                                <span>Minimum Require</span>
-                                                <span>: 3 Persons</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class = "col-right col-md-6 col-lg-2 d-flex align-items-center mt-2 mt-lg-0">
-                                        <div class = "d-flex">
-                                            <a href = "#" class = "btn d-inline-flex justify-content-center align-items-center me-3">Modify</a>
-                                            <a href = "#" class = "btn-sm-icon d-flex align-items-center justify-content-center text-white">
-                                                <i class="bi bi-trash3"></i> 
-                                            </a>
-                                        </div>
-                                    </div>  
-                                </div>
+                    <div class = "smry-block-4 smry-block">
+                        <div class = "smry-block-head row mx-0 align-items-center justify-content-between">
+                            <div class = "col-6 px-0">
+                                <h6>Transfer Information</h6>
                             </div>
-                            <div class = "summary-item p-4 position-relative mt-5">
-                                <span class = "summary-pills position-absolute">Trip  #2</span>
-                                <div class = "row">
-                                    <div class = "col-left col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Type</span>
-                                                <span>: Deluxe Room</span>
-                                            </li>
-                                            <li>
-                                                <span>Nights</span>
-                                                <span>: 5</span>
-                                            </li>
-                                            <li>
-                                                <span>Check In</span>
-                                                <span>: 14 Aug, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>Check Out</span>
-                                                <span>: 19 Aug, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>Kids</span>
-                                                <span>: 0</span>
-                                            </li>
-                                        </ul>
-                                    </div> 
-
-                                    <div class = "col-mid col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Full Name</span>
-                                                <span>: Mr. John Doe</span>
-                                            </li>
-                                            <li>
-                                                <span>Contact</span>
-                                                <span>: +91 533874783</span>
-                                            </li>
-                                            <li>
-                                                <span>Email</span>
-                                                <span>: johndoe@gmail.com</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class = "col-right col-md-6 col-lg-2 d-flex align-items-center mt-2 mt-lg-0">
-                                        <div class = "d-flex">
-                                            <a href = "#" class = "btn d-inline-flex justify-content-center align-items-center me-3">Modify</a>
-                                            <a href = "#" class = "btn-sm-icon d-flex align-items-center justify-content-center text-white">
-                                                <i class="bi bi-trash3"></i> 
-                                            </a>
-                                        </div>
-                                    </div>  
+                            <div class = "col-6 px-0">
+                                <div class = "smry-block-head-btns d-flex justify-content-end">
+                                    <a href = "#" class = "btn-text d-inline-block me-2">Modify</a>
+                                    <a href = "#" class = "btn-icon d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash"></i></a>
                                 </div>
                             </div>
                         </div>
+                        <div class = "smry-block-content">
+                            <div class = "smry-block-item position-relative mb-5">
+                                <div class = "row">
+                                    <span class = "smry-pills position-absolute">Trip #1</span>
+                                    <div class = "col-xxl-10 px-0 col-left pe-xxl-3">
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6 pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Pick Up</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option selected>Dubai Int'l Airport</option>
+                                                            <option>Super Deluxed Room</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6  ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Drop Of</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option selected>Mariiot Hotel</option>
+                                                            <option>Shazam Hotel</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                        <div class = "summary-block-foot">
-                            <div class = "p-4 d-flex align-items-center justify-content-between">
-                                <span>Total</span>
-                                <span class = "text-uppercase">aed 500</span>
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6 pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Arrival Date</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <input type = "date" class = "form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Total Pax</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>1</option>
+                                                            <option selected>2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6  pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>No of Vehicle</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option selected>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Trip Type</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option selected>Round</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6  pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Minimum Require</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option selected>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Seating Capacity</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option selected>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "col-xxl-2 px-3 col-right d-flex align-items-center justify-content-center mt-3 mt-xxl-0 pe-xxl-0">
+                                        <div class = "price-tag text-uppercase text-white d-flex align-items-center justify-content-center">AED 565</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "smry-block-item position-relative mb-5">
+                                <div class = "row">
+                                    <span class = "smry-pills position-absolute">Trip #1</span>
+                                    <div class = "col-xxl-10 px-0 col-left pe-xxl-3">
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6 pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Pick Up</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option selected>Dubai Int'l Airport</option>
+                                                            <option>Super Deluxed Room</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6  ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Drop Of</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option selected>Mariiot Hotel</option>
+                                                            <option>Shazam Hotel</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6 pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Arrival Date</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <input type = "date" class = "form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Total Pax</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>1</option>
+                                                            <option selected>2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6  pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>No of Vehicle</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option selected>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Trip Type</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option selected>Round</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class = "row px-4">
+                                            <div class = "col-md-6  pe-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Minimum Require</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option selected>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col-md-6 ps-md-3">
+                                                <div class = "mb-3 row align-items-center">
+                                                    <label for = "" class = "col-form-label ps-0 ps-md-2 col-md-4 d-flex align-items-center justify-content-md-between">
+                                                        <span>Seating Capacity</span>
+                                                        <span>:</span>
+                                                    </label>
+                                                    <div class = "col-md-8 px-0">
+                                                        <select class = "form-select">
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option selected>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "col-xxl-2 px-3 col-right d-flex align-items-center justify-content-center mt-3 mt-xxl-0 pe-xxl-0">
+                                        <div class = "price-tag text-uppercase text-white d-flex align-items-center justify-content-center">AED 565</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "smry-block-foot">
+                            <div class = "d-flex align-items-center justify-content-between w-100">
+                                <p class = "mb-0">Total</p>
+                                <span>AED 500</span>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class = "summary-block-item">
-                    <div class = "border-block">
-                        <legend>Tours Information</legend>
-                        <div class = "summary-items">
-                            <div class = "summary-item p-4 position-relative mt-2">
-                                <span class = "summary-pills position-absolute">Tour  #1</span>
-                                <div class = "row">
-                                    <div class = "col-left col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Tour</span>
-                                                <span>: Atlantis - Aquaventure</span>
-                                            </li>
-                                            <li>
-                                                <span>Category</span>
-                                                <span>: Altantis Marina</span>
-                                            </li>
-                                            <li>
-                                                <span>Pickup Point</span>
-                                                <span>: Abjar Hotel</span>
-                                            </li>
-                                            <li>
-                                                <span>Adults</span>
-                                                <span>: 3</span>
-                                            </li>
-                                            <li>
-                                                <span>Childern</span>
-                                                <span>: 0</span>
-                                            </li>
-                                        </ul>
-                                    </div> 
-
-                                    <div class = "col-mid col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Arrival Date</span>
-                                                <span>: 21 Sep, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>No of Cars</span>
-                                                <span>: 1</span>
-                                            </li>
-                                            <li>
-                                                <span>Transfer Type</span>
-                                                <span>: Private 5 Seater</span>
-                                            </li>
-                                            <li>
-                                                <span>Guide</span>
-                                                <span>: German</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class = "col-right col-md-6 col-lg-2 d-flex align-items-center mt-2 mt-lg-0">
-                                        <div class = "d-flex">
-                                            <a href = "#" class = "btn d-inline-flex justify-content-center align-items-center me-3">Modify</a>
-                                            <a href = "#" class = "btn-sm-icon d-flex align-items-center justify-content-center text-white">
-                                                <i class="bi bi-trash3"></i> 
-                                            </a>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class = "summary-item p-4 position-relative mt-5">
-                                <span class = "summary-pills position-absolute">Trip  #2</span>
-                                <div class = "row">
-                                    <div class = "col-left col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Type</span>
-                                                <span>: Deluxe Room</span>
-                                            </li>
-                                            <li>
-                                                <span>Nights</span>
-                                                <span>: 5</span>
-                                            </li>
-                                            <li>
-                                                <span>Check In</span>
-                                                <span>: 14 Aug, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>Check Out</span>
-                                                <span>: 19 Aug, 2022</span>
-                                            </li>
-                                            <li>
-                                                <span>Kids</span>
-                                                <span>: 0</span>
-                                            </li>
-                                        </ul>
-                                    </div> 
-
-                                    <div class = "col-mid col-md-6 col-lg-5 mb-3 mb-lg-0">
-                                        <ul class = "list-unstyled mx-0 mb-0">
-                                            <li>
-                                                <span>Full Name</span>
-                                                <span>: Mr. John Doe</span>
-                                            </li>
-                                            <li>
-                                                <span>Contact</span>
-                                                <span>: +91 533874783</span>
-                                            </li>
-                                            <li>
-                                                <span>Email</span>
-                                                <span>: johndoe@gmail.com</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class = "col-right col-md-6 col-lg-2 d-flex align-items-center mt-2 mt-lg-0">
-                                        <div class = "d-flex">
-                                            <a href = "#" class = "btn d-inline-flex justify-content-center align-items-center me-3">Modify</a>
-                                            <a href = "#" class = "btn-sm-icon d-flex align-items-center justify-content-center text-white">
-                                                <i class="bi bi-trash3"></i> 
-                                            </a>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>
-                        <div class = "summary-block-foot">
-                            <div class = "p-4 d-flex align-items-center justify-content-between">
-                                <span>Total</span>
-                                <span class = "text-uppercase">aed 500</span>
-                            </div>
-                        </div>
+                    <div class = "d-flex align-items-center justify-content-center mt-5">
+                        <a href = "#" class = "btn theme_btn btn-secondary active">Complete My Booking</a>
                     </div>
-                </div>
-            </div>
-
-            <div class = "text-white d-flex align-items-center justify-content-between summary-block-3 px-4">
-                <div class = "col-left">
-                    <p class = "mb-0">Grand Total <span>(Inclusive of all taxes)</span></p>
-                </div>
-                <div class = "col-right">
-                    <p class = "mb-0">AED 1500</p>
-                </div>
-            </div>
-            <div class = "mt-5 d-flex justify-content-center">
-                <a href = "#" class = "btn theme_btn btn-secondary active">Complete My Booking</a> 
+                </div> 
             </div>
         </div>
     </section>

@@ -3488,6 +3488,7 @@ header .navbar .navbar-contact-info img {
 }
 
 .smry-pg .smry-row .smry-block .smry-block-content {
+  overflow-x: scroll;
   padding: 32px 22px;
   border: 1px solid #0000004D;
 }
@@ -3510,6 +3511,7 @@ header .navbar .navbar-contact-info img {
 }
 
 .smry-pg .smry-row .smry-block .smry-block-content .smry-block-item {
+  width: 800px;
   border: 1px solid #CED4DA;
   padding: 20px;
 }

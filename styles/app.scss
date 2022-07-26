@@ -3701,6 +3701,7 @@ header {
             }
     
             .smry-block-content{
+                overflow-x: scroll;
                 padding: 32px 22px;
                 border: 1px solid #0000004D;
                 .smry-block-content-top{
@@ -3720,6 +3721,7 @@ header {
                     }
                 }
                 .smry-block-item{
+                    width: 800px;
                     border: 1px solid #CED4DA;
                     padding: 20px;
                     .col-right{

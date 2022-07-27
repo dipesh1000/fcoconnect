@@ -3657,8 +3657,7 @@ header {
     .smry-row{
         .smry-block{
             .smry-block-head{
-                background-color: 
-                #B5373E;
+                background-color: #B5373E;
                 color: white;
                 min-height: 58px;
                 display: flex;
@@ -3699,10 +3698,13 @@ header {
                 height: 49px;
                 border-radius: 4px;
             }
-    
+
             .smry-block-content{
                 padding: 32px 22px;
                 border: 1px solid #0000004D;
+                &.smry-block-scrollable{
+                    overflow-x: scroll;
+                }
                 .smry-block-content-top{
                     h5{
                         font-size: 20px;
@@ -3795,7 +3797,7 @@ header {
             }
         }
 
-        .smry-block-3, .smry-block-4{
+        .smry-block{
             .col-form-label{
                 font-size: 13px;
                 font-weight: 600;
@@ -3816,6 +3818,15 @@ header {
                     font-size: 24px;
                 }
             }
+            .smry-block-content{
+                .smry-block-item{
+                    > .row{
+                        .col-right{
+                            border-left: 1px solid #CED4DA
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -3825,11 +3836,9 @@ header {
         border: 1px solid rgba(0, 0, 0, 0.2);
 
         .smry-main-block-head{
-            background-color: #B5373E;
             margin-bottom: 15px;
             padding: 10px 22px;
-            color: white;
-            border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
             text-align: center;
             span{
                 display: block;
@@ -3944,6 +3953,31 @@ header {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .smry-block-content{
+        .smry-block-item{
+            .col-right{
+                justify-content: flex-end;
+                padding-right: 4px!important;
+                padding-left: 4px!important;
+                .price-tag{
+                    min-width: auto!important;
+                    height: auto!important;
+                    padding: 3px 8px!important;
+                    font-size: 13px!important;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .smry-block-scrollable-wrapper{
+        width: 648px;
     }
 }
 
@@ -4161,19 +4195,6 @@ header {
                         img {
                             width: 100%;
                         }
-                    }
-                }
-            }
-        }
-    }
-
-    // summary page
-    .smry-pg{
-        .smry-block{
-            .smry-block-content{
-                .smry-block-item{
-                    .col-right{
-                        border-left: 1px solid #CED4DA
                     }
                 }
             }

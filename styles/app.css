@@ -2450,6 +2450,62 @@ header .navbar .navbar-contact-info img {
   height: 51px;
 }
 
+.contact-pg .contact .col-left .form-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 15px;
+}
+
+.contact-pg .contact .col-left .form-control, .contact-pg .contact .col-left .form-select {
+  border: 1px solid #CED4DA;
+  height: 51px;
+}
+
+.contact-pg .contact .col-left textarea {
+  resize: none;
+  height: 131px !important;
+}
+
+.contact-pg .contact .col-right .contact-info-title {
+  font-weight: 600;
+}
+
+.contact-pg .contact .col-right .contact-info-block {
+  margin: 32px 0;
+}
+
+.contact-pg .contact .col-right .contact-info-block:nth-of-type(1) h6 {
+  font-weight: 600;
+}
+
+.contact-pg .contact .col-right .contact-info-block:nth-of-type(1) p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-pg .contact .col-right .contact-info-block:nth-of-type(2) .contact-info-img {
+  width: 88px;
+}
+
+.contact-pg .contact .col-right .contact-info-block:nth-of-type(3) .contact-info-list {
+  opacity: 0.8;
+}
+
+.contact-pg .contact .col-right .contact-info-block:nth-of-type(4) .social-links .social-links-icon {
+  width: 40px;
+}
+
+.contact-pg .contact .col-right .contact-info-block:nth-of-type(4) .social-links .social-links-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-pg .contact-map {
+  border-bottom: 4px solid #DC3545;
+}
+
 @media screen and (max-width: 1200px) {
   .termsgroup {
     grid-template-columns: repeat(3, 1fr) !important;
@@ -3223,7 +3279,11 @@ header .navbar .navbar-contact-info img {
 }
 
 .single_p_banner {
-  max-width: 453px;
+  background: red !important;
+}
+
+.single_p_banner img {
+  width: 100%;
 }
 
 .about_wrap .main_content {
@@ -3370,8 +3430,10 @@ header .navbar .navbar-contact-info img {
   line-height: 35px;
 }
 
-.about_team_wrap .team_lists .team_item img {
+.about_team_wrap .team_lists .team_item .team_item_img {
   margin-bottom: 15px;
+  max-height: 360px;
+  overflow: hidden;
 }
 
 .about_team_wrap .team_lists .team_item .team_content h4 {
@@ -3388,16 +3450,22 @@ header .navbar .navbar-contact-info img {
   position: relative;
 }
 
-.about_team_wrap .team_lists.team-slides .owl-prev {
-  position: absolute;
-  left: 0;
+.about_team_wrap .team_lists.team-slides .owl-prev, .about_team_wrap .team_lists.team-slides .owl-next {
+  font-size: 50px;
   top: 50%;
+  position: absolute;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.about_team_wrap .team_lists.team-slides .owl-prev {
+  left: -30px;
+  transform: translateY(calc(-50% - 50px));
 }
 
 .about_team_wrap .team_lists.team-slides .owl-next {
-  position: absolute;
   right: 0;
-  top: 50%;
+  right: -30px;
+  transform: translateY(calc(-50% - 50px));
 }
 
 .invo-pg .invo-top .col-right ul li {

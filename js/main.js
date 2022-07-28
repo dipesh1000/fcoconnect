@@ -8,6 +8,7 @@ $(document).ready(function () {
   var featuredSlides = $('.featured-slider');
   var placesSlides = $('.placesSlides');
   var restSlides = $('.rest-slider');
+  var teamslides = $('.team-slides');
 
   owl.owlCarousel({
     // items change number for slider display on desktop
@@ -151,6 +152,29 @@ $(document).ready(function () {
       1200:{
         items:4
       }
+    }
+  });
+
+  teamslides.owlCarousel({
+    items: 4,
+    loop: true,
+    autoplay: true,
+    nav: true,
+    smartSpeed: 1000,
+    margin: 20,
+	  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2,
+          margin: 40,
+      },
+      1000:{
+          items:3,
+          stagePadding: 50,
+          margin: 60,
+      },
     }
   });
 });

@@ -2441,6 +2441,73 @@ header {
     }
 }
 
+// contact page
+.contact-pg{
+    .contact{
+        .col-left{
+            .form-label{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+                margin-bottom: 15px;
+            }
+            .form-control, .form-select{
+                border: 1px solid #CED4DA;
+                height: 51px;
+            }
+            textarea{
+                resize: none;
+                height: 131px!important;
+            }
+        }
+        .col-right{
+            .contact-info{
+                &-title{
+                    font-weight: 600;
+                }
+                &-block{
+                    margin: 32px 0;
+                    &:nth-of-type(1){
+                        h6{
+                            font-weight: 600;
+                        }
+                        p{
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: rgba(0, 0, 0, 0.5);
+                        }
+                    }
+
+                    &:nth-of-type(2){
+                        .contact-info-img{
+                            width: 88px;
+                        }
+                    }
+
+                    &:nth-of-type(3){
+                        .contact-info-list{
+                            opacity: 0.8;
+                        }
+                    }
+                    &:nth-of-type(4){
+                        .social-links{
+                            .social-links-icon{
+                                width: 40px;
+                            }
+                            .social-links-text{
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-map{
+        border-bottom: 4px solid #DC3545;
+    }
+}
 
 
 @media screen and (max-width: 1200px){
@@ -3462,7 +3529,10 @@ header {
 
 // about page
 .single_p_banner {
-    max-width: 453px;
+    background: red!important;
+    img{
+        width: 100%;
+    }
 }
 .about_wrap {
     .main_content {
@@ -3595,8 +3665,10 @@ header {
     }
     .team_lists {
         .team_item {
-            img {
+            .team_item_img{
                 margin-bottom: 15px;
+                max-height: 360px;
+                overflow: hidden;
             }
             .team_content {
                 h4 {
@@ -3611,15 +3683,20 @@ header {
         }
         &.team-slides {
             position: relative;
-            .owl-prev {
-                position: absolute;
-                left: 0;
+            .owl-prev, .owl-next{
+                font-size: 50px;
                 top: 50%;
+                position: absolute;
+                color: rgba(51, 51, 51, 0.5);
+            }
+            .owl-prev {
+                left: -30px;
+                transform: translateY(calc(-50% - 50px));
             }
             .owl-next {
-                position: absolute;
                 right: 0;
-                top: 50%;
+                right: -30px;
+                transform: translateY(calc(-50% - 50px));
             }
         }
     }

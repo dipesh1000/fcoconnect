@@ -12,10 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/app.css">
-    <title>Document</title>
+    <title>Contact Page</title>
 </head>
 <body>
-    <div class = "main-holder">
+    <div class = "main-holder contact-pg">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -51,21 +51,113 @@
     <section class="banner" style="background: url('img/contact/contact_bg.png') center/cover no-repeat;">
     </section>
 
-    <main>
+    <section class = "contact my-5 py-5">
         <div class = "container">
-            <div class = "row py-5">
-                <div class = "col-md-6 col-left">
-                    <form>
-                        <div class = "mb-3">
-                            <label for = "" class = "form-label">Full Name *</label>
-                            <input type = "text" class = "form-control" name = "" id = "">
-                        </div>
-                    </form> 
+            <div class = "row gx-5">
+                <div class = "col-lg-6 col-left">
+                    <div class = "contact-form pe-xxl-4">
+                        <form>
+                            <div class = "mb-3">
+                                <label for = "" class = "form-label">Full Name *</label>
+                                <input type = "text" class = "form-control" name = "" id = "">
+                            </div>
+                            <div class = "mb-3">
+                                <label for = "" class = "form-label">Phone *</label>
+                                <input type = "text" class = "form-control" name = "" id = "">
+                            </div>
+                            <div class = "mb-3">
+                                <label for = "" class = "form-label">Email address *</label>
+                                <input type = "text" class = "form-control" name = "" id = "">
+                            </div>
+                            <div class = "mb-3">
+                                <label for = "" class = "form-label">What can we help you with? *</label>
+                                <select class = "form-select">
+                                    <option selected disabled>Choose</option>
+                                    <option value = "">Option 1</option>
+                                    <option value = "">Option 2</option>
+                                </select>
+                            </div>
+                            <div class = "mb-3">
+                                <label for = "" class = "form-label">Select country where you are from *</label>
+                                <select class = "form-select">
+                                    <option selected disabled>Choose</option>
+                                    <option value = "">Option 1</option>
+                                    <option value = "">Option 2</option>
+                                </select>
+                            </div>
+                            <div class = "mb-3">
+                                <label for = "" class="form-label">Message *</label>
+                                <textarea class = "form-control"></textarea>
+                            </div>
+                            <div class = "d-flex align-items-center justify-content-center">
+                                <button type = "submit" class = "btn theme_btn btn-secondary active mt-4">Submit</button>
+                            </div>
+                        </form> 
+                    </div>
                 </div>
-                <div class = "col-md-6 col-right"></div>
+                <div class = "col-lg-6 col-right">
+                    <div class = "contact-info ps-xxl-4">
+                        <h5 class = "text-uppercase contact-info-title mb-4">support 24/7</h5>
+                        <div class = "contact-info-block">
+                            <h6 class = "text-capitalize">customer services center</h6>
+                            <p>Supporting customers all related matters to the booking processing, quotation, booking status, after-sales service.</p>
+                        </div>
+                        <div class = "contact-info-block d-flex align-items-start">
+                            <div class = "contact-info-img me-3">
+                                <img src = "img/contact/24_img.svg" alt = "" class = "img-fluid">
+                            </div>
+                            <div class = "contact-info-text">
+                                <p class = "fw-bold mb-2">Phone Number:</p>
+                                <div class = "d-flex align-items-center">
+                                    <img src = "img/contact/flag.svg" alt = "">
+                                    <span class = "ms-2">+1 949 864 6017</span>
+                                </div>
+                                <p class = "mb-0"><span class = "fw-bold">Email:</span> connect@fco.com</p>
+                            </div>
+                        </div>
+                        <div class = "contact-info-block mt-4">
+                            <h6 class = "fw-bold text-black-50">pcoconnect.com, Travel Synergies L.L.c</h6>
+                            <ul class = "list-unstyled mx-0 contact-info-list mt-4">
+                                <li class = "my-2">Email: connect@fco.com</li>
+                                <li class = "my-2">Phone: +978 783 3434</li>
+                                <li class = "my-2">Address: Dubai, UAE</li>
+                                <li class = "my-2">Working hours: 9 AM - 6PM GMT - 8 (Mon - Fri)</li>
+                            </ul>
+                        </div>
+                        <div class = "contact-info-block mt-4">
+                            <h6 class = "fw-bold mb-3">Chat now</h6>
+                            <ul class = "list-unstyled mx-0 social-links">
+                                <li class = "d-flex align-items-center my-3">
+                                    <span class = "social-links-icon d-flex align-items-center me-2">
+                                        <img src = "img/contact/whatsapp.svg" alt = "" class = "img-fluid">
+                                    </span>
+                                    <span class = "social-links-text">+971-43 34232 7</span>
+                                </li>
+                                <li class = "d-flex align-items-center my-3">
+                                    <span class = "social-links-icon d-flex align-items-center me-2">
+                                        <img src = "img/contact/viber.svg" alt = "" class = "img-fluid">
+                                    </span>
+                                    <span class = "social-links-text">+971-43 34232 7</span>
+                                </li>
+                                <li class = "d-flex align-items-center my-3">
+                                    <span class = "social-links-icon d-flex align-items-center me-2">
+                                        <img src = "img/contact/skype.svg" alt = "" class = "img-fluid">
+                                    </span>
+                                    <span class = "social-links-text">connect@fco.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    <section>
+        <div class = "contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231277.43278418912!2d54.85598083281249!3d25.077820299999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f157cb47ee2af%3A0x62fcc9e32e0bfa77!2sDelta%20Hotels%20by%20Marriott%20Jumeirah%20Beach%2C%20Dubai!5e0!3m2!1sen!2snp!4v1659001546183!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
     
     <section class="footer">
         <div class="mainfooter">

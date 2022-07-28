@@ -3633,6 +3633,23 @@ header .navbar .navbar-contact-info img {
   background-color: #B5373E !important;
 }
 
+.smry-pg .smry-info-head {
+  background-color: #b5373e;
+  color: white;
+  padding: 5px 8px;
+  margin-bottom: 16px;
+}
+
+.smry-pg .smry-info-head h6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.smry-pg .smry-info .form-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .ptmt-pg .ptmt-wrapper .ptmt-note {
   color: #DC3545;
 }

@@ -3850,6 +3850,23 @@ header {
     .theme_btn{
         background-color: #B5373E!important;
     }
+
+    .smry-info{
+        &-head{
+            background-color: #b5373e;
+            color: white;
+            padding: 5px 8px;
+            margin-bottom: 16px;
+            h6{
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+        .form-label{
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
 }
 
 .ptmt-pg{

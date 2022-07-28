@@ -134,10 +134,10 @@ $(document).ready(function () {
   restSlides.owlCarousel({
     items: 4,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     nav: true,
     smartSpeed: 1000,
-    margin: 10,
+    margin: 20,
 	  responsive:{
       0:{
           items:1

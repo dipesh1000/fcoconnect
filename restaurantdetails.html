@@ -14,7 +14,7 @@
     <title>FCO Connect</title>
 </head>
 <body>
-    <div class = "main-holder rest-pg">
+    <div class = "main-holder rest-details-pg">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -53,103 +53,97 @@
         </div>
     </section>
     
-    <section class="rest">
+    <section class="">
         <div class="container">
-            <div class = "rest-form mb-5">
-                <form>
-                    <div class = "row">
-                        <div class = "mb-3 col-md-6 col-xl-2">
-                            <input type = "date" placeholder="Date" class = "form-control">
-                        </div>
-                        <div class = "mb-3 col-md-6 col-xl-2">
-                            <select class = "form-select">
-                                <option selected disabled hidden>People</option>
-                                <option value=""></option>
-                            </select>
-                        </div>
-                        <div class = "mb-3 col-md-6 col-xl-3">
-                            <select class = "form-select">
-                                <option selected disabled hidden>Restaurant Name</option>
-                                <option value=""></option>
-                            </select>
-                        </div>
-                        <div class = "mb-3 col-md-6 col-xl-3">
-                            <select class = "form-select">
-                                <option selected disabled hidden>Location</option>
-                                <option value=""></option>
-                            </select>
-                        </div>
-                        <div class = "mb-3 col-md-6 col-xl-2">
-                            <button type = "submit" class = "btn btn-secondary theme_btn active w-100">Search</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div class = "rest-featured">
-                <div class = "rest-featured-title">
-                    <h3>Featured Restaurant</h3>
-                </div>
-                <div class = "rest-featured-items rest-slider owl-carousel owl-theme">
-                    <div class = "rest-featured-item text-center mx-auto">
-                        <div class = "rest-featured-item-img">
-                            <img src = "img/restaurant/rest-feat-img-1.png" alt = "" class = "img-fluid">
-                        </div>
-                        <div class = "rest-featured-item-text pt-3 ps-4 pe-4 pb-4">
-                            <h5 class = "mb-0">Tribes Dubai Mall</h5>
-                            <p>AUD 250 Average Price</p>
-                            <a href = "#" class = "theme_btn_sm btn btn-outline-primary">Select</a>
-                        </div>
-                    </div>
-
-                    <div class = "rest-featured-item text-center mx-auto">
-                        <div class = "rest-featured-item-img">
-                            <img src = "img/restaurant/rest-feat-img-2.png" alt = "" class = "img-fluid">
-                        </div>
-                        <div class = "rest-featured-item-text pt-3 ps-4 pe-4 pb-4">
-                            <h5 class = "mb-0">Tribes Dubai Mall</h5>
-                            <p>AUD 250 Average Price</p>
-                            <a href = "#" class = "theme_btn_sm btn btn-outline-primary">Select</a>
-                        </div>
-                    </div>
-
-                    <div class = "rest-featured-item text-center mx-auto">
-                        <div class = "rest-featured-item-img">
-                            <img src = "img/restaurant/rest-feat-img-3.png" alt = "" class = "img-fluid">
-                        </div>
-                        <div class = "rest-featured-item-text pt-3 ps-4 pe-4 pb-4">
-                            <h5 class = "mb-0">Tribes Dubai Mall</h5>
-                            <p>AUD 250 Average Price</p>
-                            <a href = "#" class = "theme_btn_sm btn btn-outline-primary">Select</a>
-                        </div>
-                    </div>
-
-                    <div class = "rest-featured-item text-center mx-auto">
-                        <div class = "rest-featured-item-img">
-                            <img src = "img/restaurant/rest-feat-img-4.png" alt = "" class = "img-fluid">
-                        </div>
-                        <div class = "rest-featured-item-text pt-3 ps-4 pe-4 pb-4">
-                            <h5 class = "mb-0">Tribes Dubai Mall</h5>
-                            <p>AUD 250 Average Price</p>
-                            <a href = "#" class = "theme_btn_sm btn btn-outline-primary">Select</a>
-                        </div>
-                    </div>
-
-                    <div class = "rest-featured-item text-center mx-auto">
-                        <div class = "rest-featured-item-img">
-                            <img src = "img/restaurant/rest-feat-img-4.png" alt = "" class = "img-fluid">
-                        </div>
-                        <div class = "rest-featured-item-text pt-3 ps-4 pe-4 pb-4">
-                            <h5 class = "mb-0">Tribes Dubai Mall</h5>
-                            <p>AUD 250 Average Price</p>
-                            <a href = "#" class = "theme_btn_sm btn btn-outline-primary">Select</a>
+            <div class = "rest-details">
+                <div class = "rest-details-block-1">
+                    <div class = "rest-details-item px-4 px-lg-5 py-4 mb-4">
+                        <span class = "rest-details-heading mb-1 d-block">Your Selected Restaurant Information</span>
+                        <div class = "row rest-details-item-top gy-4 gy-md-0 mx-0">
+                            <div class = "col-md-4 col-lg-3 col-img ps-0">
+                                <img src = "img/restaurant/rest-details-img.png" alt = "" class = "img-fluid">
+                            </div>
+                            <div class = " col-md-5 col-lg-7 col-text px-0 ps-md-3">
+                                <h5 class = "text-capitalize d-block rest-details-item-title">Tribes Dubai Mall</h5>
+                                <ul class = "col-text-list list-unstyled d-lg-flex flex-wrap">
+                                    <li class = "d-flex align-items-center py-1 pe-5">
+                                        <span>
+                                            <img src = "img/restaurant/map-marker-icon.svg" alt = "">
+                                        </span>
+                                        <span class = "ps-1">Dubai Polo</span>
+                                    </li>
+                                    <li class = "d-flex align-items-center py-1 pe-5">
+                                        <span>
+                                            <img src = "img/restaurant/persons-icon.svg" alt = "">
+                                        </span>
+                                        <span class = "ps-1">5 Number of visitors</span>
+                                    </li>
+                                    <li class = "d-flex align-items-center py-1 pe-5">
+                                        <span>
+                                            <img src = "img/restaurant/calender-icon.svg" alt = "">
+                                        </span>
+                                        <span class = "ps-1">July 12, 2023</span>
+                                    </li>
+                                </ul>
+                                <a href = "#">Change</a>
+                            </div>
+                            <div class = "col-md-3 col-lg-2 d-flex align-items-center ps-0 ps-md-3 ps-lg-5">
+                                <div class = "price-tag">
+                                    <p class = "mb-0 text-uppercase">aed 250</p>
+                                    <span class = "d-block">Average price</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="button_container d-flex justify-content-center mt-5">
-                    <button class="btn theme_btn btn-outline-primary me-2 btn-white">Back</button>
-                    <button class="btn theme_btn active btn-primary" id="handleclick">Continue</button>
+                <div class = "rest-details-block-2 py-3 d-flex flex-column">
+                    <div class = "rest-details-form">
+                        <h4 class = "mb-3">Personal Information</h4>
+                        <p class = "info-text">
+                            <span class = "info-text-icon me-2">
+                                <i class="bi bi-info-circle-fill"></i>
+                            </span>
+                            <span>Enter the traveler's name as it appears on passport or government-issed photo ID.</span>
+                        </p>
+
+                        <form class = "mt-2 mb-4">
+                            <div class = "row">
+                                <div class = "col-md-6 col-lg-4 col-xl-1 mb-3">
+                                    <label for = "" class = "form-label">Title *</label>
+                                    <select class = "form-select">
+                                        <option value = "" selected>Mr.</option>
+                                        <option value="">Mrs.</option>
+                                    </select>
+                                </div>
+                                <div class = "col-md-6 col-lg-4 col-xl-3 mb-3">
+                                    <label for = "" class = "form-label">Full Name *</label>
+                                    <input type = "text" class = "form-control" placeholder="e.g. Mohammed">
+                                </div>
+                                <div class = "col-md-6 col-lg-4 col-xl-3 mb-3">
+                                    <label for = "" class = "form-label">Email *</label>
+                                    <input type = "text" class = "form-control" placeholder="Abadulla">
+                                </div>
+                                <div class = "col-md-6 col-lg-4 col-xl-3 mb-3">
+                                    <label for="" class = "form-label">Phone Number *</label>
+                                    <div class = "input-group">
+                                        <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src = "img/restaurant/flag.png" alt = ""> <span class = "ms-1">+971</span></button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">+971</a></li>
+                                          <li><a class="dropdown-item" href="#">+977</a></li>
+                                        </ul>
+                                        <input type = "text" class = "form-control" placeholder="+971 52 707 3043">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="button_container d-flex justify-content-center mt-5">
+                        <button class="btn theme_btn btn-outline-primary me-2 btn-white">Back</button>
+                        <button class="btn theme_btn active btn-primary" id="handleclick">Continue</button>
+                    </div>
                 </div>
             </div>
         </div>

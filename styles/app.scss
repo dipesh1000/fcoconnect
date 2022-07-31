@@ -4130,6 +4130,170 @@ header {
     }
 }
 
+.transfers-pg{
+    .transfers{
+        .transfers-search-box{
+            background: #F2FAFF;
+            .transfers-form{
+                background-color: #fff;
+                padding: 29px;
+                border: 1px solid #00000033;
+                box-shadow: 0px 4px 10px 0px #E4E3E340;
+
+                h5{
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $primary;
+                }
+                a{
+                    color: $primary;
+                }
+                .form-label{
+                    font-weight: 600;
+                    font-size: 16px;
+                    opacity: 0.9;
+                }
+                .form-control, .form-select{
+                    border: 1px solid #CED4DA;
+                    height: 49px;
+                    border-radius: 4px;
+                    color: rgba(0, 0, 0, 0.7);
+                }
+                .btn-icon{
+                    width: 49px;
+                    height: 49px;
+                    background-color: $primary;
+                    color: white;
+                }
+            }
+        }
+        .transfers-search{
+            &-title{
+                h3{
+                    font-weight: 600;
+                    color: $primary;
+                }
+                span{
+                    opacity: 0.8;
+                }
+            }
+            .transfers-summary{
+                h4{
+                    background-color: $primary;
+                    height: 58px;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 700;
+                    border: 1px solid $primary;
+                }
+                .summary-list{
+                    border: 1px solid #0000004D;
+                    &-item{
+                        margin-bottom: 8px;
+                        span{
+                            width: 50%;
+                            &:first-child{
+                                opacity: 0.95;
+                            }
+                            &:last-child{
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .transfers-items{
+            .transfers-item{
+                border: 1px solid #0000004D;
+                &-head{
+                    p{
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    span{
+                        background-color: $primary;
+                        color: white;
+                        padding: 6px 16px;
+                        border-radius: 2px;
+                    }
+                }
+                &-body{
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    background-color: rgba(0, 0, 0, 0.01);
+                    padding: 20px;
+                    &-left{
+                        p{
+                            font-weight: 600;
+                        }
+                    }
+                    &-right{
+                        .transfers-item-details{
+                            padding-bottom: 26px;
+                            &-left{
+                                ul{
+                                    li{
+                                        font-size: 14px;
+                                        margin-bottom: 8px;
+                                        span{
+                                            &:first-child{
+                                                color: $primary;
+                                            }
+                                            &:last-child{
+                                                opacity: 0.9;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-right{
+                                .details-right-col-l{
+                                    margin-right: 20px;
+                                    ul{
+                                        li{
+                                            background-color: rgba(0, 0, 0, 0.02);
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            margin-bottom: 10px;
+                                            padding: 8px;
+                                            text-align: center;
+                                            min-width: 60px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                    }
+                                }
+                                .details-right-col-r{
+                                    border: 1px solid rgba(0, 0, 0, 0.1);
+                                    background-color: rgba(0, 0, 0, 0.02);
+                                    ul{
+                                        li{
+                                            margin-bottom: 2px;
+                                            opacity: 0.9;
+                                            font-size: 13px;
+                                            span{
+                                                &:first-child{
+                                                    width: 60%;
+                                                }
+                                                &:last-child{
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                            &:last-child{
+                                                margin-bottom: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 560px){
     .about_wrap {
         .main_content {
@@ -4453,6 +4617,24 @@ header {
                         width: 115%;
                         img {
                             width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .transfers-pg{
+        .transfers{
+            .transfers-items{
+                .transfers-item{
+                    .transfers-item-body{
+                        .transfers-item-body-right{
+                            .transfers-item-details-right{
+                                .details-right-col-r{
+                                    width: 70%;
+                                }
+                            }
                         }
                     }
                 }

@@ -300,6 +300,7 @@ a:hover {
 
 /** Global CSS Ends **/
 header {
+  position: relative;
   z-index: 1;
 }
 
@@ -339,12 +340,17 @@ header .navbar .navbar-contact-info img {
   height: 565px;
 }
 
-.banner .inner_content {
+.inner_content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 65%;
   margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
-.banner .inner_content form {
+.inner_content form {
   position: relative;
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
@@ -354,21 +360,25 @@ header .navbar .navbar-contact-info img {
   z-index: 1000 !important;
 }
 
-.banner .inner_content form div {
+.inner_content form div {
   padding: 1em 0 1em 1em;
   flex: 1;
   margin-top: -1px;
 }
 
-.banner .inner_content form div:last-child {
+.inner_content form div:last-child {
   padding-right: 1em;
 }
 
-.banner .inner_content form div select {
+.inner_content form div select {
   border: 1px solid #CED4DA;
   border-radius: 4px;
   color: #8b8d8f;
   height: 49px !important;
+}
+
+.header-main-slider {
+  z-index: 0 !important;
 }
 
 .searchbox {
@@ -2623,7 +2633,7 @@ header .navbar .navbar-contact-info img {
   header .navbar .navbar-collapse .nav-item .nav-link:after {
     display: none;
   }
-  .banner .inner_content {
+  .inner_content {
     width: 100%;
   }
   .tab-content {
@@ -2702,10 +2712,10 @@ header .navbar .navbar-contact-info img {
 }
 
 @media screen and (max-width: 768px) {
-  .banner .inner_content form {
+  .inner_content form {
     flex-direction: column;
   }
-  .banner .inner_content form div {
+  .inner_content form div {
     padding-right: 16px !important;
   }
   .search_image_ads {

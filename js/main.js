@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  var mainSlides = $('.header-main-slider');
   var owl = $('.highlightside');
   var event = $('.eventsides');
   var preslides = $('.preeventslides');
@@ -9,6 +10,18 @@ $(document).ready(function () {
   var placesSlides = $('.placesSlides');
   var restSlides = $('.rest-slider');
   var teamslides = $('.team-slides');
+
+  mainSlides.owlCarousel({
+    loop: true,
+    autoplay: true,
+    dots: true,
+    items: 1,
+    margin: 10,
+    smartSpeed: 1000,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+  })
 
   owl.owlCarousel({
     // items change number for slider display on desktop

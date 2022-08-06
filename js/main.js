@@ -7,6 +7,7 @@ $(document).ready(function () {
   var card = $('.cardslider');
   var searchInnerBoxPillsTab = $('.nav-pills.slidrss');
   var featuredSlides = $('.featured-slider');
+  var tourFeaturedSlides = $('.tour-featured-slider');
   var placesSlides = $('.placesSlides');
   var restSlides = $('.rest-slider');
   var teamslides = $('.team-slides');
@@ -14,7 +15,8 @@ $(document).ready(function () {
   mainSlides.owlCarousel({
     loop: true,
     autoplay: true,
-    dots: true,
+    dots: false,
+    nav: true,
     items: 1,
     margin: 10,
     smartSpeed: 1000,
@@ -113,12 +115,36 @@ $(document).ready(function () {
   });
 
   featuredSlides.owlCarousel({
+    items: 3,
+    loop: true,
+    nav: true,
+    dots: false,
+    smartSpeed: 1000,
+    margin: 22,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    stagePadding: 20,
+    responsive:{
+      0:{
+          items:1
+      },
+      700:{
+          items:2
+      },
+      1000:{
+          items:3
+      },
+    }
+  });
+
+  tourFeaturedSlides.owlCarousel({
     items: 1,
     loop: true,
     nav: false,
     dots: true,
     smartSpeed: 1000,
-    margin: 15,
+    margin: 10,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,

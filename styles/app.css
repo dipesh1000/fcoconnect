@@ -465,6 +465,9 @@ header .navbar .navbar-contact-info img {
   padding: 1em 2.324em;
   border-radius: 0;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .searchbox .form_field_group .nav-pills .nav-item .nav-link.active {
@@ -4037,14 +4040,16 @@ header .navbar .navbar-contact-info img {
 }
 
 .transfers-pg .transfers .transfers-search-box {
-  background: #F2FAFF;
+  background: url("../img/transfer-page/search-banner.png") center/cover no-repeat;
+  min-height: 60vh;
 }
 
 .transfers-pg .transfers .transfers-search-box .transfers-form {
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.97);
   padding: 29px;
-  border: 1px solid #00000033;
-  box-shadow: 0px 4px 10px 0px #E4E3E340;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 10px rgba(228, 227, 227, 0.25);
+  border-radius: 12px;
 }
 
 .transfers-pg .transfers .transfers-search-box .transfers-form h5 {
@@ -4054,7 +4059,9 @@ header .navbar .navbar-contact-info img {
 }
 
 .transfers-pg .transfers .transfers-search-box .transfers-form a {
-  color: #DC3545;
+  color: #00000080;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .transfers-pg .transfers .transfers-search-box .transfers-form .form-label {

@@ -456,6 +456,10 @@ header {
                     padding: 1em 2.324em;
                     border-radius: 0;
                     width: 100%;
+
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                     &.active {
                         position: relative;
                         border-radius: 0;
@@ -4282,12 +4286,14 @@ header {
 .transfers-pg{
     .transfers{
         .transfers-search-box{
-            background: #F2FAFF;
+            background: url('../img/transfer-page/search-banner.png') center/cover no-repeat;
+            min-height: 60vh;
             .transfers-form{
-                background-color: #fff;
+                background: rgba(255, 255, 255, 0.97);
                 padding: 29px;
-                border: 1px solid #00000033;
-                box-shadow: 0px 4px 10px 0px #E4E3E340;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 4px 10px rgba(228, 227, 227, 0.25);
+                border-radius: 12px;
 
                 h5{
                     font-size: 18px;
@@ -4295,7 +4301,9 @@ header {
                     color: $primary;
                 }
                 a{
-                    color: $primary;
+                    color: #00000080;
+                    font-weight: 600;
+                    font-size: 16px;
                 }
                 .form-label{
                     font-weight: 600;
